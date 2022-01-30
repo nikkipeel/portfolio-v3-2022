@@ -58,8 +58,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/nikkipeel/portfolio-v3-2022.git"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
