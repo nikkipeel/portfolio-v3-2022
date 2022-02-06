@@ -116,7 +116,7 @@ const Certs = () => {
           </div>
         </Slider>
         </div>
-        <div className="dark:bg-bgPrimary bg-primary relative skew-y-[5deg] w-full h-48 -mt-80 -mb-20"></div>
+        <div className="dark:bg-bgPrimary bg-primary relative skew-y-[5deg] w-full h-36 lg:h-48 -mt-60 lg:-mt-80 -mb-20"></div>
       </>
     )
   }

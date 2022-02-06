@@ -22,7 +22,7 @@ const RecentPosts = () => {
 
   return (
     <>
-      <div className="dark:bg-bgDark bg-dark h-48 w-full relative -skew-y-6 mt-8"></div>
+      <div className="dark:bg-bgDark bg-dark h-48 w-full relative -skew-y-6 lg:mt-8"></div>
      <div className="dark:bg-bgDark bg-dark w-full h-full text-center pt-64 pb-32 -mt-20">
                 <div className="flex flex-col justify-center items-center mx-auto">
                   <h1 className="section-heading w-auto text-4xl tracking-wide font-bold text-white">Recent Posts</h1>

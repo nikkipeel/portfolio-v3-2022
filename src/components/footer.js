@@ -6,6 +6,7 @@ import { faCodepen, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-ic
 function Footer() {
   return (
         <footer className="flex bg-secondary justify-between w-full h-full p-8">
+
             <p className="text-white text-lg font-semibold tracking-wide">Nikki Peel</p>
             <div className="flex">
                 <a aria-label="linked in" href="https://www.linkedin.com/in/nikkipeel" className="text-white text-xl pr-4"><FontAwesomeIcon icon={faLinkedin} /></a>

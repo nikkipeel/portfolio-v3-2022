@@ -371,12 +371,18 @@ textarea {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 0;
+  top: 2px;
   width: auto;
   border-radius: 0 0 3px 3px;
   padding: 6px 10px;
   background-color: var(--secondary);
   color: var(--white);
+}
+
+@media screen and (max-width: 768px) {
+  .button-code {
+    top:0;
+  }
 }
 
 /* Dark Theme */

@@ -33,7 +33,7 @@ const SinglePost = ({data, location, post }) => {
                     <div className="header-overlay absolute w-full z-20" style={{backgroundColor: 'rgba(0,0,0,0.3)', height: '400px'}}></div>
                     <GatsbyImage image={singlePost.frontmatter.coverImage.childImageSharp.gatsbyImageData} alt="" className="w-full" style={{objectFit: 'cover', objectPosition: 'left top', height: '400px', zIndex: '10'}}  />
                 </header>
-                <div className="dark:bg-bgDark bg-white dark:text-white text-dark break-words px-8 py-12 prose lg:prose-xl max-w-none leading-normal mx-auto">
+                <div className="dark:bg-bgDark bg-white dark:text-white text-dark break-words px-8 py-12 prose lg:prose-xl max-w-full leading-normal mx-auto">
                     <div dangerouslySetInnerHTML={{ __html: singlePost.html }} />
                 </div>
             </article>
