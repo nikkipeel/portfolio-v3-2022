@@ -29,16 +29,13 @@ const Projects = () => {
   `)
 
   return (
-    <div id="projects" className="dark:bg-bgPrimary bg-primary w-full h-full flex flex-col justify-center items-center py-20">
-        <h1 className="section-heading text-center w-auto text-3xl tracking-wide font-bold text-white">Recent Projects</h1>
-
-        <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 xl:w-3/4 items-center gap-4 mt-12 mx-auto p-4" style={{marginBottom: '-4rem'}}>
+        <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 xl:w-3/4 items-center gap-4 mt-8 mx-auto p-4">
         
         {data.allMarkdownRemark.nodes.map(project => (
           <>
           {project.frontmatter.slug &&
             
-        <Link to={"/projects/" + project.frontmatter.slug} className="card-project col rounded text-dark bg-white dark:bg-bgSecondary" tabIndex="0" key={project.frontmatter.slug}>
+        <Link to={"/projects/" + project.frontmatter.slug} className="card-project col rounded text-dark bg-white dark:bg-bgSecondary border-2 border-secondary" tabIndex="0" key={project.frontmatter.slug}>
             {project.frontmatter.image &&
             <>
             <GatsbyImage className="object-contain shadow-inner" image={project.frontmatter.image.childImageSharp.gatsbyImageData} alt={project.frontmatter.alt}  placeholder="blurred"  />  
@@ -65,7 +62,7 @@ const Projects = () => {
             </>
         ))}
 </div>
-  </div>
+
   )
                 }
 

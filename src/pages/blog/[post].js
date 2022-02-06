@@ -21,7 +21,7 @@ const SinglePost = ({data, location, post }) => {
             <article postSlug={post} key={postSlug} className="dark:bg-bgSecondary bg-primary text-dark mx-auto justify-center rounded-lg">
                 <header className="relative">
                     <div className="absolute h-full w-full flex items-center justify-center p-8 z-40">
-                        <div className="dark:bg-bgSecondary dark:text-white bg-white text-dark bg-opacity-75 rounded p-4 md:p-12">
+                        <div className="dark:bg-bgSecondary dark:text-white bg-white text-dark bg-opacity-50 rounded p-4 md:p-12">
                             <h1 className="mono text-3xl mb-4">
                                 {singlePost.frontmatter.postTitle}
                             </h1>
@@ -33,7 +33,7 @@ const SinglePost = ({data, location, post }) => {
                     <div className="header-overlay absolute w-full z-20" style={{backgroundColor: 'rgba(0,0,0,0.3)', height: '400px'}}></div>
                     <GatsbyImage image={singlePost.frontmatter.coverImage.childImageSharp.gatsbyImageData} alt="" className="w-full" style={{objectFit: 'cover', objectPosition: 'left top', height: '400px', zIndex: '10'}}  />
                 </header>
-                <div className="dark:bg-bgDark bg-white dark:text-white text-dark break-words px-8 py-12 prose lg:prose-xl max-w-full leading-normal mx-auto">
+                <div className="dark:bg-bgDark bg-white dark:text-white text-dark break-words px-8 py-12 prose max-w-none lg:prose-xl leading-normal mx-auto">
                     <div dangerouslySetInnerHTML={{ __html: singlePost.html }} />
                 </div>
             </article>

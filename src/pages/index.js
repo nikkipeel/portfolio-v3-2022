@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import Header from "../components/header"
 import Seo from "../components/seo"
 import Skills from "../components/skills"
-import Projects from "../components/projects"
+import RecentProjects from "../components/recentProjects"
 import Certs from "../components/certifications"
 import RecentPosts from "../components/recentPosts"
 
@@ -12,7 +12,7 @@ const IndexPage = () => (
     <Seo title="Home" />
     <Header></Header>
     <Skills></Skills>
-    <Projects></Projects>
+    <RecentProjects></RecentProjects>
     <Certs></Certs>
     <RecentPosts></RecentPosts>
   </Layout>

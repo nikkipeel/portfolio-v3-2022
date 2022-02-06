@@ -25,6 +25,7 @@
 
 html {
   scroll: smooth;
+  overflow-x: hidden;
 }
 h1 {
   font-size: 1.875rem;
@@ -42,15 +43,19 @@ a {
   transition: all .4s ease;
 }
 
-a:focus, button:focus {
-  outline: 3px solid var(--highlight);
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--highlight);
   outline-offset: 2px;
 }
 
 .prose {
-  width: 90ch;
+  width: 70vw;
 }
-
+@media screen and (max-width: 1023px) {
+    .prose {
+      width: 90vw;
+    }
+  }
 .prose h3 {
   margin: 2rem 0;
 }
@@ -291,7 +296,7 @@ div.certs-carousel {
   justify-content: center;
   width: 1290px;
   margin: 3rem auto -10rem auto;
-  z-index: 400;
+  z-index: 30;
 }
 
 @media (max-width: 1290px) {
@@ -318,13 +323,13 @@ div.certs-carousel {
 }
 
 .slick-slide {
-  z-index: 700;
+  z-index: 30;
   transition: .5s cubic-bezier(0.37, 0, 0.63, 1);
 }
 
 .slick-center {
   transform: scale(1.225);
-  z-index: 800;
+  z-index: 40;
 }
 
 .right-arrow svg, .left-arrow svg{
@@ -359,6 +364,7 @@ textarea {
   top: 10px;
   height: 100%;
   margin: 0 1rem 0 0;
+  z-index:40;
 }
 
 @media (max-width: 1280px){

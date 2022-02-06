@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from 'gatsby';
-import { GatsbyImage } from "gatsby-plugin-image"
 import { useStaticQuery,graphql } from 'gatsby'
 
 const RecentPosts = () => {
@@ -44,7 +43,7 @@ const RecentPosts = () => {
           <div className="flex gap-2 justify-between items-center my-4 mx-4">
             {categories &&
             <>
-            <div className="flex flex-wrap w-48 lg:w-auto gap-2">
+            <div className="flex flex-wrap w-1/2 lg:w-auto gap-2">
                 {categories.map((category) => (
                     <>
                     <span className="tag bg-primary py-1 px-2 rounded-md font-semibold text-sm">{category}</span>

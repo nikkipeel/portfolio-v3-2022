@@ -26,6 +26,7 @@ module.exports = {
         highlight: 'var(--highlight)'
       },
       fontFamily: {
+        'bree':['Bree', 'Verdana', 'sans-serif'],
         'sans': ['Source Sans Pro', 'Verdana', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         'serif': ['Source Serif Pro', 'ui-serif', 'Georgia', 'serif'],
         'mono': ['Source Code Pro', 'ui-monospace', 'SFMono-Regular', 'monospace'],
