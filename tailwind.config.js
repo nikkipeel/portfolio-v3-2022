@@ -12,8 +12,11 @@ module.exports = {
         }
       },
       colors: {
+        whitest: 'var(--whitest)',
+        white: 'var(--white)',
         white65: 'var(--white-65)',
         white85: 'var(--white-85)',
+        bgTransparent: 'var(--transparent-bg)',
         primary: 'var(--primary)',
         bgPrimary: 'var(--dark-bg-primary)',
         darkPrimary: 'var(--dark-primary)',
@@ -22,7 +25,6 @@ module.exports = {
         darkSecondary: 'var(--dark-secondary)',
         dark: 'var(--dark)',
         bgDark: 'var(--dark-bg)',
-        white: 'var(--white)',
         highlight: 'var(--highlight)'
       },
       fontFamily: {
@@ -31,9 +33,6 @@ module.exports = {
         'serif': ['Source Serif Pro', 'ui-serif', 'Georgia', 'serif'],
         'mono': ['Source Code Pro', 'ui-monospace', 'SFMono-Regular', 'monospace'],
     },
-    borderRadius: {
-      'full': '50%',
-    }
   },
     variants: {
       extend: {

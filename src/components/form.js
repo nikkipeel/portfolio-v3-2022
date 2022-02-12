@@ -30,7 +30,7 @@ export default function Form() {
   }
 
   return (
-      <div className="dark:bg-bgDark bg-dark w-100 lg:w-2/3 xl:w-1/2 rounded-sm mx-4 md:mx-auto mt-12 p-8 lg:p-12 focus-within:border-2 focus-within:border-highlight">
+      <div className="dark:bg-bgDark bg-dark text-white w-full md:w-3/4 xl:w-1/2 rounded-sm mx-auto mt-12 p-8 lg:p-12 focus-within:border-2 focus-within:border-highlight">
       <form
         name="contact"
         method="post"
@@ -48,39 +48,39 @@ export default function Form() {
           </label>
         </p>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-0 justify-center items-start mx-auto">
-        <div className="mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap:0 md:gap-2 lg:gap-4 justify-around items-center mx-auto">
+        <div className="md:mx-auto">
         <p>
-          <label className="text-white font-mono tracking-tight">
+          <label className="font-mono tracking-tight">
             First Name:
             <br />
-            <input className="dark:bg-dark dark:text-white text-dark text-base font-sans border-transparent focus:outline-none focus:ring-2 focus:ring-highlight dark:focus:ring-darkPrimary focus:border-transparent rounded-sm mt-2 mb-4 p-2" type="text" name="first-name" onChange={handleChange} />
+            <input className="bg-white dark:bg-dark dark:text-white text-dark text-base font-sans border-transparent focus:outline-none focus:ring-2 focus:ring-highlight dark:focus:ring-darkPrimary focus:border-transparent rounded-sm mt-2 mb-4 lg:p-2" type="text" name="first-name" onChange={handleChange} />
           </label>
         </p>
         <p>
-          <label className="text-white font-mono tracking-tight">
+          <label className="font-mono tracking-tight">
             Last Name:
             <br />
-            <input  className="dark:bg-dark dark:text-white text-dark text-base font-sans border-transparent focus:outline-none focus:ring-2 focus:ring-highlight dark:focus:ring-darkPrimary focus:border-transparent rounded-sm mt-2 mb-4 p-2" type="text" name="last-name" onChange={handleChange} />
+            <input  className="bg-white dark:bg-dark dark:text-white text-dark text-base font-sans border-transparent focus:outline-none focus:ring-2 focus:ring-highlight dark:focus:ring-darkPrimary focus:border-transparent rounded-sm mt-2 mb-4 lg:p-2" type="text" name="last-name" onChange={handleChange} />
           </label>
         </p>
         <p>
-          <label className="text-white font-mono tracking-tight">
+          <label className="font-mono tracking-tight">
             Email Address:
             <br />
-            <input  className="dark:bg-dark dark:text-white text-dark text-base font-sans border-transparent focus:outline-none focus:ring-2 focus:ring-highlight dark:focus:ring-darkPrimary focus:border-transparent rounded-sm mt-2 mb-4 p-2" type="email" name="email" onChange={handleChange} />
+            <input  className="bg-white dark:bg-dark dark:text-white text-dark text-base font-sans border-transparent focus:outline-none focus:ring-2 focus:ring-highlight dark:focus:ring-darkPrimary focus:border-transparent rounded-sm mt-2 mb-4 lg:p-2" type="email" name="email" onChange={handleChange} />
           </label>
         </p>
         </div>
-        <p className="mx-auto">
-          <label className="text-white font-mono tracking-tight">
+        <p className="md:mx-auto">
+          <label className="font-mono tracking-tight">
             Message:
             <br />
-            <textarea className="dark:bg-dark dark:text-white text-dark text-base font-sans border-transparent focus:outline-none focus:ring-2 focus:ring-highlight dark:focus:ring-darkPrimary focus:border-transparent rounded-sm mt-2 mb-4 p-2" name="message" onChange={handleChange}/>
+            <textarea className="bg-white dark:bg-dark dark:text-white text-dark text-base font-sans border-transparent focus:outline-none focus:ring-2 focus:ring-highlight dark:focus:ring-darkPrimary focus:border-transparent rounded-sm mt-2 mb-4 lg:p-2" name="message" onChange={handleChange}/>
           </label>
         </p>
         </div>
-        <button type="submit" className="flex justify-center dark:bg-darkSecondary bg-secondary text-white font-semibold uppercase focus:ring-highlight rounded shadow-md py-3 px-12 mt-4 mx-auto transition duration-500">Send</button>
+        <button type="submit" className="flex justify-center bg-secondary hover:brightness-125 text-white font-semibold font-mono uppercase focus:ring-highlight rounded shadow-md py-3 px-12 mt-4 mx-auto transition duration-500">Send</button>
       </form>
       </div>
   )

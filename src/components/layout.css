@@ -7,11 +7,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300,0,400;0,600;0,900;1,700&family=Source+Code+Pro:wght@400;600;700&family=Source+Serif+Pro:wght@600&display=swap');
 
-/* Define color themes for dropdown toggle */
 :root {
+  --whitest: #ffffff;
   --white: #F2F0F0;
   --white-85: rgb(253, 253, 253, .85);
   --white-65: rgb(253, 253, 253, .65);
+  --transparent-bg: transparent;
   --dark: #2B293C;
   --dark-bg: #1d1b28;
   --primary: #4A94A8;
@@ -48,6 +49,9 @@ a:focus-visible, button:focus-visible {
   outline-offset: 2px;
 }
 
+.rounded-full {
+  border-radius: 50%;
+}
 .prose {
   width: 70vw;
 }
@@ -348,12 +352,15 @@ input {
 
 textarea {
   height: 150px;
-  width: 300px;
+  width: 250px;
 }
 
 @media screen and (max-width: 768px) {
+  input {
+    width: 100%;
+  }
   textarea {
-    width: 250px;
+    width: 100%;
   }
 }
 

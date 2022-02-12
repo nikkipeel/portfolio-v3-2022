@@ -15,7 +15,7 @@ function HeaderInfo() {
       <a href="mailto:nikkipeel.dev@gmail.com" className="p-1 text-base dark:text-white85 font-bold hover:underline focus:ring-2 focus:ring-highlight" style={{textUnderlineOffset: '3px'}}>nikkipeel.dev@gmail.com</a>
       
         <a href="#" className="link-resume font-mono dark:text-white text-dark uppercase font-bold hover:underline hover:scale-105 focus:ring-2 focus:ring-highlight p-1">Download Resume</a>
-        <div className="h-8 mt-4">
+        <div className="flex justify-center h-8 my-2">
           <a aria-label="linked in" href="https://www.linkedin.com/in/nikkipeel" className="dark:text-darkSecondary text-dark text-2xl hover:text-secondary focus:text-secondary focus:ring-2 focus:ring-highlight p-2"><FontAwesomeIcon className="h-6 w-6" icon={faLinkedin} /></a>
           <a aria-label="github"  href="https://www.github.com/nikkipeel" className="dark:text-darkSecondary text-dark text-2xl hover:text-secondary focus:text-secondary focus:ring-2 focus:ring-highlight p-2"><FontAwesomeIcon className="h-6 w-6" icon={faGithub} /></a>
           <a aria-label="codepen" href="https://www.codepen.io/nikki-peel" className="dark:text-darkSecondary text-dark text-2xl hover:text-secondary focus:text-secondary focus:ring-2 focus:ring-highlight p-2"><FontAwesomeIcon className="h-6 w-6" icon={faCodepen} /></a>

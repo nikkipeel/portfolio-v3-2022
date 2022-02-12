@@ -21,8 +21,8 @@ const RecentPosts = () => {
 
   return (
     <>
-      <div className="dark:bg-bgDark bg-dark h-48 w-full relative -skew-y-6 lg:mt-8"></div>
-     <div className="dark:bg-bgDark bg-dark w-full h-full text-center pt-64 pb-32 -mt-20">
+    <div className="dark:bg-bgDark bg-dark h-48 w-full relative -skew-y-6 lg:mt-8"></div>
+     <div className="dark:bg-bgDark bg-dark w-full h-full text-center pt-64 pb-20 -mt-20">
                 <div className="flex flex-col justify-center items-center mx-auto">
                   <h1 className="section-heading w-auto text-4xl tracking-wide font-bold text-white">Recent Posts</h1>
                 </div>
@@ -63,6 +63,9 @@ const RecentPosts = () => {
             )
 })}
 </div>
+  </div>
+  <div className="flex justify-center bg-dark dark:bg-bgDark pb-20 mx-auto">
+    <Link to="/blog" className="font-mono bg-secondary  hover:brightness-125 hover:scale-105 hover:text-large text-white font-semibold rounded shadow-md py-2 px-4 m-6 transition duration-500 focus:ring-2 focus:ring-highlight tracking-tight">View All</Link>
   </div>
   </>
   )

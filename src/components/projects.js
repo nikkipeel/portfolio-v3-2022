@@ -29,13 +29,13 @@ const Projects = () => {
   `)
 
   return (
-        <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 xl:w-3/4 items-center gap-4 mt-8 mx-auto p-4">
+        <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-4 mt-8 mx-auto md:p-4">
         
         {data.allMarkdownRemark.nodes.map(project => (
           <>
           {project.frontmatter.slug &&
             
-        <Link to={"/projects/" + project.frontmatter.slug} className="card-project col rounded text-dark bg-white dark:bg-bgSecondary dark:border-2 dark:border-secondary" tabIndex="0" key={project.frontmatter.slug}>
+        <Link to={"/projects/" + project.frontmatter.slug} className="card-project col rounded text-dark bg-white border-2 border-darkSecondary dark:bg-bgSecondary dark:border-2 dark:border-secondary" tabIndex="0" key={project.frontmatter.slug}>
             {project.frontmatter.image &&
             <>
             <GatsbyImage className="object-contain shadow-inner" image={project.frontmatter.image.childImageSharp.gatsbyImageData} alt={project.frontmatter.alt}  placeholder="blurred"  />  
