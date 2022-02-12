@@ -7,12 +7,8 @@ import Seo from "../../components/seo"
 
 const BlogPage = ({ data }) => {
     return (
-  <Layout>
+  <Layout pageTitle="Blog">
     <Seo title="Blog" />
-    <div className="bg-white mx-auto justify-center">
-        <header className="bg-primary text-white">
-          <h1 className="text-5xl lg:w-3/4 px-8 py-16 mx-auto">Blog</h1>
-        </header>
         <div className="lg:w-3/4 flex flex-col mx-auto text-dark p-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center mx-auto md:gap-8 mb-24"> 
                 {data.allMarkdownRemark.nodes.map((post) => {
@@ -56,7 +52,6 @@ const BlogPage = ({ data }) => {
                    
                 </div>
               </div>
-         </div>
   </Layout>
     )
                         }

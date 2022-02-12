@@ -1,7 +1,9 @@
 import React from "react"
 import {graphql} from 'gatsby';
-import Layout from "../../components/layout"
 import Seo from "../../components/seo"
+import NavMenu from "../../components/menu"
+import ScrollToTop from "../../components/scrollToTop"
+import Footer from "../../components/footer"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 const SinglePost = ({data, location, post }) => {
@@ -12,12 +14,14 @@ const SinglePost = ({data, location, post }) => {
     const posts = data.allMarkdownRemark
     {console.log(postSlug)}
       return (
-        <Layout>
- 
+          <>
+        <NavMenu></NavMenu>
         <div className="bg-dark w-full min-h-screen">
         {posts.nodes.map((singlePost) => (
             <>
 {postSlug === singlePost.frontmatter.postSlug && (
+    <>
+    <Seo title={singlePost.frontmatter.postTitle}/>
             <article postSlug={post} key={postSlug} className="dark:bg-bgSecondary bg-primary text-dark mx-auto justify-center rounded-lg">
                 <header className="relative">
                     <div className="absolute h-full w-full flex items-center justify-center p-8 z-40">
@@ -37,11 +41,14 @@ const SinglePost = ({data, location, post }) => {
                     <div dangerouslySetInnerHTML={{ __html: singlePost.html }} />
                 </div>
             </article>
+            </>
 )}
 </>
         ))}
 </div>
-  </Layout>
+<ScrollToTop showBelow={250}></ScrollToTop>
+<Footer></Footer>
+</>
       )
 
 

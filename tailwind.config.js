@@ -31,6 +31,9 @@ module.exports = {
         'serif': ['Source Serif Pro', 'ui-serif', 'Georgia', 'serif'],
         'mono': ['Source Code Pro', 'ui-monospace', 'SFMono-Regular', 'monospace'],
     },
+    borderRadius: {
+      'full': '50%',
+    }
   },
     variants: {
       extend: {

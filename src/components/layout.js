@@ -1,17 +1,28 @@
 import React from 'react';
+import Seo from "../components/seo"
 import PropTypes from "prop-types"
 import NavMenu from "../components/menu"
 import Footer from "./footer"
 import ScrollToTop from "./scrollToTop";
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, title, pageTitle }) => {
 
   return (
     <>
+    <Seo title={title} />
       <NavMenu id="top"></NavMenu>
-      <main>{children}</main>
-      <ScrollToTop showBelow={250}></ScrollToTop>
+          <header className="bg-primary text-white">
+            <h1 className="text-5xl lg:w-3/4 px-8 py-16 mx-auto">{pageTitle}</h1>
+          </header>
+          <main>
+            <section className="dark:bg-bgPrimary bg-white w-full h-full justify-center text-dark dark:text-white px-8 py-12">
+              <div className="w-full mx-auto">
+                {children}
+              </div>
+            </section>
+          </main>
+        <ScrollToTop showBelow={250}></ScrollToTop>
       <Footer></Footer>
       </>
   )
@@ -19,6 +30,7 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  pageTitle: PropTypes.node.isRequired,
 }
 
 export default Layout

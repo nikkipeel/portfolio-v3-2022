@@ -5,11 +5,7 @@ import Layout from "../components/layout"
 const Project = ({ pageContext }) => {
   const { title, tags, image, description } = pageContext
   return (
-    <Layout>
-      <article className="dark:bg-bgDark bg-white mx-auto justify-center">
-        <header className="bg-primary text-white">
-          <h1 className="text-5xl lg:w-3/4 px-8 py-16 mx-auto">{title}</h1>
-        </header>
+    <Layout pageTitle={title}>
         <div className="lg:w-3/4 flex flex-col mx-auto dark:text-white85 text-dark p-8">
         <div className="flex gap-4 mb-4">
             {tags.map(tag => (
@@ -36,7 +32,6 @@ const Project = ({ pageContext }) => {
              
           </div>
         </div>
-      </article>
     </Layout>
   )
 }

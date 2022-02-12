@@ -62,7 +62,7 @@ function NavMenu() {
 
     return (
        <> 
-    <nav className="flex justify-center items-center bg-dark dark:bg-bgPrimary text-white h-full p-5 pb-6">
+    <nav className="flex justify-center items-center bg-dark dark:bg-bgPrimary text-white h-full pt-5 pb-6 px-8 xl:px-20">
       <div className="text-white hidden md:flex mx-auto">
         <Link to="/"  activeClassName="underline" className="underline-offset text-white text-base mx-8 px-2 transition duration-500 focus:text-white hover:text-white hover:underline">
             home

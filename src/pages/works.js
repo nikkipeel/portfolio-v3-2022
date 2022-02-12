@@ -8,16 +8,12 @@ import Projects from "../components/projects";
 
 const WorksPage = () => (
 <>
-    <Seo title="Works" />
- <Layout>
- <header className="bg-primary text-white">
-          <h1 className="text-5xl lg:w-3/4 px-8 py-16 mx-auto">Recent Projects</h1>
-        </header>
-  <section id="works" className="dark:bg-bgPrimary bg-white w-full h-full">
+
+ <Layout pageTitle="Recent Projects" id="works">
+  <Seo title="Works" />
       <div className="flex flex-col justify-center items-center w-full pb-12">
        <Projects></Projects>
       </div>
-    </section>
 </Layout>
   </>
 )

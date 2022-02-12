@@ -30,7 +30,7 @@ export default function Form() {
   }
 
   return (
-      <div className="dark:bg-bgDark bg-dark w-100 lg:w-2/3 xl:w-1/2 rounded-sm mx-4 md:mx-auto mt-12 p-8 lg:p-12">
+      <div className="dark:bg-bgDark bg-dark w-100 lg:w-2/3 xl:w-1/2 rounded-sm mx-4 md:mx-auto mt-12 p-8 lg:p-12 focus-within:border-2 focus-within:border-highlight">
       <form
         name="contact"
         method="post"
@@ -38,6 +38,7 @@ export default function Form() {
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
+ 
       >
         {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
         <input type="hidden" name="form-name" value="contact" />

@@ -35,7 +35,7 @@ const Projects = () => {
           <>
           {project.frontmatter.slug &&
             
-        <Link to={"/projects/" + project.frontmatter.slug} className="card-project col rounded text-dark bg-white dark:bg-bgSecondary border-2 border-secondary" tabIndex="0" key={project.frontmatter.slug}>
+        <Link to={"/projects/" + project.frontmatter.slug} className="card-project col rounded text-dark bg-white dark:bg-bgSecondary dark:border-2 dark:border-secondary" tabIndex="0" key={project.frontmatter.slug}>
             {project.frontmatter.image &&
             <>
             <GatsbyImage className="object-contain shadow-inner" image={project.frontmatter.image.childImageSharp.gatsbyImageData} alt={project.frontmatter.alt}  placeholder="blurred"  />  
