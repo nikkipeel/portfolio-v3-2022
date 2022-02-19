@@ -70,8 +70,8 @@ function NavMenu() {
         <Link to="/about" activeClassName="underline" className="underline-offset text-white text-base mx-8 px-2 transition duration-500 focus:text-white hover:text-white hover:underline" >
             about
         </Link>
-        <Link to="/works" activeClassName="underline" className="underline-offset text-white text-base  mx-8 px-2 transition duration-500 focus:text-white hover:text-white hover:underline" >
-            works
+        <Link to="/projects" activeClassName="underline" className="underline-offset text-white text-base  mx-8 px-2 transition duration-500 focus:text-white hover:text-white hover:underline" >
+            projects
         </Link>
         <Link to="/contact"  activeClassName="underline" className="underline-offset text-white text-base  mx-8 px-2 transition duration-500 focus:text-white hover:text-white hover:underline">
             contact
@@ -86,7 +86,7 @@ function NavMenu() {
       <Menu class="mobileNav bg-dark text-white lg:hidden absolute top-0 right-0 m-0 text-center z-40" right styles={ styles }>
         <a href="/" className="menu-item  tracking-tight white block cursor-pointer transition duration-500 focus:text-white  hover:text-white hover:underline mt-1 py-3">Home</a>
         <a href="/about" className="menu-item tracking-tight white block cursor-pointer transition duration-500 focus:text-white  hover:text-white hover:underline mt-1 py-3">About</a>
-        <a href="/works" className="menu-item  tracking-tight white block cursor-pointer transition duration-500 focus:text-white hover:text-white hover:underline mt-1 py-3">Works</a>
+        <a href="/projects" className="menu-item  tracking-tight white block cursor-pointer transition duration-500 focus:text-white hover:text-white hover:underline mt-1 py-3">Projects</a>
         <a href="/contact" className="menu-item  tracking-tight white block cursor-pointer transition duration-500 focus:text-white hover:text-white hover:underline mt-1 py-3">Contact</a>
         <a href="/blog" className="menu-item  tracking-tight white block cursor-pointer transition duration-500 focus:text-white hover:text-white hover:underline mt-1 py-3">Blog</a>
       </Menu>

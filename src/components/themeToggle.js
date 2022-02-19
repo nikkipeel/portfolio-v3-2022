@@ -5,7 +5,11 @@ export class ThemeToggle extends React.Component {
   render() {
     return (
       <ThemeToggler>
-        {({ theme, toggleTheme }) => (
+        {({ theme, toggleTheme }) => {
+              if (theme == null) {
+                return null
+              }
+              return (
           <div>
           <label className="flex items-center justify-between p-1 relative">
           <input type="checkbox" className="absolute opacity-0 cursor-pointer w-5"
@@ -22,7 +26,8 @@ export class ThemeToggle extends React.Component {
                 </svg>
             </label> 
           </div>
-        )}
+              )
+  }}
       </ThemeToggler>
     )
   }

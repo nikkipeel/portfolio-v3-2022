@@ -5,8 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300,0,400;0,600;0,900;1,700&family=Source+Code+Pro:wght@400;600;700&family=Source+Serif+Pro:wght@600&display=swap');
-
 :root {
   --whitest: #ffffff;
   --white: #F2F0F0;
@@ -38,6 +36,10 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
+}
+
+p {
+  letter-spacing: 1px;
 }
 
 a {
@@ -129,7 +131,7 @@ body {
   overflow-x: hidden;
   color: var(--dark);
   font-size: 16px;
-  font-family: 'Source Sans Pro', helvetica, sans-serif;
+  font-family: 'source-sans-3', 'Trebuchet MS', 'Helvetica', 'ui-sans-serif', 'system-ui', 'sans-serif';
 }
 
 strong#name {
@@ -364,7 +366,7 @@ textarea {
   }
 }
 
-/* 'copy code' button in markdown code blocks */
+/* Copy code button in markdown code blocks */
 .button-container--code {
   display: flex;
   position: relative;
@@ -398,7 +400,7 @@ textarea {
   }
 }
 
-/* Dark Theme */
+/* Light/dark theme toggle */
 .checkbox {
 	opacity: 0;
   top: 5px;
@@ -421,4 +423,59 @@ textarea {
 }
 
 
+/* Breadcrumbs */
+.breadcrumbs {
+  display: flex;
+  align-items:center;
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+.breadcrumbs svg.home-icon {
+  margin-left: .5rem;
+  margin-right: -1rem;
+  z-index: 25;
+}
+
+.breadcrumbs svg {
+  width: 22px;
+  height: 1.15rem;
+}
+
+ ol {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--secondary);
+  color: var(--white);
+  padding: 1rem;
+  max-height: 100%;;
+}
+
+.breadcrumbs ol li {
+  margin: 0 .5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .breadcrumbs ol li{
+    margin: 0;
+  }
+}
+
+ol li a {
+  font-family: 'interstate-mono', 'Consolas', 'Monaco', 'ui-monospace', 'SFMono-Regular', 'monospace';
+  font-size: 1rem;
+}
+
+ol li:last-of-type {
+  font-style: italic;
+}
+
+ol li span {
+  font-weight: bold;
+}
+
+.crumb-separator {
+  margin: 0 .75rem;
+}
 

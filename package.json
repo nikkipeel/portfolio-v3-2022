@@ -12,6 +12,7 @@
     "@mdx-js/react": "^1.6.22",
     "autoprefixer": "^10.4.2",
     "gatsby": "^4.5.2",
+    "gatsby-plugin-breadcrumb": "^12.3.1",
     "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-gatsby-cloud": "^4.5.1",
     "gatsby-plugin-image": "^2.5.1",

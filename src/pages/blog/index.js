@@ -9,12 +9,12 @@ const BlogPage = ({ data }) => {
     return (
   <Layout pageTitle="Blog">
     <Seo title="Blog" />
-        <div className="flex flex-col mx-auto text-dark p-8">
+        <div className="flex flex-col mx-auto text-dark md:p-8">
                 <div className="flex flex-col md:flex-row justify-center mx-auto md:gap-8 mb-24"> 
                 {data.allMarkdownRemark.nodes.map((post) => {
                     const {postSlug,postTitle,postDescription, categories, date} = post.frontmatter;
                     return (
-                        <Link to={`/blog/${postSlug}`} state={{ postSlug: postSlug, postTitle: postTitle}} className="card-post flex flex-col leading-snug p-4 rounded-sm border-2 border-secondary hover:border-primary dark:hover:border-darkPrimary hover:scale-105 text-dark dark:text-white text-left" tabIndex="0" key={postSlug}>
+                        <Link to={`/blog/${postSlug}`} state={{ postSlug: postSlug, postTitle: postTitle}} className="card-post flex flex-col leading-snug p-4 my-4 rounded-sm border-2 border-secondary hover:border-primary dark:hover:border-darkPrimary hover:scale-105 text-dark dark:text-white text-left" tabIndex="0" key={postSlug}>
                         <p className="text-secondary dark:text-white65 italic mx-4 text-base tracking-wide">{date}</p>
                         <h3 className="my-2 mx-4 font-bold text-xl">{postTitle}</h3>
                         

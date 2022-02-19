@@ -3,7 +3,7 @@ import Seo from "../components/seo"
 import Layout from "../components/layout"
 import Projects from "../components/projects";
 
-const WorksPage = () => (
+const ProjectsPage = () => (
 <>
 
  <Layout pageTitle="Recent Projects" id="works">
@@ -15,4 +15,4 @@ const WorksPage = () => (
   </>
 )
 
-export default WorksPage
+export default ProjectsPage;

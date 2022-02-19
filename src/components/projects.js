@@ -29,13 +29,13 @@ const Projects = () => {
   `)
 
   return (
-        <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-4 mt-8 mx-auto md:p-4">
+        <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-4 mt-8 mx-auto -px-8 md:p-4">
         
         {data.allMarkdownRemark.nodes.map(project => (
           <>
           {project.frontmatter.slug &&
             
-        <Link to={"/projects/" + project.frontmatter.slug} className="card-project col rounded text-dark bg-white border-2 border-darkSecondary dark:bg-bgSecondary dark:border-2 dark:border-secondary" tabIndex="0" key={project.frontmatter.slug}>
+        <Link to={"/projects/" + project.frontmatter.slug} className="card-project col rounded text-dark bg-white shadow-sm shadow-dark dark:bg-bgSecondary dark:shadow-sm dark:shadow-darkPrimary" tabIndex="0" key={project.frontmatter.slug}>
             {project.frontmatter.image &&
             <>
             <GatsbyImage className="object-contain shadow-inner" image={project.frontmatter.image.childImageSharp.gatsbyImageData} alt={project.frontmatter.alt}  placeholder="blurred"  />  
@@ -49,7 +49,7 @@ const Projects = () => {
             <>
                 {project.frontmatter.tags.map((tag) => (
                     <>
-                    <span className="tag border-2 border-secondary dark:border-darkPrimary p-1 rounded-md font-semibold text-purple dark:text-darkPrimary text-sm">{tag}</span>
+                    <span className="tag border-2 border-secondary dark:border-darkPrimary p-1 rounded-md text-secondary dark:text-darkPrimary font-semibold text-sm">{tag}</span>
                 </>
                 ))}
                 </>
