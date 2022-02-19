@@ -40,6 +40,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.0",
+    "gatsby-plugin-netlify": "^4.1.0",
     "gatsby-remark-code-buttons": "^2.0.7",
     "prettier": "^2.5.1",
     "prettier-plugin-tailwindcss": "^0.1.4"
