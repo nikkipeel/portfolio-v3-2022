@@ -1,10 +1,12 @@
 import * as React from "react"
 import Seo from "../components/seo"
+import NavMenu from "../components/menu"
 import Layout from "../components/layout"
 import Form from "../components/form"
 
 const ContactPage = () => ( 
   <>
+  <NavMenu></NavMenu>
   <Layout pageTitle="Contact Me">
       <Seo title="Contact" />
       <div className="flex flex-col items-center w-full mx-auto">        

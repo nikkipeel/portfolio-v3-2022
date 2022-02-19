@@ -1,5 +1,4 @@
 import * as React from "react"
-import {Link} from 'gatsby';
 import Seo from "../components/seo"
 import NavMenu from "../components/menu"
 import Header from "../components/header"

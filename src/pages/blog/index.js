@@ -1,12 +1,14 @@
 import React from "react"
 import { graphql } from 'gatsby'
-import { GatsbyImage } from 'gatsby-plugin-image'
+import NavMenu from "../../components/menu"
 import Layout from "../../components/layout"
 import Link from 'gatsby-link';
 import Seo from "../../components/seo"
 
 const BlogPage = ({ data }) => {
     return (
+      <>
+      <NavMenu></NavMenu>
   <Layout pageTitle="Blog">
     <Seo title="Blog" />
         <div className="flex flex-col mx-auto text-dark md:p-8">
@@ -42,6 +44,7 @@ const BlogPage = ({ data }) => {
                 </div>
               </div>
   </Layout>
+  </>
     )
                         }
 

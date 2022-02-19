@@ -1,8 +1,10 @@
 import * as React from "react"
+import NavMenu from "../components/menu"
 import Layout from "../components/layout"
 
 const AboutPage = () => (
   <>
+  <NavMenu></NavMenu>
   <Layout title="About" pageTitle="About">
     <div className="w-full lg:w-3/4 xl:w-1/2 mx-auto">
        <p className="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos temporibus quam modi similique reiciendis ut consectetur voluptatibus accusamus quasi sint esse optio exercitationem quia possimus vero est, sapiente maiores?
