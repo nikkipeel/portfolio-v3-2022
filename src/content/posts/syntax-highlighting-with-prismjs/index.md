@@ -2,7 +2,7 @@
 postSlug: "syntax-highlighting-with-prismjs"
 date: "02.24.2021"
 postTitle: "Adding Syntax Highlighting to Code Blocks with PrismJS"
-postDescription: ""How to add syntax highlighting to code blocks written with Markdown using PrismJS and Gatsby"
+postDescription: "How to add syntax highlighting to code blocks written with Markdown using PrismJS and Gatsby"
 categories: ["Gatsby"]
 coverImage:  ../images/syntax-highlighting.png
 ---
