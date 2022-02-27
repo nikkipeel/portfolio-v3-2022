@@ -62,29 +62,31 @@ a:focus-visible, button:focus-visible {
       width: 90vw;
     }
   }
-.prose h3 {
+
+
+.prose h3, .post-content h3 {
   margin: 2rem 0;
 }
 
-.prose a {
+.prose a,, .post-content a {
   color: var(--secondary);
   text-underline-offset: 1.5px;
 }
 
-.prose a:hover {
+.prose a:hover, .post-content a:hover {
   filter:brightness(115%);
   text-underline-offset: 3px;
 }
 
-.dark .prose a {
+.dark .prose a, .dark .post-content a {
   color: var(--dark-primary);
 }
 
-.prose strong {
+.prose strong, .post-content strong {
   color: var(--secondary);
 }
 
-.dark .prose strong {
+.dark .prose strong, .dark .post-content strong {
   color: var(--dark-secondary);
 }
 

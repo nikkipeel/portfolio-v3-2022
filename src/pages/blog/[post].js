@@ -1,5 +1,5 @@
 import React from "react"
-import {Link, graphql} from 'gatsby';
+import { graphql} from 'gatsby';
 import Seo from "../../components/seo"
 import NavMenu from "../../components/menu"
 import ScrollToTop from "../../components/scrollToTop"
@@ -65,8 +65,8 @@ const SinglePost = ({data, location, post, pageContext }) => {
                     <div className="header-overlay absolute w-full z-20" style={{backgroundColor: 'rgba(0,0,0,0.3)', height: '400px'}}></div>
                     <GatsbyImage image={singlePost.frontmatter.coverImage.childImageSharp.gatsbyImageData} alt="" className="w-full" style={{objectFit: 'cover', objectPosition: 'left top', height: '400px', zIndex: '10'}}  />
                 </header>
-                <div className="dark:bg-bgDark bg-white dark:text-white text-dark break-words px-8 py-12 prose max-w-none lg:prose-xl leading-normal mx-auto">
-                    <div dangerouslySetInnerHTML={{ __html: singlePost.html }} />
+                <div className="dark:bg-bgDark bg-white dark:text-white text-dark break-words px-4 py-8 xl:py-12 md:prose max-w-none lg:prose-xl leading-7 mx-auto">
+                    <div className="post-content text-lg" dangerouslySetInnerHTML={{ __html: singlePost.html }} />
                 </div>
             </article>
             </>

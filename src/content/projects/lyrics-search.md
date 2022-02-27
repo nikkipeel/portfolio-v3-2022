@@ -7,5 +7,5 @@ tags: [
 ]
 image: ./images/lyricssearch.png
 alt: "Lyrics Search"
-link: "https://nikkipeel.netlify.app"
+link: "https://nikkipeel.github.io/lyrics-search"
 ---

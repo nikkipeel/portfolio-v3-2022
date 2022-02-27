@@ -24,7 +24,7 @@ const RecentPosts = () => {
     <div className="dark:bg-bgDark bg-dark h-48 w-full relative -skew-y-6 lg:mt-8"></div>
      <div className="dark:bg-bgDark bg-dark w-full h-full text-center pt-64 pb-20 -mt-20">
                 <div className="flex flex-col justify-center items-center mx-auto">
-                  <h1 className="section-heading w-auto text-4xl tracking-wide font-bold text-white">Recent Posts</h1>
+                  <h2 className="section-heading w-auto text-4xl tracking-wide font-bold text-white">Recent Posts</h2>
                 </div>
 
         <div className="flex flex-col xl:w-3/4 items-center gap-4 mt-12 mx-auto p-4" style={{marginBottom: '-4rem'}}>
@@ -46,7 +46,7 @@ const RecentPosts = () => {
             <div className="flex flex-wrap w-1/2 lg:w-auto gap-2">
                 {categories.map((category) => (
                     <>
-                    <span className="tag bg-primary py-1 px-2 rounded-md font-semibold text-sm">{category}</span>
+                    <span className="tag text-darkPrimary border-2 border-darkPrimary py-1 px-2 rounded-md font-semibold text-sm">{category}</span>
                 </>
                 ))}
                 </div>
