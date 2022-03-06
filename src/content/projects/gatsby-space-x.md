@@ -1,11 +1,12 @@
 ---
 slug: "gatsby-space-x"
 title: "SpaceX API"
-description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque molestias iste ipsa ab deserunt eveniet dolorem facere consequatur exercitationem necessitatibus. In, ipsa corporis totam beatae culpa quis aliquid delectus incidunt"
+description: "Information about SpaceX, rockets, and launches using the SpaceX API. Features include a countdown for the next launch, embedded video of the most recent launch, and a details page for each launch."
 tags: [
     "Gatsby", "Tailwind", "API"
 ]
 image: ./images/spacex.png
 alt: "Gatsby SpaceX"
-link: "https://gatsby-spacex-data.netlify.app"
+link: "https://gatsby-spacex-api.netlify.app"
+repo: "https://github.com/nikkipeel/gatsby-spacex"
 ---

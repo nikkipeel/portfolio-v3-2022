@@ -24,6 +24,7 @@ exports.createPages = async ({graphql, actions}) => {
                   slug
                   tags
                   title
+                  repo
                 }
               }
           }
@@ -39,6 +40,7 @@ exports.createPages = async ({graphql, actions}) => {
       const description = frontmatter.description
       const tags = frontmatter.tags
       const link = frontmatter.link
+      const repo = frontmatter.repo
       createPage({
         path: `/projects/${url}`,
         component: projectTemplate,
@@ -48,7 +50,8 @@ exports.createPages = async ({graphql, actions}) => {
           url: url,
           description: description,
           tags: tags,
-          link: link
+          link: link,
+          repo: repo
         }
       })
     

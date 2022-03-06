@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import NavMenu from "../components/menu"
 
 const Project = ({ pageContext }) => {
-  const { title, tags, image, description, breadcrumb: { crumbs }, } = pageContext
+  const { title, tags, image, description, link, repo, breadcrumb: { crumbs }, } = pageContext
 
     const isPartiallyActive = ({ isPartiallyCurrent, isCurrent }) => {
       return isPartiallyCurrent || isCurrent
@@ -47,8 +47,8 @@ getProps={isPartiallyActive}
           </div>
           <p className="text-lg my-4">{description}</p>
                 <div className="flex gap-8 my-4">
-          <a href="#" className="font-mono leading-tight font-semibold text-lg underline">Visit Site</a>
-          <a href="#" className="font-mono leading-tight font-semibold text-lg underline">View Code</a>
+          <a href={link} className="font-mono leading-tight font-semibold text-lg underline">Visit Site</a>
+          <a href={repo} className="font-mono leading-tight font-semibold text-lg underline">View Code</a>
           </div>
           <div className="h-80 w-full sm:w-80 rounded-sm my-4">
             

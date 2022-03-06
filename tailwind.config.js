@@ -29,7 +29,7 @@ module.exports = {
       },
       fontFamily: {
         'bree':['Bree', 'Tahoma', 'Verdana', 'sans-serif'],
-        'sans': ['source-sans-2', 'Trebuchet MS', 'Helvetica', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        'sans': ['source-sans-3', 'Trebuchet MS', 'Helvetica', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         'mono': ['interstate-mono', 'Consolas', 'Monaco', 'ui-monospace', 'SFMono-Regular', 'monospace'],
     },
   },

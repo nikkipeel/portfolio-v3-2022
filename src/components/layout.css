@@ -431,6 +431,7 @@ textarea {
   align-items:center;
   background-color: var(--secondary);
   color: var(--white);
+  padding-left: 2rem;
 }
 
 .breadcrumbs svg.home-icon {
@@ -441,7 +442,7 @@ textarea {
 
 .breadcrumbs svg {
   width: 22px;
-  height: 1.15rem;
+  height: 1rem;
 }
 
  ol {
@@ -466,11 +467,12 @@ textarea {
 
 ol li a {
   font-family: 'interstate-mono', 'Consolas', 'Monaco', 'ui-monospace', 'SFMono-Regular', 'monospace';
-  font-size: 1rem;
+  font-size: .9rem;
 }
 
-ol li:last-of-type {
-  font-style: italic;
+ol li:last-of-type, ol li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 ol li span {
@@ -478,6 +480,6 @@ ol li span {
 }
 
 .crumb-separator {
-  margin: 0 .75rem;
+  margin: 0 .25rem;
 }
 
