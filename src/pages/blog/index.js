@@ -1,68 +1,133 @@
 import React from "react"
-import { graphql } from 'gatsby'
+import { graphql } from "gatsby"
+import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 import NavMenu from "../../components/menu"
 import Layout from "../../components/layout"
-import Link from 'gatsby-link';
+import Link from "gatsby-link"
 import Seo from "../../components/seo"
 
-const BlogPage = ({ data }) => {
-    return (
-      <>
+const BlogPage = ({ data, location, pageContext }) => {
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext
+
+  const isPartiallyActive = ({ isPartiallyCurrent, isCurrent }) => {
+    return isPartiallyCurrent || isCurrent
+      ? { className: "breadcrumb__link breadcrumb__link__active" }
+      : {}
+  }
+
+  const customCrumbLabel = location.pathname.toLowerCase().replaceAll("/", " ")
+
+  const customCrumbSeparator = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="crumb-separator h-6 w-6"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M9 5l7 7-7 7"
+      />
+    </svg>
+  )
+
+  return (
+    <>
       <NavMenu></NavMenu>
-  <Layout pageTitle="Blog">
-    <Seo title="Blog" />
-        <div className="flex flex-col mx-auto text-dark md:p-8">
-                <div className="flex flex-col md:flex-row justify-center mx-auto md:gap-8 mb-24"> 
-                {data.allMarkdownRemark.nodes.map((post) => {
-                    const {postSlug,postTitle,postDescription, categories, date} = post.frontmatter;
-                    return (
-                        <Link to={`/blog/${postSlug}`} state={{ postSlug: postSlug, postTitle: postTitle}} className="card-post flex flex-col leading-snug p-4 my-4 rounded-sm border-2 border-secondary hover:border-primary dark:hover:border-darkPrimary hover:scale-105 text-dark dark:text-white text-left" tabIndex="0" key={postSlug}>
-                        <p className="text-secondary dark:text-white65 italic mx-4 text-base tracking-wide">{date}</p>
-                        <h3 className="my-2 mx-4 font-bold text-xl">{postTitle}</h3>
-                        
-                          <p className="text-dark dark:text-white65 my-2 mx-4">{postDescription}</p>
-                        <div className="flex gap-2 justify-between items-center my-4 mx-4">
-                          {categories &&
-                          <>
-                          <div className="flex flex-wrap w-1/2 lg:w-auto gap-2">
-                              {categories.map((category) => (
-                                  <>
-                                  <span className="tag border-2 border-secondary dark:border-none dark:bg-primary py-1 px-2 rounded-md font-semibold text-sm text-secondary dark:text-white">{category}</span>
-                              </>
-                              ))}
-                              </div>
-                              </>
-                            }
-              
-                             <p className="text-secondary hover:text-darkSecondary dark:text-white85 link lg:pr-4 text-base font-bold font-mono">Read More</p>  
+      <div class="breadcrumbs md:pl-12">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="home-icon hidden h-6 w-6 md:flex"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+          />
+        </svg>
+        <Breadcrumb
+          crumbs={crumbs}
+          crumbSeparator={customCrumbSeparator}
+          crumbLabel={customCrumbLabel}
+          getProps={isPartiallyActive}
+        />
+      </div>
+      <Layout pageTitle="Blog">
+        <Seo title="Blog" />
+        <div className="mx-auto flex flex-col text-dark md:p-8">
+          <div className="mx-auto mb-24 flex flex-col justify-center md:flex-row md:flex-wrap md:gap-8">
+            {data.allMarkdownRemark.nodes.map(post => {
+              const { postSlug, postTitle, postDescription, categories, date } =
+                post.frontmatter
+              return (
+                <Link
+                  to={`/blog/${postSlug}`}
+                  state={{ postSlug: postSlug, postTitle: postTitle }}
+                  className="card-post my-4 flex flex-col rounded-sm border-2 border-secondary p-4 text-left leading-snug text-dark hover:scale-105 hover:border-primary dark:text-white dark:hover:border-darkPrimary"
+                  tabIndex="0"
+                  key={postSlug}
+                >
+                  <p className="mx-4 text-base italic tracking-wide text-secondary dark:text-white65">
+                    {date}
+                  </p>
+                  <h3 className="my-2 mx-4 text-xl font-bold">{postTitle}</h3>
+
+                  <p className="my-2 mx-4 text-dark dark:text-white65">
+                    {postDescription}
+                  </p>
+                  <div className="my-4 mx-4 flex items-center justify-between gap-2">
+                    {categories && (
+                      <>
+                        <div className="flex w-1/2 flex-wrap gap-2 lg:w-auto">
+                          {categories.map(category => (
+                            <>
+                              <span className="tag rounded-md border-2 border-secondary py-1 px-2 text-sm font-semibold text-secondary dark:border-none dark:bg-primary dark:text-white">
+                                {category}
+                              </span>
+                            </>
+                          ))}
                         </div>
-                      
-                      </Link>
-                    )
-})}
-                   
-                </div>
-              </div>
-  </Layout>
-  </>
-    )
-                        }
+                      </>
+                    )}
+
+                    <p className="link font-mono text-base font-bold text-secondary hover:text-darkSecondary dark:text-white85 lg:pr-4">
+                      Read More
+                    </p>
+                  </div>
+                </Link>
+              )
+            })}
+          </div>
+        </div>
+      </Layout>
+    </>
+  )
+}
 
 export const pageQuery = graphql`
-    query PostQuery {
-            allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/posts/"}}){
-                    nodes {
-                        html
-                        frontmatter {
-                            postSlug
-                            postTitle
-                            postDescription
-                            date
-                            categories
-                        }
-                    }
-            }
+  query PostQuery {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/posts/" } }) {
+      nodes {
+        html
+        frontmatter {
+          postSlug
+          postTitle
+          postDescription
+          date
+          categories
+        }
+      }
     }
-`;
+  }
+`
 
-export default BlogPage;
+export default BlogPage
