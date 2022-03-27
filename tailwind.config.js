@@ -16,6 +16,7 @@ module.exports = {
       white: "var(--white)",
       white65: "var(--white-65)",
       white75: "var(--white-75)",
+      white85: "var(--white-85)",
       bgTransparent: "var(--transparent-bg)",
       primary: "var(--primary)",
       bgPrimary: "var(--dark-bg-primary)",
