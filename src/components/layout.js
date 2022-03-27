@@ -13,7 +13,7 @@ const Layout = ({ children, title, pageTitle }) => {
         <h1 className="mx-auto px-6 py-16 text-5xl md:px-16">{pageTitle}</h1>
       </header>
       <main>
-        <section className="h-full w-full justify-center bg-white py-4 text-dark dark:bg-bgPrimary dark:text-white md:px-8">
+        <section className="dark:text-white75 h-full w-full justify-center bg-white py-4 text-dark dark:bg-bgPrimary md:px-8">
           <div className="mx-auto w-full">{children}</div>
         </section>
       </main>

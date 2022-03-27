@@ -30,7 +30,7 @@ export default function Form() {
   }
 
   return (
-    <div className="mx-auto mt-12 w-full rounded-sm bg-dark p-8 text-white focus-within:border-2 focus-within:border-highlight dark:bg-bgDark md:w-3/4 lg:p-12 xl:w-1/2">
+    <div className="form-wrapper mx-4 mt-12 w-full rounded-sm bg-dark p-8 text-white dark:bg-bgDark md:mx-auto lg:p-12">
       <form
         name="contact"
         method="post"
@@ -55,7 +55,7 @@ export default function Form() {
                 First Name:
                 <br />
                 <input
-                  className="border-transparent focus:border-transparent mt-2 mb-4 rounded-sm bg-white p-2 font-sans text-base text-dark focus:outline-none focus:ring-2 focus:ring-highlight dark:bg-dark dark:text-white dark:focus:ring-darkPrimary"
+                  className="border-transparent mt-2 mb-4 rounded-sm bg-white p-2 font-sans text-base text-dark dark:bg-dark dark:text-white"
                   type="text"
                   name="first-name"
                   onChange={handleChange}
@@ -67,7 +67,7 @@ export default function Form() {
                 Last Name:
                 <br />
                 <input
-                  className="border-transparent focus:border-transparent mt-2 mb-4 rounded-sm bg-white p-2 font-sans text-base text-dark focus:outline-none focus:ring-2 focus:ring-highlight dark:bg-dark dark:text-white dark:focus:ring-darkPrimary"
+                  className="border-transparent mt-2 mb-4 rounded-sm bg-white p-2 font-sans text-base text-dark dark:bg-dark dark:text-white"
                   type="text"
                   name="last-name"
                   onChange={handleChange}
@@ -79,7 +79,7 @@ export default function Form() {
                 Email Address:
                 <br />
                 <input
-                  className="border-transparent focus:border-transparent mt-2 mb-4 rounded-sm bg-white p-2 font-sans text-base text-dark focus:outline-none focus:ring-2 focus:ring-highlight dark:bg-dark dark:text-white dark:focus:ring-darkPrimary"
+                  className="border-transparent mt-2 mb-4 rounded-sm bg-white p-2 font-sans text-base text-dark dark:bg-dark dark:text-white "
                   type="email"
                   name="email"
                   onChange={handleChange}
@@ -92,7 +92,7 @@ export default function Form() {
               Message:
               <br />
               <textarea
-                className="border-transparent focus:border-transparent mt-2 mb-4 rounded-sm bg-white p-2 font-sans text-base text-dark focus:outline-none focus:ring-2 focus:ring-highlight dark:bg-dark dark:text-white dark:focus:ring-darkPrimary"
+                className="border-transparent mt-2 mb-4 rounded-sm bg-white p-2 font-sans text-base text-dark dark:bg-dark dark:text-white"
                 name="message"
                 onChange={handleChange}
               />
@@ -101,7 +101,7 @@ export default function Form() {
         </div>
         <button
           type="submit"
-          className="mx-auto mt-4 flex justify-center rounded bg-secondary py-3 px-12 font-mono font-semibold uppercase text-white shadow-md transition duration-500 hover:brightness-125 focus:ring-highlight"
+          className="mx-auto mt-4 flex justify-center rounded bg-secondary py-3 px-12 font-mono font-semibold uppercase text-white shadow-md transition duration-500 hover:brightness-125 "
         >
           Send
         </button>

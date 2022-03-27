@@ -1,26 +1,43 @@
-import React from 'react';
+import React from "react"
 import HeaderInfo from "../components/headerInfo"
 
 function Header() {
   return (
     <>
-<header className="dark:bg-bgDark dark:text-white bg-white text-dark flex flex-col xl:flex-row py-16">
-  <HeaderInfo></HeaderInfo>
-  
-  <div className="flex flex-col justify-center xl:items-end xl:w-1/2 text-center xl:text-right mt-12 mx-auto xl:mt-0 xl:mr-48 p-4 xl:p-0">
-    <h1 className="text-xl font-semibold p-4 xl:p-0 mb-8">Hi, my name is <strong id="name" className="text-6xl p-4">Nikki</strong></h1>
-    <p className="px-8 lg:p-0 dark:text-white65">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam itaque iusto nulla vel necessitatibus ipsa in cupiditate, ab fugit sed, sit blanditiis mollitia qui sapiente odio molestiae ratione consequuntur laboriosam quibusdam eos. Unde odio harum soluta totam, ad minima id voluptates necessitatibus labore voluptate? Velit nihil laboriosam atque similique sunt?</p>
-    
-    <div className="flex flex-col lg:flex-row justify-center items-center lg:justify-end mx-auto xl:mx-0 mt-8 p-8 xl:p-0">
-      <button id="view-works" className="font-mono  hover:scale-105 hover:text-large bg-secondary dark:brightness-125 text-white font-semibold rounded shadow-md p-2 m-6 transition duration-500 focus:ring-2 focus:ring-highlight tracking-tight">View Portfolio</button>
-      <button className="font-mono bg-transparent text-secondary dark:brightness-125 dark:text-darkSecondary border-2 border-secondary dark:border-darkSecondary hover:scale-105 hover:text-large font-semibold rounded shadow-md p-2 hover:bg-secondary dark:hover:bg-darkSecondary dark:hover:text-white hover:text-white focus:ring-2 focus:ring-highlight transition duration-500 tracking-tight">Contact Me</button>
-    </div>
+      <header className="flex flex-col bg-white py-16 text-dark dark:bg-bgDark dark:text-white xl:flex-row">
+        <HeaderInfo></HeaderInfo>
 
-  </div>
-</header>
-</>
+        <div className="mx-auto mt-12 flex flex-col justify-center p-4 text-center xl:mt-0 xl:mr-48 xl:w-1/2 xl:items-end xl:p-0 xl:text-right">
+          <h1 className="mb-8 p-4 text-xl font-semibold xl:p-0">
+            Hi, my name is{" "}
+            <strong id="name" className="p-4 text-6xl">
+              Nikki
+            </strong>
+          </h1>
+          <p className="px-8 dark:text-white65 lg:p-0">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+            itaque iusto nulla vel necessitatibus ipsa in cupiditate, ab fugit
+            sed, sit blanditiis mollitia qui sapiente odio molestiae ratione
+            consequuntur laboriosam quibusdam eos. Unde odio harum soluta totam,
+            ad minima id voluptates necessitatibus labore voluptate? Velit nihil
+            laboriosam atque similique sunt?
+          </p>
+
+          <div className="mx-auto mt-8 flex flex-col items-center justify-center p-8 lg:flex-row lg:justify-end xl:mx-0 xl:p-0">
+            <button
+              id="view-works"
+              className="hover:text-large  m-6 rounded bg-secondary p-2 font-mono font-semibold tracking-tight text-white shadow-md transition duration-500 hover:scale-105 dark:brightness-125"
+            >
+              View Portfolio
+            </button>
+            <button className="bg-transparent hover:text-large rounded border-2 border-secondary p-2 font-mono font-semibold tracking-tight text-secondary shadow-md transition duration-500 hover:scale-105 hover:bg-secondary hover:text-white dark:border-darkSecondary dark:text-darkSecondary dark:brightness-125 dark:hover:bg-darkSecondary dark:hover:text-white">
+              Contact Me
+            </button>
+          </div>
+        </div>
+      </header>
+    </>
   )
-  }
-
+}
 
 export default Header
