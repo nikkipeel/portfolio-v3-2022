@@ -21,6 +21,8 @@
   --dark-bg-secondary: #272436;
   --dark-secondary: #956aa1;
   --highlight: #ffaf5a;
+  --shadow-primary: -1.5px 1px 0px var(--primary);
+  --shadow-white: -1.5px 1px 0px var(--white);
 }
 
 html {
@@ -57,7 +59,7 @@ h3 {
 }
 
 h3 {
-  text-shadow: -1.5px 1px 0px var(--primary);
+  text-shadow: var(--shadow-primary);
 }
 
 p {
@@ -91,6 +93,18 @@ nav a,
   font-size: 22px;
   font-family: "Bree", sans-serif;
   font-weight: 600;
+}
+
+.header-card {
+  max-width: 350px;
+}
+
+.skill-icon {
+  filter: drop-shadow(2px 2px 0px var(--white));
+}
+
+.dark .skill-icon {
+  filter: none;
 }
 
 /* Post Content */

@@ -14,7 +14,7 @@ const RecentProjects = () => {
       <Projects></Projects>
       <div className="mx-auto flex justify-center bg-primary pt-8 pb-20 dark:bg-bgPrimary">
         <Link
-          to="/works"
+          to="/projects"
           className="hover:text-large m-6 rounded bg-secondary py-2 px-4 font-mono font-semibold tracking-tight text-white shadow-md transition duration-500 hover:scale-105 hover:brightness-125"
         >
           View All

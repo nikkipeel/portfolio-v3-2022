@@ -10,7 +10,7 @@ import {
 
 function HeaderInfo() {
   return (
-    <div className="mx-auto flex flex-col items-center justify-center xl:ml-36 xl:w-1/2">
+    <div className="header-card mx-auto flex flex-col items-center justify-center xl:ml-36 xl:w-1/2">
       <StaticImage
         className="header-image h-60 w-52 border-2 border-secondary shadow-inner dark:border-2 dark:border-darkSecondary"
         src="../images/selfie.jpg"
@@ -18,7 +18,7 @@ function HeaderInfo() {
         placeholder="blurred"
         loading="eager"
       />
-      <div className="card my-8 flex w-full flex-col rounded-sm border-2 border-secondary bg-white px-12 py-4 text-center text-dark shadow-xl dark:border-darkSecondary dark:bg-bgSecondary dark:text-white xl:w-2/3">
+      <div className="card my-8 flex w-full flex-col rounded-sm border-2 border-secondary bg-white px-12 py-4 text-center text-dark shadow-xl dark:border-darkSecondary dark:bg-bgSecondary dark:text-white">
         <h1 className="text-xl font-bold dark:text-white85">Nikki Peel</h1>
         <em className="text-base dark:text-white65">Front End Developer</em>
         <a
