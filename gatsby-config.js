@@ -20,7 +20,7 @@ module.exports = {
             },
           },
           {
-            resolve: 'gatsby-remark-code-buttons',
+            resolve: "gatsby-remark-code-buttons",
             options: {
               // Optional button container class name. Defaults
               // to 'gatsby-code-button-container'.
@@ -40,10 +40,10 @@ module.exports = {
               // Optional toaster text class name. Defaults to ''.
               toasterTextClass: ``,
               // Optional toaster text. Defaults to ''.
-              toasterText: 'Copied to clipboard',
+              toasterText: "Copied to clipboard",
               // Optional toaster duration. Defaults to 3500.
-              toasterDuration: 5000
-            }
+              toasterDuration: 5000,
+            },
           },
           {
             resolve: `gatsby-remark-prismjs`,
@@ -153,7 +153,7 @@ module.exports = {
         background_color: `#6A4973`,
         theme_color: `#2B293C`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, 
+        icon: `src/images/gatsby-icon.png`,
       },
     },
     `gatsby-plugin-postcss`,
@@ -162,9 +162,9 @@ module.exports = {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
         typekit: {
-          id: process.env.TYPEKIT_ID
-        }
-      }
+          id: process.env.TYPEKIT_ID,
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-breadcrumb`,
@@ -179,7 +179,7 @@ module.exports = {
           `**/dev-404-page/**`,
           `**/404/**`,
           `**/404.html`,
-          `**/offline-plugin-app-shell-fallback/**`
+          `**/offline-plugin-app-shell-fallback/**`,
         ],
         // isMatchOptions: optional, include this object to configure the wildcard-match library.
         // excludeOptions: {
@@ -197,37 +197,51 @@ module.exports = {
         //trailingSlashes: true,
         // usePathPrefix: optional, if you are using pathPrefix above
         //usePathPrefix: '/blog',
-     }
+      },
     },
     {
-			resolve: `gatsby-plugin-google-gtag`,
-			options: {
-			  // You can add multiple tracking ids and a pageview event will be fired for all of them.
-			  trackingIds: [
-				"G-LGJFSQMPBK", // Google Analytics / GA
-				// "AW-CONVERSION_ID", // Google Ads / Adwords / AW
-				// "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
-			  ],
-			  // This object gets passed directly to the gtag config command
-			  // This config will be shared across all trackingIds
-			//   gtagConfig: {
-			// 	optimize_id: "OPT_CONTAINER_ID",
-			// 	anonymize_ip: true,
-			// 	cookie_expires: 0,
-			//   },
-			  // This object is used for configuration specific to this plugin
-			//   pluginConfig: {
-			// 	// Puts tracking script in the head instead of the body
-			// 	head: false,
-			// 	// Setting this parameter is also optional
-			// 	respectDNT: true,
-			// 	// Avoids sending pageview hits from custom paths
-			// 	exclude: ["/preview/**", "/do-not-track/me/too/"],
-			// 	// Defaults to https://www.googletagmanager.com
-			// 	origin: "YOUR_SELF_HOSTED_ORIGIN",
-			//   },
-			},
-		  },
+      resolve: `gatsby-plugin-scroll-indicator`,
+      options: {
+        // Configure color of the scroll indicator
+        // color: "#4a94a8",
+        color: "linear-gradient(to right, #6a4973, #956aa1)",
+        // Height of the scroll indicator
+        height: "12px",
+        // Configure paths where the scroll indicator will appear
+        paths: ["/blog/**"],
+        // Configure the z-index of the indicator element
+        zIndex: `9999`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-LGJFSQMPBK", // Google Analytics / GA
+          // "AW-CONVERSION_ID", // Google Ads / Adwords / AW
+          // "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
+        ],
+        // This object gets passed directly to the gtag config command
+        // This config will be shared across all trackingIds
+        //   gtagConfig: {
+        // 	optimize_id: "OPT_CONTAINER_ID",
+        // 	anonymize_ip: true,
+        // 	cookie_expires: 0,
+        //   },
+        // This object is used for configuration specific to this plugin
+        //   pluginConfig: {
+        // 	// Puts tracking script in the head instead of the body
+        // 	head: false,
+        // 	// Setting this parameter is also optional
+        // 	respectDNT: true,
+        // 	// Avoids sending pageview hits from custom paths
+        // 	exclude: ["/preview/**", "/do-not-track/me/too/"],
+        // 	// Defaults to https://www.googletagmanager.com
+        // 	origin: "YOUR_SELF_HOSTED_ORIGIN",
+        //   },
+      },
+    },
     `gatsby-plugin-netlify`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

@@ -112,6 +112,11 @@ nav a,
   width: 70vw;
 }
 
+:not(pre) > code[class*="language-"],
+code.language-text {
+  word-break: break-word;
+}
+
 @media screen and (max-width: 1023px) {
   .post {
     width: 90vw;
@@ -124,6 +129,9 @@ nav a,
 }
 
 @media (max-width: 768px) {
+  .post {
+    width: 100%;
+  }
   .post-content {
     padding: 0 1rem;
   }

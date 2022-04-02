@@ -115,7 +115,7 @@ const SinglePost = ({ data, location, post, pageContext }) => {
                       }}
                     />
                   </header>
-                  <div className="post mx-auto max-w-none break-words bg-white px-4 py-8 leading-7 text-dark dark:bg-bgDark dark:text-white xl:py-12">
+                  <div className="post mx-auto max-w-none break-words bg-white py-8 leading-7 text-dark dark:bg-bgDark dark:text-white lg:px-4 xl:py-12">
                     <div
                       className="post-content text-lg"
                       dangerouslySetInnerHTML={{ __html: singlePost.html }}
