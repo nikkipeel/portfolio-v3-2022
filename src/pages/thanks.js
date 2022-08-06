@@ -61,15 +61,29 @@ const ThankYouPage = ({ location, pageContext }) => {
       </div>
       <Layout pageTitle="Thank You">
         <Seo title="Thank you" />
-        <div className="mx-auto mt-20 flex flex-col justify-center p-4 text-center xl:mt-0 xl:mr-48 xl:w-1/2 xl:items-end xl:p-0 xl:text-right">
+        <div className="mx-auto mt-20 flex flex-col justify-center p-4 text-center">
           <p className="p-4 text-lg xl:px-0">
             Thank you for reaching out, I'll be in contact with you soon!
           </p>
-          <div className="mx-auto mt-8 flex items-center justify-center p-8 xl:mx-0 xl:justify-end xl:p-0">
+          <div className="mx-auto mt-8 flex items-center justify-center p-8">
             <Link
               to="/"
-              className="mr-8 rounded bg-secondary p-2 font-mono font-semibold text-white shadow-md transition duration-500"
+              className="link--with-icon mr-8 p-2 font-mono font-semibold text-dark transition duration-500 dark:text-white85"
             >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M10 19l-7-7m0 0l7-7m-7 7h18"
+                />
+              </svg>
               Back Home
             </Link>
           </div>

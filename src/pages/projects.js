@@ -1,11 +1,17 @@
-import * as React from "react"
+import React, { useState } from "react"
+import { graphql } from "gatsby"
 import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 import Seo from "../components/seo"
 import NavMenu from "../components/menu"
 import Layout from "../components/layout"
 import Projects from "../components/projects"
+import Select from "../components/formFields/Select"
 
-const ProjectsPage = ({ location, pageContext }) => {
+const ProjectsPage = ({ data, projects, location, pageContext }) => {
+  const tags = data?.allMarkdownRemark?.distinct
+
+  const [tag, setTag] = useState("")
+
   const {
     breadcrumb: { crumbs },
   } = pageContext
@@ -34,6 +40,11 @@ const ProjectsPage = ({ location, pageContext }) => {
       />
     </svg>
   )
+
+  const handleProjectFilter = e => {
+    setTag(e.target.value)
+  }
+
   return (
     <>
       <NavMenu></NavMenu>
@@ -62,11 +73,27 @@ const ProjectsPage = ({ location, pageContext }) => {
       <Layout pageTitle="Recent Projects" id="works">
         <Seo title="Works" />
         <div className="flex w-full flex-col items-center justify-center pb-12">
-          <Projects></Projects>
+          <Select
+            name="project filter"
+            label="Filter projects by tag"
+            id="select-project-tags"
+            options={tags}
+            onChange={handleProjectFilter}
+            value={tag}
+          />
+          <Projects projects={projects} tag={tag}></Projects>
         </div>
       </Layout>
     </>
   )
 }
+
+export const pageQuery = graphql`
+  {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/projects/" } }) {
+      distinct(field: frontmatter___tags)
+    }
+  }
+`
 
 export default ProjectsPage

@@ -1,5 +1,7 @@
-import React from "react"
+import React, { useState } from "react"
 import { navigate } from "gatsby"
+import TextInput from "./formFields/TextInput"
+import TextArea from "./formFields/TextArea"
 
 function encode(data) {
   return Object.keys(data)
@@ -8,7 +10,7 @@ function encode(data) {
 }
 
 export default function Form() {
-  const [state, setState] = React.useState({})
+  const [state, setState] = useState({})
 
   const handleChange = e => {
     setState({ ...state, [e.target.name]: e.target.value })
@@ -49,57 +51,37 @@ export default function Form() {
         </p>
 
         <div className="gap:0 mx-auto grid grid-cols-1 items-center justify-around md:grid-cols-2 md:gap-2 lg:gap-4">
-          <div className="md:mx-auto">
-            <p>
-              <label className="font-mono tracking-tight">
-                First Name:
-                <br />
-                <input
-                  className="border-transparent mt-2 mb-4 rounded-sm bg-white p-2 font-sans text-base text-dark dark:bg-dark dark:text-white"
-                  type="text"
-                  name="first-name"
-                  onChange={handleChange}
-                />
-              </label>
-            </p>
-            <p>
-              <label className="font-mono tracking-tight">
-                Last Name:
-                <br />
-                <input
-                  className="border-transparent mt-2 mb-4 rounded-sm bg-white p-2 font-sans text-base text-dark dark:bg-dark dark:text-white"
-                  type="text"
-                  name="last-name"
-                  onChange={handleChange}
-                />
-              </label>
-            </p>
-            <p>
-              <label className="font-mono tracking-tight">
-                Email Address:
-                <br />
-                <input
-                  className="border-transparent mt-2 mb-4 rounded-sm bg-white p-2 font-sans text-base text-dark dark:bg-dark dark:text-white "
-                  type="email"
-                  name="email"
-                  onChange={handleChange}
-                />
-              </label>
-            </p>
+          <div className="form-item md:mx-auto">
+            <TextInput
+              label="First Name:"
+              id="contact-form-first-name"
+              name="first name"
+              className="border-transparent mt-2 mb-4 rounded-sm bg-white p-2 font-sans text-base text-dark dark:bg-dark dark:text-white"
+            />
+            <TextInput
+              label="Last Name:"
+              id="contact-form-last-name"
+              name="last name"
+              className="border-transparent mt-2 mb-4 rounded-sm bg-white p-2 font-sans text-base text-dark dark:bg-dark dark:text-white"
+            />
+            <TextInput
+              label="Email Address:"
+              id="contact-form-email"
+              name="email address"
+              className="border-transparent mt-2 mb-4 rounded-sm bg-white p-2 font-sans text-base text-dark dark:bg-dark dark:text-white"
+            />
           </div>
-          <p className="md:mx-auto">
-            <label className="font-mono tracking-tight">
-              Message:
-              <br />
-              <textarea
-                className="border-transparent mt-2 mb-4 rounded-sm bg-white p-2 font-sans text-base text-dark dark:bg-dark dark:text-white"
-                name="message"
-                onChange={handleChange}
-              />
-            </label>
-          </p>
+          <div className="form-item">
+            <TextArea
+              id="contact-form-message"
+              name="message"
+              label="Message:"
+              className="border-transparent mt-2 mb-4 rounded-sm bg-white p-2 font-sans text-base text-dark dark:bg-dark dark:text-white"
+            />
+          </div>
         </div>
         <button
+          aria-label="Send contact form"
           type="submit"
           className="mx-auto mt-4 flex justify-center rounded bg-secondary py-3 px-12 font-mono font-semibold uppercase text-white shadow-md transition duration-500 hover:brightness-125 "
         >

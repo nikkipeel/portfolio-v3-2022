@@ -7,7 +7,7 @@ import Skills from "../components/skills"
 import RecentProjects from "../components/recentProjects"
 import Certs from "../components/certifications"
 import RecentPosts from "../components/recentPosts"
-import ScrollToTop from "../components/scrollToTop";
+import ScrollToTop from "../components/scrollToTop"
 import "../components/layout.css"
 
 const IndexPage = () => (

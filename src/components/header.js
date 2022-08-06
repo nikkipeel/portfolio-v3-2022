@@ -14,7 +14,7 @@ function Header() {
           <LazyFade>
             <h1 className="mb-8 p-4 text-xl font-semibold xl:p-0">
               Hi, my name is{" "}
-              <strong id="name" className="p-4 text-6xl">
+              <strong id="name" className="p-4 text-5xl">
                 Nikki
               </strong>
             </h1>
@@ -32,7 +32,7 @@ function Header() {
               <Link
                 to="/projects"
                 id="view-works"
-                className="hover:text-large rounded bg-secondary p-2 font-mono font-semibold tracking-tight text-white shadow-md transition duration-500 hover:scale-105 dark:brightness-125"
+                className="hover:text-large rounded bg-secondary p-2 font-mono font-semibold tracking-tight text-white shadow-md transition duration-500 hover:scale-125 dark:brightness-125 dark:hover:bg-darkSecondary"
               >
                 View Portfolio
               </Link>
@@ -40,7 +40,7 @@ function Header() {
             <LazySlide>
               <Link
                 to="/contact"
-                className="bg-transparent hover:text-large rounded border-2 border-secondary p-2 font-mono font-semibold font-semibold tracking-tight text-secondary shadow-md transition duration-500 hover:scale-105 hover:bg-secondary hover:text-white dark:border-darkSecondary dark:text-darkSecondary dark:brightness-125 dark:hover:bg-darkSecondary dark:hover:text-white"
+                className="bg-transparent hover:text-large rounded border-2 border-secondary p-2 font-mono font-semibold font-semibold tracking-tight text-secondary shadow-md transition duration-500 hover:scale-125 hover:bg-secondary hover:text-white dark:border-darkSecondary dark:text-darkSecondary dark:brightness-125 dark:hover:bg-darkSecondary dark:hover:text-white"
               >
                 Contact Me
               </Link>

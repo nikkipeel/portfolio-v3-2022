@@ -68,6 +68,7 @@ p {
 
 a {
   transition: all 0.4s ease;
+  letter-spacing: 1px;
 }
 
 a:focus-visible,
@@ -76,11 +77,23 @@ button:focus-visible {
   outline-color: var(--dark);
 }
 
+a:hover,
 button:hover,
 svg:hover,
 svg:focus {
   transform: scale(1.025);
   outline: 0px transparent;
+}
+
+.link--with-icon {
+  display: flex;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.link--with-icon:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .rounded-full {
@@ -105,6 +118,21 @@ nav a,
 
 .dark .skill-icon {
   filter: none;
+}
+
+/* Form Styles */
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item label {
+  font-family: "interstate-mono", "Consolas", "Monaco", "ui-monospace",
+    "SFMono-Regular", "monospace";
+}
+
+.form-item textarea {
+  width: 100%;
 }
 
 /* Post Content */
@@ -284,7 +312,8 @@ strong#name {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 75%;
+  top: 0;
+  margin-top: 75%;
   transition: all 0.4s ease;
 }
 
@@ -294,6 +323,7 @@ strong#name {
 
 .card-project:hover .card-project--content {
   display: flex;
+  flex-direction: column;
 }
 
 /* define a different transition-delay for each element in card for staggered effect */
@@ -325,7 +355,9 @@ strong#name {
 
 .card-project:hover .card-project--content,
 .card-project:focus .card-project--content {
-  top: 35%;
+  top: 0;
+  height: 100%;
+  margin-top: 25%;
   opacity: 1;
 }
 
