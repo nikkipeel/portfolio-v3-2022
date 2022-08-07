@@ -8,7 +8,9 @@ import Projects from "../components/projects"
 import Select from "../components/formFields/Select"
 
 const ProjectsPage = ({ data, projects, location, pageContext }) => {
-  const tags = data?.allMarkdownRemark?.distinct
+  const tags = data?.allMarkdownRemark?.distinct.sort((a, b) =>
+    a.localeCompare(b)
+  )
 
   const [tag, setTag] = useState("")
 
@@ -74,8 +76,9 @@ const ProjectsPage = ({ data, projects, location, pageContext }) => {
         <Seo title="Works" />
         <div className="flex w-full flex-col items-center justify-center pb-12">
           <Select
+            className="hover:outline-none focus:outline-none"
             name="project filter"
-            label="Filter projects by tag"
+            label="Filter projects"
             id="select-project-tags"
             options={tags}
             onChange={handleProjectFilter}

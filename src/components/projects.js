@@ -74,9 +74,13 @@ const Projects = ({ tag }) => {
                         <>
                           {project.frontmatter.tags.map(tag => (
                             <>
-                              <span className="tag rounded-md border-2 border-secondary p-1 text-sm font-semibold text-secondary dark:border-darkPrimary dark:text-darkPrimary">
-                                {tag}
-                              </span>
+                              {tag === "All" ? (
+                                ""
+                              ) : (
+                                <span className="tag rounded-md border-2 border-secondary p-1 text-sm font-semibold text-secondary dark:border-darkPrimary dark:text-darkPrimary">
+                                  {tag}
+                                </span>
+                              )}
                             </>
                           ))}
                         </>
@@ -129,9 +133,13 @@ const Projects = ({ tag }) => {
                         <>
                           {project.frontmatter.tags.map(tag => (
                             <>
-                              <span className="tag rounded-md border-2 border-secondary p-1 text-sm font-semibold text-secondary dark:border-darkPrimary dark:text-darkPrimary">
-                                {tag}
-                              </span>
+                              {tag === "All" ? (
+                                ""
+                              ) : (
+                                <span className="tag rounded-md border-2 border-secondary p-1 text-sm font-semibold text-secondary dark:border-darkPrimary dark:text-darkPrimary">
+                                  {tag}
+                                </span>
+                              )}
                             </>
                           ))}
                         </>

@@ -70,9 +70,13 @@ const Project = ({ pageContext }) => {
           <div className="mb-4 flex gap-4 px-2">
             {tags.map(tag => (
               <>
-                <span className="tag text-purple rounded-md border-2 border-secondary p-1 text-sm font-semibold dark:border-darkSecondary dark:text-darkSecondary">
-                  {tag}
-                </span>
+                {tag === "All" ? (
+                  ""
+                ) : (
+                  <span className="tag text-purple rounded-md border-2 border-secondary p-1 text-sm font-semibold dark:border-darkSecondary dark:text-darkSecondary">
+                    {tag}
+                  </span>
+                )}
               </>
             ))}
           </div>
