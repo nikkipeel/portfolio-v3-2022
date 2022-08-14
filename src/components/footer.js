@@ -20,7 +20,7 @@ function Footer() {
           loading="eager"
         />
         <div className="my-4 flex w-auto max-w-full flex-col">
-          <h2 className="my-1 font-bree text-xl font-semibold tracking-widest text-white drop-shadow-md">
+          <h2 className="my-1 font-macho text-xl font-semibold tracking-widest text-white drop-shadow-md">
             Nikki Peel
           </h2>
           <em className="my-1 text-base dark:text-white85">
@@ -28,7 +28,7 @@ function Footer() {
           </em>
           <a
             href="mailto:nikkipeel.dev@gmail.com"
-            className="my-1 text-base font-bold text-white underline-offset-2 hover:underline"
+            className="my-1 font-macho text-base font-bold text-white underline-offset-2 hover:underline"
           >
             nikkipeel.dev@gmail.com
           </a>

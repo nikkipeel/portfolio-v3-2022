@@ -7,4 +7,5 @@ image: ./images/nnblog1.png
 alt: "Nomadic Nobodies"
 link: "https://nomadicnobodies.com"
 repo: ""
+featured: false
 ---

@@ -7,4 +7,5 @@ image: ./images/expensetracker.png
 alt: "Expense Tracker"
 link: "https://nikkipeel.github.io/expense-tracker-react/"
 repo: ""
+featured: true
 ---

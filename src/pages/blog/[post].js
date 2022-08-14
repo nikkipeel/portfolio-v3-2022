@@ -83,7 +83,7 @@ const SinglePost = ({ data, location, post, pageContext }) => {
                   <header className="relative">
                     <div className="absolute z-40 flex h-full w-full items-center justify-center p-8">
                       <div className="rounded bg-white bg-opacity-50 p-4 text-dark dark:bg-bgSecondary dark:text-white md:p-12">
-                        <h1 className="mono mb-4 text-3xl">
+                        <h1 className="mb-4 font-macho text-3xl">
                           {singlePost.frontmatter.postTitle}
                         </h1>
 

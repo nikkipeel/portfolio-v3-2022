@@ -7,4 +7,5 @@ image: ./images/blog.png
 alt: "Technical Blog"
 link: "https://nikkipeel.netlify.app"
 repo: ""
+featured: true
 ---

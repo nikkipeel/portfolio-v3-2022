@@ -23,7 +23,7 @@ function HeaderInfo() {
         <em className="text-base dark:text-white65">Front End Developer</em>
         <a
           href="mailto:nikkipeel.dev@gmail.com"
-          className="p-1 text-base font-bold hover:underline dark:text-white85"
+          className="p-1 font-macho text-base font-bold hover:underline dark:text-white85"
           style={{ textUnderlineOffset: "3px" }}
         >
           nikkipeel.dev@gmail.com

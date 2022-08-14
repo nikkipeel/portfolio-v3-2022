@@ -7,4 +7,5 @@ image: ./images/tailwindgallery2.png
 alt: "Photo Search"
 link: "https://nikkipeel.github.io/tailwind-gallery/"
 repo: ""
+featured: true
 ---

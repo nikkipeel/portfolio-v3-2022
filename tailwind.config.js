@@ -29,7 +29,7 @@ module.exports = {
       highlight: "var(--highlight)",
     },
     fontFamily: {
-      bree: ["Bree", "Tahoma", "Verdana", "sans-serif"],
+      macho: ["macho", "Tahoma", "Verdana", "sans-serif"],
       sans: [
         "source-sans-3",
         "Trebuchet MS",

@@ -7,4 +7,5 @@ image: ./images/lyricssearch.png
 alt: "Lyrics Search"
 link: "https://nikkipeel.github.io/lyrics-search"
 repo: ""
+featured: true
 ---

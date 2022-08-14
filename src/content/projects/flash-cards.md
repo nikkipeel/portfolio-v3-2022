@@ -7,4 +7,5 @@ image: ./images/flashcards.png
 alt: "React Colors"
 link: "https://nikkipeel.github.io/flash-cards/"
 repo: ""
+featured: true
 ---

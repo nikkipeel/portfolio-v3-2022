@@ -7,4 +7,5 @@ image: ./images/tailwindblog.png
 alt: "Tailwind Blog"
 link: "https://nikkipeel.github.io/tailwind-blog/"
 repo: ""
+featured: false
 ---

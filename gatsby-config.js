@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Nikki Peel - Portfolio`,
@@ -153,7 +157,7 @@ module.exports = {
         background_color: `#6A4973`,
         theme_color: `#2B293C`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/np-logo.svg`,
       },
     },
     `gatsby-plugin-postcss`,

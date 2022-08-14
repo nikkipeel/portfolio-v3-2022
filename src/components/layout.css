@@ -54,8 +54,12 @@ h1,
 h2,
 h3 {
   letter-spacing: 2.5px;
-  font-family: "Bree", sans-serif;
+  font-family: macho, "Tahoma", "Verdana", sans-serif;
   font-weight: 700;
+}
+
+h1 {
+  font-weight: 800;
 }
 
 h3 {
@@ -104,7 +108,7 @@ nav a,
 .mobileNav a {
   letter-spacing: 2.5px;
   font-size: 22px;
-  font-family: "Bree", sans-serif;
+  font-family: macho, "Tahoma", "Verdana", sans-serif;
   font-weight: 600;
 }
 
@@ -127,7 +131,7 @@ nav a,
 }
 
 .form-item label {
-  font-family: "interstate-mono", "Consolas", "Monaco", "ui-monospace",
+  font-family: "Interstate Mono", "Consolas", "Monaco", "ui-monospace",
     "SFMono-Regular", "monospace";
 }
 
@@ -255,6 +259,9 @@ code.language-text {
 .post h3,
 .post-content h3 {
   margin: 2rem 0;
+  border-left: 0.5rem solid var(--secondary);
+  padding: 0.5rem 0.75rem;
+  text-shadow: none;
 }
 
 .post-content a {
@@ -295,7 +302,12 @@ code.language-text {
 .dark h3,
 .dark .post-content p h3 {
   color: var(--white);
-  text-shadow: -1.5px 1px 0px var(--dark-primary);
+  text-shadow: none;
+}
+
+.dark .post-content p h3 {
+  border-left: 0.5rem solid var(--dark-secondary);
+  padding: 0.5rem 0.75rem;
 }
 
 .section-heading {

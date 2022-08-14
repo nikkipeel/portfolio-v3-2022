@@ -7,4 +7,5 @@ image: ./images/spacex.png
 alt: "Gatsby SpaceX"
 link: "https://gatsby-spacex-api.netlify.app"
 repo: "https://github.com/nikkipeel/gatsby-spacex"
+featured: true
 ---
