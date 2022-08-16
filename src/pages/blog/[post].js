@@ -69,64 +69,67 @@ const SinglePost = ({ data, location, post, pageContext }) => {
           getProps={isPartiallyActive}
         />
       </div>
-      <div className="min-h-screen w-full bg-dark">
-        {posts.nodes.map(singlePost => (
-          <>
-            {postSlug === singlePost.frontmatter.postSlug && (
-              <>
-                <Seo title={singlePost.frontmatter.postTitle} />
-                <article
-                  postSlug={post}
-                  key={postSlug}
-                  className="mx-auto justify-center rounded-lg bg-primary text-dark dark:bg-bgSecondary"
-                >
-                  <header className="relative">
-                    <div className="absolute z-40 flex h-full w-full items-center justify-center p-8">
-                      <div className="rounded bg-white bg-opacity-50 p-4 text-dark dark:bg-bgSecondary dark:text-white md:p-12">
-                        <h1 className="mb-4 font-macho text-3xl">
-                          {singlePost.frontmatter.postTitle}
-                        </h1>
+      <main>
+        <div className="min-h-screen w-full bg-dark">
+          {posts.nodes.map(singlePost => (
+            <>
+              {postSlug === singlePost.frontmatter.postSlug && (
+                <>
+                  <Seo title={singlePost.frontmatter.postTitle} />
+                  <article
+                    postSlug={post}
+                    key={postSlug}
+                    className="mx-auto justify-center rounded-lg bg-primary text-dark dark:bg-bgSecondary"
+                  >
+                    <header className="relative">
+                      <div className="absolute z-40 flex h-full w-full items-center justify-center p-8">
+                        <div className="rounded bg-white bg-opacity-50 p-4 text-dark dark:bg-bgSecondary dark:text-white md:p-12">
+                          <h1 className="mb-4 font-macho text-3xl">
+                            {singlePost.frontmatter.postTitle}
+                          </h1>
 
-                        <p className="mt-4 text-center text-base font-semibold">
-                          Published on{" "}
-                          <strong>{singlePost.frontmatter.date}</strong>
-                        </p>
+                          <p className="mt-4 text-center text-base font-semibold">
+                            Published on{" "}
+                            <strong>{singlePost.frontmatter.date}</strong>
+                          </p>
+                        </div>
                       </div>
+                      <div
+                        className="header-overlay absolute z-20 w-full"
+                        style={{
+                          backgroundColor: "rgba(0,0,0,0.3)",
+                          height: "400px",
+                        }}
+                      ></div>
+                      <GatsbyImage
+                        image={
+                          singlePost.frontmatter.coverImage.childImageSharp
+                            .gatsbyImageData
+                        }
+                        alt=""
+                        className="w-full"
+                        style={{
+                          objectFit: "cover",
+                          objectPosition: "left top",
+                          height: "400px",
+                          zIndex: "10",
+                        }}
+                      />
+                    </header>
+
+                    <div className="post mx-auto max-w-none break-words bg-white py-8 leading-7 text-dark dark:bg-bgDark dark:text-white lg:px-4 xl:py-12">
+                      <div
+                        className="post-content text-lg"
+                        dangerouslySetInnerHTML={{ __html: singlePost.html }}
+                      />
                     </div>
-                    <div
-                      className="header-overlay absolute z-20 w-full"
-                      style={{
-                        backgroundColor: "rgba(0,0,0,0.3)",
-                        height: "400px",
-                      }}
-                    ></div>
-                    <GatsbyImage
-                      image={
-                        singlePost.frontmatter.coverImage.childImageSharp
-                          .gatsbyImageData
-                      }
-                      alt=""
-                      className="w-full"
-                      style={{
-                        objectFit: "cover",
-                        objectPosition: "left top",
-                        height: "400px",
-                        zIndex: "10",
-                      }}
-                    />
-                  </header>
-                  <div className="post mx-auto max-w-none break-words bg-white py-8 leading-7 text-dark dark:bg-bgDark dark:text-white lg:px-4 xl:py-12">
-                    <div
-                      className="post-content text-lg"
-                      dangerouslySetInnerHTML={{ __html: singlePost.html }}
-                    />
-                  </div>
-                </article>
-              </>
-            )}
-          </>
-        ))}
-      </div>
+                  </article>
+                </>
+              )}
+            </>
+          ))}
+        </div>
+      </main>
       <ScrollToTop showBelow={250}></ScrollToTop>
       <Footer></Footer>
     </>

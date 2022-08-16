@@ -19,7 +19,7 @@
   --dark-primary: #3fa5c0;
   --secondary: #6a4973;
   --dark-bg-secondary: #272436;
-  --dark-secondary: #956aa1;
+  --dark-secondary: #bb9ec2; /* old #956aa1; */
   --highlight: #ffaf5a;
   --shadow-primary: -1.5px 1px 0px var(--primary);
   --shadow-white: -1.5px 1px 0px var(--white);
@@ -692,14 +692,29 @@ ol li a {
   font-size: 0.9rem;
 }
 
-ol li:last-of-type,
-ol li a:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
 ol li span {
   font-weight: bold;
+}
+
+ol li a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: all 0.4s ease-in-out;
+}
+
+ol li a:hover {
+  text-underline-offset: 6px;
+}
+
+ol li:last-of-type a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+ol li:last-of-type a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .crumb-separator {

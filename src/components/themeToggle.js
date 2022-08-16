@@ -12,11 +12,12 @@ export class ThemeToggle extends React.Component {
           return (
             <div>
               <label className="relative flex items-center justify-between p-1">
-                <span className="hidden">
+                <span className="hidden" id="theme-toggle">
                   Toggle
                   {theme === "dark" ? "light" : "dark"} theme
                 </span>
                 <input
+                  aria-labelledby="theme-toggle"
                   type="checkbox"
                   className="absolute w-5 cursor-pointer opacity-0"
                   checked={theme === "dark"}

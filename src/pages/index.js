@@ -15,10 +15,12 @@ const IndexPage = () => (
     <NavMenu id="top"></NavMenu>
     <Seo title="Home" />
     <Header></Header>
-    <Skills></Skills>
-    <RecentProjects></RecentProjects>
-    <Certs></Certs>
-    <RecentPosts></RecentPosts>
+    <main>
+      <Skills></Skills>
+      <RecentProjects></RecentProjects>
+      <Certs></Certs>
+      <RecentPosts></RecentPosts>
+    </main>
     <ScrollToTop showBelow={250}></ScrollToTop>
     <Footer></Footer>
   </>
