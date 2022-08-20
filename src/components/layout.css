@@ -1,6 +1,3 @@
-/*@import url("https://use.typekit.net/uwt3xft.css");
-@import url("https://use.typekit.net/uwt3xft.css");
-@import url("https://use.typekit.net/uwt3xft.css");*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,7 +16,7 @@
   --dark-primary: #3fa5c0;
   --secondary: #6a4973;
   --dark-bg-secondary: #272436;
-  --dark-secondary: #bb9ec2; /* old #956aa1; */
+  --dark-secondary: #956aa1; /* AAA contrast: #bb9ec2 */
   --highlight: #ffaf5a;
   --shadow-primary: -1.5px 1px 0px var(--primary);
   --shadow-white: -1.5px 1px 0px var(--white);
@@ -392,7 +389,7 @@ strong#name {
 
 .card-project {
   display: block;
-  height: 100%;
+  height: 250px;
   width: 300px;
   text-align: left;
   position: relative;

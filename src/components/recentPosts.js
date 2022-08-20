@@ -37,14 +37,14 @@ const RecentPosts = () => {
           className="mx-auto mt-12 flex flex-col items-center gap-4 p-4 xl:w-3/4"
           style={{ marginBottom: "-4rem" }}
         >
-          {postData.allMarkdownRemark.nodes.map(post => {
+          {postData.allMarkdownRemark.nodes.map((post, index) => {
             const { postSlug, postTitle, postDescription, categories, date } =
               post.frontmatter
 
             return (
               <>
                 {postSlug && (
-                  <LazySlideLeft>
+                  <LazySlideLeft key={postSlug + " " + index}>
                     <Link
                       to={"/blog/" + postSlug}
                       state={{ postSlug: postSlug }}

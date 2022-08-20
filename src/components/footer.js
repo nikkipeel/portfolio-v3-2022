@@ -11,7 +11,7 @@ import {
 function Footer() {
   return (
     <footer className="flex h-full w-full flex-col items-center justify-between bg-secondary p-8 lg:flex-row">
-      <div class="flex w-full flex-col items-start px-2 text-left lg:flex-row lg:items-center lg:gap-8">
+      <div className="flex w-full flex-col items-start px-2 text-left lg:flex-row lg:items-center lg:gap-8">
         <StaticImage
           className="h-20 w-20 rounded-full shadow-inner drop-shadow-md"
           src="../images/selfie.jpg"

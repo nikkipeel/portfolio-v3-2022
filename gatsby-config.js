@@ -157,7 +157,7 @@ module.exports = {
         background_color: `#6A4973`,
         theme_color: `#2B293C`,
         display: `minimal-ui`,
-        icon: `src/images/np-logo.svg`,
+        icon: `src/images/np-logo.png`,
       },
     },
     `gatsby-plugin-postcss`,
@@ -210,7 +210,7 @@ module.exports = {
         // color: "#4a94a8",
         color: "linear-gradient(to right, #6a4973, #956aa1)",
         // Height of the scroll indicator
-        height: "12px",
+        height: "14px",
         // Configure paths where the scroll indicator will appear
         paths: ["/blog/**"],
         // Configure the z-index of the indicator element

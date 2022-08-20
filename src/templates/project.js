@@ -99,7 +99,8 @@ const Project = ({ pageContext }) => {
             <GatsbyImage
               image={image}
               alt={title}
-              imgStyle={{ objectFit: "cover" }}
+              imgStyle={{ objectFit: "cover", height: "180px" }}
+              height={180}
               placeholder="blurred"
             />
           </div>
