@@ -51,7 +51,6 @@ const Projects = ({ tag }) => {
                   {project.frontmatter.image && (
                     <>
                       <GatsbyImage
-                        className="object-cover shadow-inner"
                         image={
                           project.frontmatter.image.childImageSharp
                             .gatsbyImageData
@@ -61,15 +60,28 @@ const Projects = ({ tag }) => {
                       />
                     </>
                   )}
-                  <h3 className="card-title z-100 my-2 py-2 px-4 text-xl font-bold">
-                    {project.frontmatter.title}
-                  </h3>
 
                   <div className="card-project--content mx-auto flex flex-col bg-white p-4 dark:bg-bgSecondary dark:text-white85">
-                    <h3 className="my-2 text-xl font-bold">
-                      {project.frontmatter.title}
-                    </h3>
-                    <div className="my-2 flex gap-2">
+                    <div className="card-project--content__header">
+                      <h3 className="my-2 text-xl font-bold dark:border-none">
+                        {project.frontmatter.title}
+                      </h3>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        className="h-6 w-6"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          stroke="currentColor"
+                          stroke-width="2px"
+                          d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div className="tags my-2 flex gap-2">
                       {project.frontmatter.tags && (
                         <>
                           {project.frontmatter.tags.map(tag => (
@@ -110,7 +122,6 @@ const Projects = ({ tag }) => {
                   {project.frontmatter.image && (
                     <>
                       <GatsbyImage
-                        className="object-cover shadow-inner"
                         image={
                           project.frontmatter.image.childImageSharp
                             .gatsbyImageData
@@ -120,15 +131,28 @@ const Projects = ({ tag }) => {
                       />
                     </>
                   )}
-                  <h3 className="card-title z-100 my-2 py-2 px-4 text-xl font-bold">
-                    {project.frontmatter.title}
-                  </h3>
 
                   <div className="card-project--content mx-auto flex flex-col bg-white p-4 dark:bg-bgSecondary dark:text-white85">
-                    <h3 className="my-2 text-xl font-bold">
-                      {project.frontmatter.title}
-                    </h3>
-                    <div className="my-2 flex gap-2">
+                    <div className="card-project--content__header">
+                      <h3 className="my-2 text-xl font-bold dark:border-none">
+                        {project.frontmatter.title}
+                      </h3>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        className="h-6 w-6"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          stroke="currentColor"
+                          stroke-width="2px"
+                          d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div className="tags my-2 flex gap-2">
                       {project.frontmatter.tags && (
                         <>
                           {project.frontmatter.tags.map(tag => (

@@ -39,7 +39,7 @@ const BlogPage = ({ data, location, pageContext }) => {
   return (
     <>
       <NavMenu></NavMenu>
-      <div class="breadcrumbs md:pl-12">
+      <div class="breadcrumbs">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="home-icon hidden h-6 w-6 md:flex"
