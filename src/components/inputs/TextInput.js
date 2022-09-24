@@ -1,4 +1,5 @@
 import React from "react"
+import "./inputs.css"
 
 const TextInput = ({ type, id, label, name, className, handleChange }) => {
   return (

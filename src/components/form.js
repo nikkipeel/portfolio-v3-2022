@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { navigate } from "gatsby"
-import TextInput from "./formFields/TextInput"
-import TextArea from "./formFields/TextArea"
+import TextInput from "./inputs/TextInput"
+import TextArea from "./inputs/TextArea"
 
 function encode(data) {
   return Object.keys(data)

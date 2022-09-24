@@ -1,0 +1,123 @@
+.card {
+  box-shadow: -8px 8px 0px var(--primary);
+}
+
+.dark.card {
+  box-shadow: -8px 8px 0px var(--dark-primary);
+}
+
+.angled-bg {
+  position: absolute;
+  z-index: 0;
+  transform: translateY(-310px);
+  height: 300px;
+  clip-path: polygon(0% -10%, 0 100%, 50% 65%, 100% 100%, 100% 0);
+}
+
+.card-post {
+  width: 500px;
+}
+
+@media (max-width: 768px) {
+  .card-post {
+    width: 90vw;
+  }
+}
+
+.card-post:hover .link {
+  text-underline-offset: 4px;
+  text-decoration: underline;
+}
+
+.card-project {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+  width: 350px;
+  height: 250px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.card-project img {
+  position: absolute;
+  z-index: 0;
+  transition: 0.25s;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+}
+
+.card-project--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  z-index: 5;
+  height: max-content;
+  bottom: 0;
+  position: absolute;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.card-project--content__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-project--content__header svg {
+  transform: none;
+  transition: 0.3s ease;
+}
+
+.card-project--content .tags {
+  display: none;
+  height: 0;
+  opacity: 0;
+  transition: all 0.4s 0.2s ease-in;
+}
+
+.card-project--content a,
+.card-project--content p {
+  display: none;
+  opacity: 0;
+  transition: all 0.5s 0.3s ease-in;
+}
+
+.card-project--content h3,
+.card-project:hover .card-project--content p,
+.card-project:hover .card-project--content .tags,
+.card-project:hover .card-project--content a,
+.card-project--content h3,
+.card-project:focus .card-project--content p,
+.card-project:focus .card-project--content .tags,
+.card-project:focus .card-project--content a {
+  display: flex;
+  opacity: 1;
+  height: max-content;
+}
+
+.card-project:hover,
+.card-project:focus {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card-project:hover img,
+.card-project:focus img {
+  filter: brightness(45%);
+  transform: scale(1.25);
+}
+
+.card-project:hover .card-project--content__header svg,
+.card-project:focus .card-project--content__header svg {
+  transform: rotate(180deg);
+}
+
+.card-project:hover .card-project--content p,
+.card-project:focus .card-project--content p {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

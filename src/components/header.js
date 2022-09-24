@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import HeaderInfo from "../components/headerInfo"
+import Info from "./cards/Info"
 import LazySlide from "../animations/lazySlide"
 import LazyFade from "../animations/lazyFade"
 
@@ -8,7 +8,7 @@ function Header() {
   return (
     <>
       <header className="flex flex-col bg-white py-16 text-dark dark:bg-bgDark dark:text-white xl:flex-row">
-        <HeaderInfo></HeaderInfo>
+        <Info />
 
         <div className="mx-auto mt-12 flex flex-col justify-center p-4 text-center xl:mt-0 xl:mr-48 xl:w-1/2 xl:items-end xl:p-0 xl:text-right">
           <LazyFade>

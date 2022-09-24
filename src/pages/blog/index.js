@@ -3,8 +3,8 @@ import { graphql } from "gatsby"
 import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 import NavMenu from "../../components/menu"
 import Layout from "../../components/layout"
-import Link from "gatsby-link"
 import Seo from "../../components/seo"
+import Post from "../../components/cards/Post"
 
 const BlogPage = ({ data, location, pageContext }) => {
   const {
@@ -39,7 +39,7 @@ const BlogPage = ({ data, location, pageContext }) => {
   return (
     <>
       <NavMenu></NavMenu>
-      <div class="breadcrumbs">
+      <div className="breadcrumbs">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="home-icon hidden h-6 w-6 md:flex"
@@ -65,45 +65,18 @@ const BlogPage = ({ data, location, pageContext }) => {
         <Seo title="Blog" />
         <div className="mx-auto flex flex-col text-dark md:p-8">
           <div className="mx-auto mb-24 flex flex-col justify-center md:flex-row md:flex-wrap md:gap-8">
-            {data.allMarkdownRemark.nodes.map(post => {
+            {data.allMarkdownRemark.nodes.map((post, index) => {
               const { postSlug, postTitle, postDescription, categories, date } =
                 post.frontmatter
               return (
-                <Link
-                  to={`/blog/${postSlug}`}
-                  state={{ postSlug: postSlug, postTitle: postTitle }}
-                  className="card-post my-4 flex flex-col rounded-sm border-2 border-secondary p-4 text-left leading-snug text-dark hover:scale-105 hover:border-primary dark:text-white dark:hover:border-darkPrimary"
-                  tabIndex="0"
-                  key={postSlug}
-                >
-                  <p className="mx-4 text-base italic tracking-wide text-secondary dark:text-white65">
-                    {date}
-                  </p>
-                  <h3 className="my-2 mx-4 text-xl font-bold">{postTitle}</h3>
-
-                  <p className="my-2 mx-4 text-dark dark:text-white65">
-                    {postDescription}
-                  </p>
-                  <div className="my-4 mx-4 flex items-center justify-between gap-2">
-                    {categories && (
-                      <>
-                        <div className="flex w-1/2 flex-wrap gap-2 lg:w-auto">
-                          {categories.map(category => (
-                            <>
-                              <span className="tag rounded-md border-2 border-secondary py-1 px-2 text-sm font-semibold text-secondary dark:border-none dark:bg-primary dark:text-white">
-                                {category}
-                              </span>
-                            </>
-                          ))}
-                        </div>
-                      </>
-                    )}
-
-                    <p className="link font-mono text-base font-bold text-secondary hover:text-darkSecondary dark:text-white85 lg:pr-4">
-                      Read More
-                    </p>
-                  </div>
-                </Link>
+                <Post
+                  slug={postSlug}
+                  date={date}
+                  title={postTitle}
+                  description={postDescription}
+                  tags={categories}
+                  index={index}
+                />
               )
             })}
           </div>

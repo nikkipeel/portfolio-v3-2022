@@ -1,5 +1,5 @@
 import React from "react"
-import "../layout.css"
+import "./inputs.css"
 
 const Select = ({ name, id, label, options, onChange, className }) => {
   return (

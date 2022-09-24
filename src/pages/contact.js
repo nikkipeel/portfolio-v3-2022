@@ -4,6 +4,7 @@ import Seo from "../components/seo"
 import NavMenu from "../components/menu"
 import Layout from "../components/layout"
 import Form from "../components/form"
+import "../components/layout.css"
 
 const ContactPage = ({ location, pageContext }) => {
   const {

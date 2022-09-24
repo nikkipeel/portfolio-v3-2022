@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 import NavMenu from "../components/menu"
 import Layout from "../components/layout"
 import Projects from "../components/projects"
-import Select from "../components/formFields/Select"
+import Select from "../components/inputs/Select"
 
 const ProjectsPage = ({ data, projects, location, pageContext }) => {
   const tags = data?.allMarkdownRemark?.distinct.sort((a, b) =>

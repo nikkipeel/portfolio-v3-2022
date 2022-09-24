@@ -7,13 +7,14 @@ import {
   faGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
+import "./cards.css"
 
-function HeaderInfo() {
+function Info() {
   return (
     <div className="header-card mx-auto flex flex-col items-center justify-center xl:ml-36 xl:w-1/2">
       <StaticImage
         className="header-image h-60 w-52 border-2 border-secondary shadow-inner dark:border-2 dark:border-darkSecondary"
-        src="../images/selfie.jpg"
+        src="../../images/selfie.jpg"
         alt="Portrait"
         placeholder="blurred"
         loading="eager"
@@ -70,4 +71,4 @@ function HeaderInfo() {
   )
 }
 
-export default HeaderInfo
+export default Info
