@@ -206,12 +206,22 @@ article header {
 
 article header {
   background: transparent;
-  padding: 0 5rem;
   margin: 0 auto;
 }
 
-article .category,
-section .tag {
+article header span {
+  display: flex;
+  height: 4px;
+  background: var(--secondary);
+  border-radius: 2px;
+}
+
+article .categories {
+  padding-bottom: 2rem;
+}
+
+article a.category,
+section a.tag {
   border: 2px solid var(--accent);
   color: var(--accent);
 }
@@ -230,17 +240,12 @@ code.language-text {
 
 .post-content {
   width: 100%;
-  padding: 0 4rem;
 }
 
 @media (max-width: 768px) {
   .post,
   article header {
     width: 100%;
-  }
-  .post-content,
-  article header {
-    padding: 0 1rem;
   }
 }
 

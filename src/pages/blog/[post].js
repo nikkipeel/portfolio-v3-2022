@@ -4,8 +4,6 @@ import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 import Seo from "../../components/seo"
 import NavMenu from "../../components/menu"
 import Layout from "../../components/layout"
-import ScrollToTop from "../../components/scrollToTop"
-import Footer from "../../components/footer"
 import "../../components/layout.css"
 
 const SinglePost = ({ data, location, post, pageContext }) => {
@@ -88,22 +86,26 @@ const SinglePost = ({ data, location, post, pageContext }) => {
                         <strong>{singlePost.frontmatter.date}</strong>
                       </p>
 
-                      <div className="mb-4 flex gap-4">
+                      <div className="categories mb-4 flex gap-4">
                         {singlePost.frontmatter.categories.map(category => (
                           <>
                             {category === "All" ? (
                               ""
                             ) : (
-                              <span className="category rounded-md border-2 p-1 text-sm font-semibold">
+                              <a
+                                href="#"
+                                className="category rounded-md border-2 p-1 text-sm font-semibold"
+                              >
                                 {category}
-                              </span>
+                              </a>
                             )}
                           </>
                         ))}
                       </div>
+                      <span></span>
                     </header>
 
-                    <div className="post mx-auto max-w-none break-words py-8 leading-7 xl:py-12">
+                    <div className="post mx-auto max-w-none break-words px-6 py-8 leading-7 md:px-16 xl:py-12">
                       <div
                         className="post-content text-lg"
                         dangerouslySetInnerHTML={{ __html: singlePost.html }}

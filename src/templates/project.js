@@ -66,16 +66,19 @@ const Project = ({ pageContext }) => {
         />
       </div>
       <Layout pageTitle={title}>
-        <div className="mx-auto flex w-full flex-col p-4 text-dark dark:text-white85 lg:w-3/4">
+        <div className=" mx-auto flex w-full flex-col p-4 lg:w-3/4">
           <div className="mb-4 flex gap-4 px-2">
             {tags.map(tag => (
               <>
                 {tag === "All" ? (
                   ""
                 ) : (
-                  <span className="tag text-purple rounded-md border-2 border-secondary p-1 text-sm font-semibold dark:border-darkSecondary dark:text-darkSecondary">
+                  <a
+                    href="#"
+                    className="tag rounded-md border-2 p-1 text-sm font-semibold"
+                  >
                     {tag}
-                  </span>
+                  </a>
                 )}
               </>
             ))}
