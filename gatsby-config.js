@@ -154,8 +154,8 @@ module.exports = {
         name: `Nikki Peel - Portfolio`,
         short_name: `portfolio`,
         start_url: `/`,
-        background_color: `#6A4973`,
-        theme_color: `#2B293C`,
+        background_color: `#75acc0`,
+        theme_color: `#75acc0`,
         display: `minimal-ui`,
         icon: `src/images/np-logo.png`,
       },
@@ -208,7 +208,7 @@ module.exports = {
       options: {
         // Configure color of the scroll indicator
         // color: "#4a94a8",
-        color: "linear-gradient(to right, #6a4973, #956aa1)",
+        color: "linear-gradient(to right, #c8782f, #da9c63)",
         // Height of the scroll indicator
         height: "14px",
         // Configure paths where the scroll indicator will appear

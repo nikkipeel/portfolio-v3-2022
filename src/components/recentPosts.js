@@ -61,7 +61,7 @@ const RecentPosts = () => {
               link="/blog"
               id="blog-link"
               text="View All"
-              classes="button button--primary hover:text-large m-6 rounded px-4 font-mono font-semibold tracking-tight shadow-md transition duration-500 hover:scale-105 hover:brightness-125"
+              classes="button button--secondary hover:text-large m-6 rounded px-4 font-mono font-semibold tracking-tight shadow-md transition duration-500 hover:scale-105 hover:brightness-125"
             />
           </div>
         </div>

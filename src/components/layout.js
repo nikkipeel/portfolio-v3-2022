@@ -10,7 +10,9 @@ const Layout = ({ children, title, pageTitle }) => {
     <>
       <Seo title={title} />
       <header>
-        <h1 className="mx-auto px-6 py-16 text-5xl md:px-16">{pageTitle}</h1>
+        <h1 className="mx-auto px-6 py-16 text-5xl leading-tight md:px-16">
+          {pageTitle}
+        </h1>
       </header>
       <main>
         <section className="h-full w-full justify-center py-4 md:px-8">

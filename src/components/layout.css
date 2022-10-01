@@ -18,6 +18,7 @@
   --secondary-light: #8e2c3a;
   --accent-light: #da9c63; /* #d38945; */
   --highlight-light: #e7c692;
+  --highlight-lighter: #faf3e9;
 
   --text-primary: #122127; /* or #122127 */
   --text-secondary: #f6e2e5; /* or #260c10 */
@@ -42,6 +43,9 @@ body {
     "system-ui", "sans-sefooterrif";
 }
 
+main section {
+  background: var(--highlight-lighter);
+}
 nav {
   background-color: var(--black);
 }
@@ -94,6 +98,10 @@ a {
 header {
   background: var(--primary);
   color: var(--text-primary);
+}
+
+article header {
+  background: transparent;
 }
 
 section {
@@ -227,7 +235,7 @@ code.language-text {
 .post h3,
 .post-content h3 {
   margin: 2rem 0;
-  border-left: 0.5rem solid var(--secondary);
+  border-left: 0.5rem solid var(--secondary-light);
   padding: 0.5rem 0.75rem;
   text-shadow: none;
 }

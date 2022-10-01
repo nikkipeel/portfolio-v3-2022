@@ -31,7 +31,7 @@ const ScrollToTop = ({ showBelow }) => {
           id="scroll-to-top-link"
           label="back to top"
           text="back to top"
-          classes="overflow-x-none fixed bottom-32 right-8 z-50 text-white lg:bottom-52 lg:right-16"
+          classes="button--scroll overflow-x-none fixed bottom-32 right-8 z-50 lg:bottom-52 lg:right-16"
         />
       )}
     </>

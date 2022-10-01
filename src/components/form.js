@@ -33,7 +33,7 @@ export default function Form() {
   }
 
   return (
-    <div className="form-wrapper mx-4 mt-12 w-full rounded-sm md:mx-auto lg:p-12">
+    <div className="form-wrapper mx-4 mt-12 w-full rounded-sm md:mx-auto md:p-4">
       <form
         name="contact"
         method="post"
@@ -41,6 +41,7 @@ export default function Form() {
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
+        className="p-8 md:p-4"
       >
         {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
         <input type="hidden" name="form-name" value="contact" />

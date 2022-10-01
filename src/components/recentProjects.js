@@ -38,7 +38,7 @@ const RecentProjects = () => {
   return (
     <div
       id="projects"
-      className="bg-primary dark:bg-bgPrimary flex h-full w-full flex-col items-center justify-center py-20"
+      className="recent-projects bg-primary dark:bg-bgPrimary flex h-full w-full flex-col items-center justify-center py-20"
     >
       <h2 className="section-heading w-auto text-center text-3xl font-bold tracking-wide text-white">
         Recent Projects
@@ -60,7 +60,7 @@ const RecentProjects = () => {
           link="/projects"
           id="projects-link--home"
           text="View All"
-          classes="button button--secondary hover:text-large m-6 rounded py-2 px-4 font-mono font-semibold tracking-tight text-white shadow-md transition duration-500 hover:scale-105 hover:brightness-125"
+          classes="button button--primary hover:text-large m-6 rounded py-2 px-4 font-mono font-semibold tracking-tight text-white shadow-md transition duration-500 hover:scale-105 hover:brightness-125"
         />
       </div>
     </div>
