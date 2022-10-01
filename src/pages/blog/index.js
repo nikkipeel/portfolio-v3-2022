@@ -63,7 +63,7 @@ const BlogPage = ({ data, location, pageContext }) => {
       </div>
       <Layout pageTitle="Blog">
         <Seo title="Blog" />
-        <div className="mx-auto flex flex-col text-dark md:p-8">
+        <div className="mx-auto flex flex-col md:p-8">
           <div className="mx-auto mb-24 flex flex-col justify-center md:flex-row md:flex-wrap md:gap-8">
             {data.allMarkdownRemark.nodes.map((post, index) => {
               const { postSlug, postTitle, postDescription, categories, date } =

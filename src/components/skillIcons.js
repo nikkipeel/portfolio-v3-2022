@@ -18,43 +18,43 @@ function SkillIcons() {
       <LazySlide>
         <FontAwesomeIcon
           icon={faHtml5}
-          className="skill-icon lazy-slide pointer-events-none m-10 p-2 text-7xl text-dark dark:text-darkPrimary md:text-8xl"
+          className="skill-icon lazy-slide pointer-events-none m-10 p-2 text-7xl md:text-8xl"
         />
       </LazySlide>
       <LazySlide>
         <FontAwesomeIcon
           icon={faCss3}
-          className="skill-icon lazy-slide pointer-events-none m-10 p-2 text-7xl text-dark dark:text-darkPrimary md:text-8xl"
+          className="skill-icon lazy-slide pointer-events-none m-10 p-2 text-7xl md:text-8xl"
         />
       </LazySlide>
       <LazySlide>
         <FontAwesomeIcon
           icon={faSass}
-          className="skill-icon lazy-slide pointer-events-none m-10 p-2 text-7xl text-dark dark:text-darkPrimary md:text-8xl"
+          className="skill-icon lazy-slide pointer-events-none m-10 p-2 text-7xl md:text-8xl"
         />
       </LazySlide>
       <LazySlide>
         <FontAwesomeIcon
           icon={faJsSquare}
-          className="skill-icon lazy-slide pointer-events-none m-10 p-2 text-7xl text-dark dark:text-darkPrimary md:text-8xl"
+          className="skill-icon lazy-slide pointer-events-none m-10 p-2 text-7xl md:text-8xl"
         />
       </LazySlide>
       <LazySlide>
         <FontAwesomeIcon
           icon={faReact}
-          className="skill-icon lazy-slide pointer-events-none m-10 p-2 text-7xl text-dark dark:text-darkPrimary md:text-8xl"
+          className="skill-icon lazy-slide pointer-events-none m-10 p-2 text-7xl md:text-8xl"
         />
       </LazySlide>
       <LazySlide>
         <FontAwesomeIcon
           icon={faWordpress}
-          className="skill-icon lazy-slide  pointer-events-none m-10 p-2 text-7xl text-dark dark:text-darkPrimary md:text-8xl"
+          className="skill-icon lazy-slide  pointer-events-none m-10 p-2 text-7xl md:text-8xl"
         />
       </LazySlide>
       <LazySlide>
         <FontAwesomeIcon
           icon={faDrupal}
-          className="skill-icon lazy-slide pointer-events-none m-10 p-2 text-7xl text-dark dark:text-darkPrimary md:text-8xl"
+          className="skill-icon lazy-slide pointer-events-none m-10 p-2 text-7xl md:text-8xl"
         />
       </LazySlide>
     </div>

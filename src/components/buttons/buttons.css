@@ -1,0 +1,39 @@
+.button {
+  padding: 8px 12px;
+}
+
+.button--primary {
+  background: var(--text-primary);
+  color: var(--white);
+  border: none;
+}
+/* .button-primary:hover,
+.button--primary:focus {
+  background: var(--text-primary);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+} */
+
+.button--secondary {
+  background: var(--secondary);
+  color: var(--white);
+  border: none;
+}
+/* .button--secondary:hover,
+.button--secondary:focus {
+  background: var(--secondary);
+  color: var(--white);
+  border: 2px solid var(--secondary);
+} */
+
+.button--secondary__outline {
+  background: transparent;
+  color: var(--secondary);
+  border: 2px solid var(--secondary);
+}
+.button--secondary__outline:hover,
+.button--secondary__outline:focus {
+  background: var(--secondary);
+  color: var(--white);
+  border: 2px solid var(--secondary);
+}

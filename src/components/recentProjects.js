@@ -1,7 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import Project from "./cards/Project"
+import LinkButton from "./buttons/LinkButton"
 
 const RecentProjects = () => {
   const data = useStaticQuery(graphql`
@@ -38,7 +38,7 @@ const RecentProjects = () => {
   return (
     <div
       id="projects"
-      className="flex h-full w-full flex-col items-center justify-center bg-primary py-20 dark:bg-bgPrimary"
+      className="bg-primary dark:bg-bgPrimary flex h-full w-full flex-col items-center justify-center py-20"
     >
       <h2 className="section-heading w-auto text-center text-3xl font-bold tracking-wide text-white">
         Recent Projects
@@ -55,13 +55,13 @@ const RecentProjects = () => {
             />
           ))}
       </div>
-      <div className="mx-auto flex justify-center bg-primary pt-8 pb-20 dark:bg-bgPrimary">
-        <Link
-          to="/projects"
-          className="hover:text-large m-6 rounded bg-secondary py-2 px-4 font-mono font-semibold tracking-tight text-white shadow-md transition duration-500 hover:scale-105 hover:brightness-125"
-        >
-          View All
-        </Link>
+      <div className="bg-primary dark:bg-bgPrimary mx-auto flex justify-center pt-8 pb-20">
+        <LinkButton
+          link="/projects"
+          id="projects-link--home"
+          text="View All"
+          classes="button button--secondary hover:text-large m-6 rounded py-2 px-4 font-mono font-semibold tracking-tight text-white shadow-md transition duration-500 hover:scale-105 hover:brightness-125"
+        />
       </div>
     </div>
   )

@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { navigate } from "gatsby"
+import Button from "./buttons/Button"
 import TextInput from "./inputs/TextInput"
 import TextArea from "./inputs/TextArea"
 
@@ -32,7 +33,7 @@ export default function Form() {
   }
 
   return (
-    <div className="form-wrapper mx-4 mt-12 w-full rounded-sm bg-dark p-8 text-white dark:bg-bgDark md:mx-auto lg:p-12">
+    <div className="form-wrapper mx-4 mt-12 w-full rounded-sm md:mx-auto lg:p-12">
       <form
         name="contact"
         method="post"
@@ -56,19 +57,19 @@ export default function Form() {
               label="First Name:"
               id="contact-form-first-name"
               name="first name"
-              className="border-transparent mt-2 mb-4 rounded-sm bg-white p-2 font-sans text-base text-dark dark:bg-dark dark:text-white"
+              className="mt-2 mb-4 rounded-sm p-2 font-sans text-base"
             />
             <TextInput
               label="Last Name:"
               id="contact-form-last-name"
               name="last name"
-              className="border-transparent mt-2 mb-4 rounded-sm bg-white p-2 font-sans text-base text-dark dark:bg-dark dark:text-white"
+              className="mt-2 mb-4 rounded-sm p-2 font-sans text-base"
             />
             <TextInput
               label="Email Address:"
               id="contact-form-email"
               name="email address"
-              className="border-transparent mt-2 mb-4 rounded-sm bg-white p-2 font-sans text-base text-dark dark:bg-dark dark:text-white"
+              className="mt-2 mb-4 rounded-sm p-2 font-sans text-base"
             />
           </div>
           <div className="form-item">
@@ -76,17 +77,16 @@ export default function Form() {
               id="contact-form-message"
               name="message"
               label="Message:"
-              className="border-transparent mt-2 mb-4 rounded-sm bg-white p-2 font-sans text-base text-dark dark:bg-dark dark:text-white"
+              className="mt-2 mb-4 rounded-sm p-2 font-sans text-base"
             />
           </div>
         </div>
-        <button
-          aria-label="Send contact form"
+        <Button
+          id="submit-form"
           type="submit"
-          className="mx-auto mt-4 flex justify-center rounded bg-secondary py-3 px-12 font-mono font-semibold uppercase text-white shadow-md transition duration-500 hover:brightness-125 "
-        >
-          Send
-        </button>
+          text="Send"
+          classes="button button--primary mx-auto mt-4 flex justify-center rounded py-3 px-12 font-mono font-semibold uppercase shadow-md transition duration-500 hover:brightness-125"
+        />
       </form>
     </div>
   )

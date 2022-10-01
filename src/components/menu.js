@@ -33,9 +33,10 @@ var styles = {
     position: "fixed",
     top: "0",
     height: "100%",
-    background: "#2B293C",
+    background: "#192d35",
   },
   bmMenu: {
+    background: "#192d35",
     padding: "2.5em 1.5em 0",
     fontSize: "1.15em",
   },
@@ -43,7 +44,8 @@ var styles = {
     fill: "#373a47",
   },
   bmItemList: {
-    color: "#b8b7ad",
+    background: "#192d35",
+    color: "#fcfdfe",
     paddingTop: "3rem",
   },
   bmItem: {
@@ -51,7 +53,7 @@ var styles = {
     flexDirection: "columns",
     justifyContent: "center",
     alignItems: "center",
-    color: "#fff",
+    color: "#fcfdfe",
   },
   bmOverlay: {
     background: "rgba(0, 0, 0, 0.3)",
@@ -61,7 +63,7 @@ var styles = {
 function NavMenu() {
   return (
     <>
-      <nav className="flex h-full items-center justify-center bg-dark px-8 pt-5 pb-6 text-white xl:px-20">
+      <nav className="flex h-full items-center justify-center px-8 pt-5 pb-6 text-white xl:px-20">
         <div className="mx-auto hidden text-white md:flex">
           <Link
             to="/"
@@ -80,21 +82,21 @@ function NavMenu() {
           <Link
             to="/projects"
             activeClassName="underline"
-            className="underline-offset mx-8 text-base  text-white transition duration-500 hover:text-white hover:underline focus:text-white"
+            className="underline-offset mx-8 text-base transition duration-500 hover:text-white hover:underline focus:text-white"
           >
             projects
           </Link>
           <Link
             to="/contact"
             activeClassName="underline"
-            className="underline-offset mx-8 text-base  text-white transition duration-500 hover:text-white hover:underline focus:text-white"
+            className="underline-offset mx-8 text-base transition duration-500 hover:text-white hover:underline focus:text-white"
           >
             contact
           </Link>
           <Link
             to="/blog"
             activeClassName="underline"
-            className="underline-offset mx-8 text-base  text-white transition duration-500 hover:text-white hover:underline focus:text-white"
+            className="underline-offset mx-8 text-base transition duration-500 hover:text-white hover:underline focus:text-white"
           >
             blog
           </Link>
@@ -103,7 +105,7 @@ function NavMenu() {
       </nav>
 
       <Menu
-        class="mobileNav absolute top-0 right-0 z-40 m-0 bg-dark text-center text-white lg:hidden"
+        class="mobileNav absolute top-0 right-0 z-40 m-0 text-center text-white lg:hidden"
         right
         styles={styles}
       >

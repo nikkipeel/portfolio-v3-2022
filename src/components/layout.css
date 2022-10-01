@@ -3,22 +3,29 @@
 @tailwind utilities;
 
 :root {
-  --whitest: #ffffff;
-  --white: #f2f0f0;
-  --white-85: rgb(253, 253, 253, 0.85);
-  --white-75: rgb(253, 253, 253, 0.75);
-  --white-65: rgb(253, 253, 253, 0.65);
-  --transparent-bg: transparent;
-  --dark: #2b293c;
-  --dark-bg: #1d1b28;
-  --primary: #4a94a8;
-  --dark-bg-primary: #181621;
-  --dark-primary: #3fa5c0;
-  --secondary: #6a4973;
-  --dark-bg-secondary: #272436;
-  --dark-secondary: #956aa1; /* AAA contrast: #bb9ec2 */
-  --highlight: #ffaf5a;
+  --primary: #75acc0; /* light blue */
+  --secondary: #66202a; /* maroon */
+  --accent: #c8782f; /* burnt orange */
+  --highlight: #e1b878; /* light burnt orange */
+  --white: #fcfdfe; /* #fafcfd or */
+  --white-85: rgba(252, 253, 254, 0.85);
+  --white-75: rgba(252, 253, 254, 0.75);
+  --white-65: rgba(252, 253, 254, 0.65);
+  --black: #101d22; /*#0d181c or  */
+
+  /* brighter colors for dark theme */
+  --primary-light: #b1d0db; /* #81b3c5; */
+  --secondary-light: #8e2c3a;
+  --accent-light: #da9c63; /* #d38945; */
+  --highlight-light: #e7c692;
+
+  --text-primary: #122127; /* or #122127 */
+  --text-secondary: #f6e2e5; /* or #260c10 */
+  --text-accent: #78481c; /* or #5d3816; */
+  --text-highlight: #ae7927; /* #d29433 or */
+
   --shadow-primary: -1.5px 1px 0px var(--primary);
+  --shadow-secondary: -1.5px 1px 0px var(--secondary-light);
   --shadow-white: -1.5px 1px 0px var(--white);
 }
 
@@ -29,10 +36,22 @@ html {
 
 body {
   overflow-x: hidden;
-  color: var(--dark);
+  color: var(--black);
   font-size: 16px;
   font-family: "source-sans-3", "Trebuchet MS", "Helvetica", "ui-sans-serif",
-    "system-ui", "sans-serif";
+    "system-ui", "sans-sefooterrif";
+}
+
+nav {
+  background-color: var(--black);
+}
+
+nav a {
+  color: var(--white);
+}
+
+.mobileNav {
+  background: #192d35;
 }
 
 h1 {
@@ -72,10 +91,64 @@ a {
   letter-spacing: 1px;
 }
 
+header {
+  background: var(--primary);
+  color: var(--text-primary);
+}
+
+section {
+  background: var(--white);
+  color: var(--text-primary);
+}
+
+.bg-primary {
+  background: var(--primary);
+}
+
+.bg-secondary {
+  background: var(--secondary);
+}
+
+.bg-accent {
+  background: var(--accent);
+}
+
+.bg-black {
+  background: var(--black);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.text-dark {
+  color: var(--black);
+}
+
+.text-highlight {
+  color: var(--highlight);
+}
+
+.border-highlight {
+  border: 2px solid var(--highlight);
+}
+
+.border-primary {
+  border: 2px solid var(--primary);
+}
+
+.border-accent {
+  border: 2px solid var(--accent);
+}
+
 a:focus-visible,
 button:focus-visible {
   outline-offset: 4px;
-  outline-color: var(--dark);
+  outline-color: var(--black);
 }
 
 a:hover,
@@ -109,16 +182,16 @@ nav a,
   font-weight: 600;
 }
 
-.header-card {
-  max-width: 350px;
+header .card {
+  width: max-content;
 }
 
-.skill-icon {
-  filter: drop-shadow(2px 2px 0px var(--white));
+.header-image {
+  border: 2px solid var(--secondary-light);
 }
 
-.dark .skill-icon {
-  filter: none;
+.recent-posts {
+  background: var(--accent);
 }
 
 /* Post Content */
@@ -182,7 +255,7 @@ code.language-text {
 
 .dark .post strong,
 .dark .post-content strong {
-  color: var(--dark-secondary);
+  color: var(--secondary-light);
 }
 
 .post-content p,
@@ -201,53 +274,32 @@ code.language-text {
 }
 
 .dark .post-content p h3 {
-  border-left: 0.5rem solid var(--dark-secondary);
+  border-left: 0.5rem solid var(--secondary-lightdark-secondary);
   padding: 0.5rem 0.75rem;
 }
 
 .section-heading {
-  border-bottom: 18px solid var(--secondary);
-  line-height: 0.45;
+  border-bottom: 12px solid var(--secondary-light);
+  line-height: 0.65;
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
 }
 
 .dark .section-heading {
-  border-bottom: 18px solid var(--dark-secondary);
+  border-bottom: 18px solid var(--secondary-light);
   line-height: 0.45;
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
 }
 
 strong#name {
   text-shadow: 2px 2px 0px var(--primary);
-  text-decoration: 3px underline wavy var(--secondary);
+  text-decoration: 3px underline wavy var(--secondary-light);
   text-underline-offset: 8px;
 }
 
 .dark strong#name {
   text-shadow: 2px 2px 0px var(--dark-primary);
-  text-decoration: 3px underline wavy var(--dark-secondary);
+  text-decoration: 3px underline wavy var(--secondary-light);
   text-underline-offset: 8px;
-}
-
-.link-resume {
-  color: var(--dark);
-  font-weight: 700;
-  font-size: 20px;
-  text-shadow: -1.5px 0.5px 0px var(--primary);
-  text-underline-offset: 3px;
-}
-
-.dark.link-resume {
-  text-shadow: -2px 0.75px 0px var(--dark-primary);
-}
-
-.header-image {
-  border-radius: 50%;
-  box-shadow: -6px 0.5px 0px var(--primary);
-}
-
-.dark.header-image {
-  box-shadow: -6px 0.5px 0px var(--dark-primary);
 }
 
 .underline-offset {
@@ -270,20 +322,49 @@ strong#name {
   }
 }
 
+.skills {
+  background: var(--primary);
+  color: var(--text-primary);
+}
+
+.skills--card {
+  background: var(--white-75);
+  color: var(--text-primary);
+}
+
+.skills-card h3 {
+  text-shadow: -1.5px 1.5px 0px var(--accent);
+}
+
+.skill-icon {
+  color: var(--text-primary);
+}
 /* footer */
 footer {
-  background: var(--purple);
+  background: var(--secondary);
   color: var(--white);
 }
 
-footer small,
-footer a {
+footer em {
+  color: var(--white-85);
+}
+
+footer small {
   opacity: 0.9;
 }
 
 footer small a {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
+}
+
+footer a {
+  color: var(--white-75);
+}
+
+footer a:hover,
+footer a:focus {
+  color: var(--white);
 }
 
 /* certifications slider */
@@ -352,6 +433,10 @@ div.certs-carousel {
 }
 
 /* contact form styles */
+.form-wrapper {
+  background: var(--accent);
+  color: var(--white);
+}
 input {
   width: 250px;
   height: 32px;
@@ -366,7 +451,7 @@ textarea {
 form button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 1.75px solid var(--dark-primary);
+  outline: 1.75px solid var(--text-primary);
   outline-offset: 4px;
 }
 
@@ -422,7 +507,7 @@ textarea:focus-visible {
 }
 
 .label {
-  background-color: var(--dark);
+  background-color: var(--black);
   border-radius: 50px;
   cursor: pointer;
   display: flex;
@@ -472,7 +557,7 @@ ol {
 }
 
 .breadcrumbs ol li {
-  margin: 0 0.5rem 0.25rem 0.5rem;
+  margin: 0.5rem;
 }
 
 @media screen and (max-width: 768px) {

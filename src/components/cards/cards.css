@@ -1,9 +1,11 @@
 .card {
   box-shadow: -8px 8px 0px var(--primary);
+  border: 2px solid var(--secondary-light);
 }
 
 .dark.card {
-  box-shadow: -8px 8px 0px var(--dark-primary);
+  box-shadow: -8px 8px 0px var(--primary);
+  border: 2px solid var(--secondary-light);
 }
 
 .angled-bg {
@@ -16,6 +18,52 @@
 
 .card-post {
   width: 500px;
+}
+
+.card-post:not(:hover) {
+  border: 2px solid var(--secondary);
+}
+
+.card-post:hover,
+.card-post:focus {
+  border: 2px solid var(--highlight-light);
+}
+
+section .card-post:hover,
+section .card-post:focus {
+  border: 2px solid var(--accent);
+}
+
+.card-post h3 {
+  color: var(--white);
+  text-shadow: var(--shadow-secondary);
+}
+
+section .card-post h3 {
+  color: var(--text-primary);
+  text-shadow: var(--shadow-primary);
+}
+
+.card-post p {
+  color: var(--white-85);
+}
+
+section .card-post p {
+  color: var(--text-primary);
+}
+
+.card-post .tag {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+
+section .card-post .tag {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+.card-post .link {
+  color: var(--secondary);
 }
 
 @media (max-width: 768px) {
@@ -35,7 +83,7 @@
   position: relative;
   cursor: pointer;
   width: 350px;
-  height: 250px;
+  height: 225px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
@@ -60,6 +108,8 @@
   bottom: 0;
   position: absolute;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  background: var(--white);
+  padding: 1rem;
 }
 
 .card-project--content__header {
@@ -85,6 +135,11 @@
   display: none;
   opacity: 0;
   transition: all 0.5s 0.3s ease-in;
+}
+
+.card-project--content .tag {
+  border: 2px solid var(--secondary-light);
+  color: var(--secondary-light);
 }
 
 .card-project--content h3,
@@ -120,4 +175,25 @@
 .card-project:focus .card-project--content p {
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+.link-resume {
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 20px;
+  text-shadow: -1.5px 0.5px 0px var(--highlight);
+  text-underline-offset: 3px;
+}
+
+.dark.link-resume {
+  text-shadow: -2px 0.75px 0px var(--dark-primary);
+}
+
+.header-image {
+  border-radius: 50%;
+  box-shadow: -6px 0.5px 0px var(--primary);
+}
+
+.dark.header-image {
+  box-shadow: -6px 0.5px 0px var(--dark-primary);
 }

@@ -9,11 +9,11 @@ const Layout = ({ children, title, pageTitle }) => {
   return (
     <>
       <Seo title={title} />
-      <header className="bg-primary text-white">
+      <header>
         <h1 className="mx-auto px-6 py-16 text-5xl md:px-16">{pageTitle}</h1>
       </header>
       <main>
-        <section className="dark:text-white75 h-full w-full justify-center bg-white py-4 text-dark dark:bg-bgPrimary md:px-8">
+        <section className="h-full w-full justify-center py-4 md:px-8">
           <div className="mx-auto w-full">{children}</div>
         </section>
       </main>

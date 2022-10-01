@@ -1,6 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
+import LinkButton from "./buttons/LinkButton"
 import Post from "./cards/Post"
 
 const RecentPosts = () => {
@@ -25,8 +25,8 @@ const RecentPosts = () => {
 
   return (
     <>
-      <div className="relative h-48 w-full -skew-y-6 bg-dark dark:bg-bgDark lg:mt-8"></div>
-      <div className="-mt-20 h-full w-full bg-dark pt-64 pb-20 text-center dark:bg-bgDark">
+      <div className="overlay--skew relative h-48 w-full -skew-y-6 lg:mt-8"></div>
+      <div className="recent-posts -mt-20 h-full w-full pt-64 pb-20 text-center">
         <div className="mx-auto flex flex-col items-center justify-center">
           <h2 className="section-heading w-auto text-4xl font-bold tracking-wide text-white">
             Recent Posts
@@ -56,13 +56,13 @@ const RecentPosts = () => {
               </>
             )
           })}
-          <div className="mx-auto mt-8 mb-20 flex justify-center bg-dark dark:bg-bgDark">
-            <Link
-              to="/blog"
-              className="hover:text-large m-6 rounded bg-secondary py-2 px-4 font-mono font-semibold tracking-tight text-white shadow-md transition duration-500 hover:scale-105 hover:brightness-125"
-            >
-              View All
-            </Link>
+          <div className="mx-auto mt-8 mb-20 flex justify-center">
+            <LinkButton
+              link="/blog"
+              id="blog-link"
+              text="View All"
+              classes="button button--primary hover:text-large m-6 rounded px-4 font-mono font-semibold tracking-tight shadow-md transition duration-500 hover:scale-105 hover:brightness-125"
+            />
           </div>
         </div>
       </div>

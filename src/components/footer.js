@@ -10,7 +10,7 @@ import {
 
 function Footer() {
   return (
-    <footer className="flex h-full w-full flex-col items-center justify-between bg-secondary p-8 lg:flex-row">
+    <footer className="flex h-full w-full flex-col items-center justify-between p-8 lg:flex-row">
       <div className="flex w-full flex-col items-start px-2 text-left lg:flex-row lg:items-center lg:gap-8">
         <StaticImage
           className="h-20 w-20 rounded-full shadow-inner drop-shadow-md"
@@ -20,21 +20,19 @@ function Footer() {
           loading="eager"
         />
         <div className="my-4 flex w-auto max-w-full flex-col">
-          <h2 className="my-1 font-macho text-xl font-semibold tracking-widest text-white drop-shadow-md">
+          <h2 className="my-1 font-macho text-xl font-semibold tracking-widest drop-shadow-md">
             Nikki Peel
           </h2>
-          <em className="my-1 text-base dark:text-white85">
-            Front End Developer
-          </em>
+          <em className="my-1 text-base">Front End Developer</em>
           <a
             href="mailto:nikkipeel.dev@gmail.com"
-            className="my-1 font-macho text-base font-bold text-white underline-offset-2 hover:underline"
+            className="my-1 font-macho text-base font-bold underline-offset-2 hover:underline"
           >
             nikkipeel.dev@gmail.com
           </a>
           <a
             href="https://www.linkedin.com/in/nikkipeel"
-            className="my-2 flex items-center font-mono font-semibold uppercase leading-tight tracking-wide text-white underline-offset-2 drop-shadow-lg hover:scale-105 hover:underline"
+            className="my-2 flex items-center font-mono font-semibold uppercase leading-tight tracking-wide underline-offset-2 drop-shadow-lg hover:scale-105 hover:underline"
           >
             Download Resume
             <svg
@@ -58,28 +56,28 @@ function Footer() {
         <a
           aria-label="linked in"
           href="https://www.linkedin.com/in/nikkipeel"
-          className="mr-2 px-2 text-2xl text-white hover:scale-105"
+          className="mr-2 px-2 text-2xl hover:scale-105"
         >
           <FontAwesomeIcon className="h-8 w-8" icon={faLinkedin} />
         </a>
         <a
           aria-label="github"
           href="https://www.github.com/nikkipeel"
-          className="mr-2 px-2 text-2xl text-white hover:scale-105"
+          className="mr-2 px-2 text-2xl hover:scale-105"
         >
           <FontAwesomeIcon className="h-8 w-8" icon={faGithub} />
         </a>
         <a
           aria-label="codepen"
           href="https://www.codepen.io/nikki-peel"
-          className="mr-2 px-2 text-2xl text-white hover:scale-105"
+          className="mr-2 px-2 text-2xl hover:scale-105"
         >
           <FontAwesomeIcon className="h-8 w-8" icon={faCodepen} />
         </a>
         <a
           aria-label="blog"
           href="https://nikkipeel.netlify.app"
-          className="px-2 text-2xl text-white hover:scale-105"
+          className="px-2 text-2xl hover:scale-105"
         >
           <FontAwesomeIcon className="h-8 w-8" icon={faExternalLinkAlt} />
         </a>
