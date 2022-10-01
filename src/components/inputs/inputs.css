@@ -40,21 +40,21 @@
 .form-item__select--wrapper {
   display: flex;
   flex-wrap: wrap;
-  border: 1.5px solid var(--dark);
+  border: 1.5px solid var(--secondary);
   border-radius: 2px;
   padding: 0.35rem;
   width: 200px;
-  background-color: var(--whitest);
+  background-color: var(--white);
 }
 
 .dark .form-item__select--wrapper {
-  border: 1.5px solid var(--primary);
+  border: 1.5px solid var(--primary-light);
 }
 
 select {
   padding: 0 0.75rem;
   outline: none;
-  color: var(--dark);
+  color: var(--text-primary);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;

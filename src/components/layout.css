@@ -100,10 +100,6 @@ header {
   color: var(--text-primary);
 }
 
-article header {
-  background: transparent;
-}
-
 section {
   background: var(--white);
   color: var(--text-primary);
@@ -203,8 +199,21 @@ header .card {
 }
 
 /* Post Content */
-.post {
+.post,
+article header {
   width: 70vw;
+}
+
+article header {
+  background: transparent;
+  padding: 0 5rem;
+  margin: 0 auto;
+}
+
+article .category,
+section .tag {
+  border: 2px solid var(--accent);
+  color: var(--accent);
 }
 
 :not(pre) > code[class*="language-"],
@@ -213,7 +222,8 @@ code.language-text {
 }
 
 @media screen and (max-width: 1023px) {
-  .post {
+  .post,
+  article header {
     width: 90vw;
   }
 }
@@ -224,10 +234,12 @@ code.language-text {
 }
 
 @media (max-width: 768px) {
-  .post {
+  .post,
+  article header {
     width: 100%;
   }
-  .post-content {
+  .post-content,
+  article header {
     padding: 0 1rem;
   }
 }
@@ -453,6 +465,10 @@ input {
 textarea {
   height: 150px;
   width: 250px;
+}
+
+select {
+  outline: 2px solid var(--secondary);
 }
 
 .form-wrapper:focus-within,

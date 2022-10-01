@@ -82,14 +82,28 @@ const SinglePost = ({ data, location, post, pageContext }) => {
                     key={postSlug}
                     className=" mx-auto justify-center rounded-lg"
                   >
-                    <header className="relative">
-                      <p className="mt-4 text-center text-base font-semibold">
+                    <header className="relative px-6 text-left md:px-16">
+                      <p className="my-4 text-base font-semibold">
                         Published on{" "}
                         <strong>{singlePost.frontmatter.date}</strong>
                       </p>
+
+                      <div className="mb-4 flex gap-4">
+                        {singlePost.frontmatter.categories.map(category => (
+                          <>
+                            {category === "All" ? (
+                              ""
+                            ) : (
+                              <span className="category rounded-md border-2 p-1 text-sm font-semibold">
+                                {category}
+                              </span>
+                            )}
+                          </>
+                        ))}
+                      </div>
                     </header>
 
-                    <div className="post mx-auto max-w-none break-words py-8 leading-7 lg:px-4 xl:py-12">
+                    <div className="post mx-auto max-w-none break-words py-8 leading-7 xl:py-12">
                       <div
                         className="post-content text-lg"
                         dangerouslySetInnerHTML={{ __html: singlePost.html }}
@@ -102,9 +116,6 @@ const SinglePost = ({ data, location, post, pageContext }) => {
           )}
         </>
       ))}
-
-      <ScrollToTop showBelow={250}></ScrollToTop>
-      <Footer></Footer>
     </>
   )
 }
