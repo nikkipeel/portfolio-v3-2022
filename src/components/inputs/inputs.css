@@ -44,11 +44,12 @@
   border-radius: 2px;
   padding: 0.35rem;
   width: 200px;
-  background-color: var(--neutral-lightest);
+  background: var(--neutral-lightest);
 }
 
-.dark .form-item__select--wrapper {
-  border: 1.5px solid var(--primary-light);
+body.dark .form-item__select--wrapper {
+  border: 1.5px solid var(--d-accent);
+  background: var(--d-neutral-light);
 }
 
 select {
@@ -62,6 +63,14 @@ select {
   border: none;
   background: transparent;
   background-image: url("../../images/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+}
+
+body.dark select {
+  color: var(--neutral-light);
+  background: transparent;
+  background-image: url("../../images/chevron-down-dark.svg");
   background-repeat: no-repeat;
   background-position-x: 100%;
 }
@@ -83,6 +92,11 @@ select:active {
 .form-item__select--option {
   border: none;
   padding: 0.5rem;
+  background: var(--neutral-light);
+}
+
+body.dark .form-item__select--option {
+  background: var(--d-neutral-lightest);
 }
 
 select .form-item__select--option:hover,

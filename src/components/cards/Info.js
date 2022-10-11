@@ -36,32 +36,32 @@ function Info() {
         >
           Download Resume
         </a>
-        <div className="my-2 flex h-8 justify-center">
+        <div className="card--social-links my-2 flex h-8 justify-center">
           <a
             aria-label="linked in"
             href="https://www.linkedin.com/in/nikkipeel"
-            className="text-dark hover:text-secondary dark:text-darkSecondary my-auto mr-2 px-2 text-2xl hover:scale-105 dark:brightness-125"
+            className="text-dark hover:text-secondary my-auto mr-2 px-2 text-2xl hover:scale-105 dark:brightness-125"
           >
             <FontAwesomeIcon className="h-6 w-6" icon={faLinkedin} />
           </a>
           <a
             aria-label="github"
             href="https://www.github.com/nikkipeel"
-            className="text-dark hover:text-secondary dark:text-darkSecondary my-auto mr-2 px-2 text-2xl hover:scale-105 dark:brightness-125"
+            className="text-dark hover:text-secondary  my-auto mr-2 px-2 text-2xl hover:scale-105 dark:brightness-125"
           >
             <FontAwesomeIcon className="h-6 w-6" icon={faGithub} />
           </a>
           <a
             aria-label="codepen"
             href="https://www.codepen.io/nikki-peel"
-            className="text-dark hover:text-secondary dark:text-darkSecondary my-auto mr-2 px-2 text-2xl  hover:scale-105 dark:brightness-125"
+            className="text-dark hover:text-secondary my-auto mr-2 px-2 text-2xl  hover:scale-105 dark:brightness-125"
           >
             <FontAwesomeIcon className="h-6 w-6" icon={faCodepen} />
           </a>
           <a
             aria-label="blog"
             href="https://nikkipeel.netlify.app"
-            className="text-dark hover:text-secondary dark:text-darkSecondary my-auto px-2 text-2xl hover:scale-105 dark:brightness-125"
+            className="text-dark hover:text-secondary my-auto px-2 text-2xl hover:scale-105 dark:brightness-125"
           >
             <FontAwesomeIcon className="h-6 w-6" icon={faExternalLinkAlt} />
           </a>

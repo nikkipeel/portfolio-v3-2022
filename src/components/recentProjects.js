@@ -38,7 +38,7 @@ const RecentProjects = () => {
   return (
     <div
       id="projects"
-      className="recent-projects bg-primary dark:bg-bgPrimary flex h-full w-full flex-col items-center justify-center py-20"
+      className="recent-projects flex h-full w-full flex-col items-center justify-center py-20"
     >
       <h2 className="section-heading w-auto text-center text-3xl font-bold tracking-wide text-white">
         Recent Projects
@@ -55,7 +55,7 @@ const RecentProjects = () => {
             />
           ))}
       </div>
-      <div className="bg-primary dark:bg-bgPrimary mx-auto flex justify-center pt-8 pb-20">
+      <div className="mx-auto flex justify-center pt-8 pb-20">
         <LinkButton
           link="/projects"
           id="projects-link--home"

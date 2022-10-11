@@ -103,10 +103,7 @@ const Certs = () => {
 
   return (
     <>
-      <div
-        id="certs"
-        className="h-full w-full bg-primary py-32 text-center dark:bg-bgPrimary"
-      >
+      <div id="certs" className="h-full w-full py-32 text-center">
         <div className="flex flex-col items-center justify-center text-center">
           <h1 className="section-heading w-auto text-3xl font-bold tracking-wide text-white">
             Certifications
@@ -180,7 +177,7 @@ const Certs = () => {
           </div>
         </Slider>
       </div>
-      <div className="relative -mt-60 -mb-20 h-36 w-full skew-y-[5deg] bg-primary dark:bg-bgPrimary lg:-mt-80 lg:h-48"></div>
+      <div className="relative -mt-60 -mb-20 h-36 w-full skew-y-[5deg] lg:-mt-80 lg:h-48"></div>
     </>
   )
 }

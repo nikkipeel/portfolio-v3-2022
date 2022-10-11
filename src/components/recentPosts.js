@@ -25,8 +25,8 @@ const RecentPosts = () => {
 
   return (
     <>
-      <div className="overlay--skew relative h-48 w-full -skew-y-6 lg:mt-8"></div>
-      <div className="recent-posts -mt-20 h-full w-full pt-64 pb-20 text-center">
+      {/* <div className="overlay--skew relative h-48 w-full -skew-y-6 lg:mt-8"></div> */}
+      <div className="recent-posts h-full w-full pt-64 pb-20 text-center">
         <div className="mx-auto flex flex-col items-center justify-center">
           <h2 className="section-heading w-auto text-4xl font-bold tracking-wide text-white">
             Recent Posts
