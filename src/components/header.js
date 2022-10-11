@@ -7,7 +7,7 @@ import LazyFade from "../animations/lazyFade"
 function Header() {
   return (
     <>
-      <header className="text-dark dark:bg-bgDark flex flex-col bg-white py-16 dark:text-white xl:flex-row">
+      <header className="bg-light flex flex-col py-16 xl:flex-row">
         <Info />
 
         <div className="mx-auto mt-12 flex flex-col justify-center p-4 text-center xl:mt-0 xl:mr-48 xl:w-1/2 xl:items-end xl:p-0 xl:text-right">

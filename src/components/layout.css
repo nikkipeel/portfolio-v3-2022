@@ -7,18 +7,31 @@
   --secondary: #66202a; /* maroon */
   --accent: #c8782f; /* burnt orange */
   --highlight: #e1b878; /* light burnt orange */
-  --white: #fcfdfe; /* #fafcfd or */
-  --white-85: rgba(252, 253, 254, 0.85);
-  --white-75: rgba(252, 253, 254, 0.75);
-  --white-65: rgba(252, 253, 254, 0.65);
-  --black: #101d22; /*#0d181c or  */
+  --neutral-dark: #101d22;
+  --neutral-light: #faf3e9;
+  --neutral-lightest: #fcfdfe;
 
-  /* brighter colors for dark theme */
+  /* --white-85: rgba(252, 253, 254, 0.85);
+  --white-75: rgba(252, 253, 254, 0.75);
+  --white-65: rgba(25highli2, 253, 254, 0.65); */
+
+  /* dark theme */
+  /* lightened 10% then desaturated 20% */
+  --d-primary: #8ab1bf;
+  --d-secondary: #7a323c;
+  --d-accent: #c3864e;
+  --d-highlight: #dabd8e;
+
+  /*
+  --d-text-primary: 
+  --d-text-secondary:
+  --d-text-accent:
+  --d-text-highlight:
+*/
   --primary-light: #b1d0db; /* #81b3c5; */
   --secondary-light: #8e2c3a;
   --accent-light: #da9c63; /* #d38945; */
   --highlight-light: #e7c692;
-  --highlight-lighter: #faf3e9;
 
   --text-primary: #122127; /* or #122127 */
   --text-secondary: #f6e2e5; /* or #260c10 */
@@ -27,7 +40,7 @@
 
   --shadow-primary: -1.5px 1px 0px var(--primary);
   --shadow-secondary: -1.5px 1px 0px var(--secondary-light);
-  --shadow-white: -1.5px 1px 0px var(--white);
+  --shadow-white: -1.5px 1px 0px var(--neutral-lightest);
 }
 
 html {
@@ -44,14 +57,14 @@ body {
 }
 
 main section {
-  background: var(--highlight-lighter);
+  background: var(--neutral-light);
 }
 nav {
-  background-color: var(--black);
+  background-color: var(--neutral-dark);
 }
 
 nav a {
-  color: var(--white);
+  color: var(--neutral-lightest);
 }
 
 .mobileNav {
@@ -101,7 +114,7 @@ header {
 }
 
 section {
-  background: var(--white);
+  background: var(--neutral-light);
   color: var(--text-primary);
 }
 
@@ -117,8 +130,16 @@ section {
   background: var(--accent);
 }
 
-.bg-black {
-  background: var(--black);
+.bg-dark {
+  background: var(--neutral-dark);
+}
+
+.bg-light {
+  background: var(--neutral-light);
+}
+
+.bg-lightest {
+  background: var(--neutral-lightest);
 }
 
 .text-secondary {
@@ -130,7 +151,7 @@ section {
 }
 
 .text-dark {
-  color: var(--black);
+  color: var(--neutral-dark);
 }
 
 .text-highlight {
@@ -259,13 +280,25 @@ code.language-text {
 
 .post-content a {
   color: var(--secondary);
-  text-underline-offset: 1.5px;
+  font-weight: 600;
+  font-size: inherit;
+  transition: all 0.4s ease-in-out;
+  background: linear-gradient(to right, var(--primary), var(--primary)),
+    linear-gradient(
+      to right,
+      var(--primary) 20%,
+      var(--highlight),
+      var(--accent),
+      var(--secondary)
+    );
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: all 0.4s ease-in-out;
 }
 
-.post a:hover,
 .post-content a:hover {
-  filter: brightness(115%);
-  text-underline-offset: 3px;
+  background-size: 0 0.1em, 100% 0.1em;
 }
 
 .dark .post a,
@@ -294,7 +327,7 @@ code.language-text {
 
 .dark h3,
 .dark .post-content p h3 {
-  color: var(--white);
+  color: var(--neutral-lightest);
   text-shadow: none;
 }
 
@@ -338,7 +371,7 @@ strong#name {
 
 .fa-times,
 .fa-bars {
-  color: var(--white) !important;
+  color: var(--neutral-lightest) !important;
 }
 
 @media screen and (min-width: 769px) {
@@ -367,11 +400,12 @@ strong#name {
 /* footer */
 footer {
   background: var(--secondary);
-  color: var(--white);
+  color: var(--neutral-lightest);
 }
 
 footer em {
-  color: var(--white-85);
+  color: var(--neutral-lightest);
+  opacity: 0.85;
 }
 
 footer small {
@@ -389,7 +423,7 @@ footer a {
 
 footer a:hover,
 footer a:focus {
-  color: var(--white);
+  color: var(--neutral-lightest);
 }
 
 /* certifications slider */
@@ -450,7 +484,7 @@ div.certs-carousel {
 
 .right-arrow svg,
 .left-arrow svg {
-  fill: var(--white);
+  fill: var(--neutral-lightest);
 }
 
 .arrows button {
@@ -460,7 +494,7 @@ div.certs-carousel {
 /* contact form styles */
 .form-wrapper {
   background: var(--accent);
-  color: var(--white);
+  color: var(--neutral-lightest);
 }
 input {
   width: 250px;
@@ -518,7 +552,7 @@ textarea:focus-visible {
   border-radius: 0 0 3px 3px;
   padding: 6px 10px;
   background-color: var(--secondary);
-  color: var(--white);
+  color: var(--neutral-lightest);
 }
 
 @media screen and (max-width: 768px) {
@@ -536,7 +570,7 @@ textarea:focus-visible {
 }
 
 .label {
-  background-color: var(--black);
+  background-color: var(--neutral-dark);
   border-radius: 50px;
   cursor: pointer;
   display: flex;
@@ -554,7 +588,7 @@ textarea:focus-visible {
   display: flex;
   align-items: center;
   background-color: var(--secondary);
-  color: var(--white);
+  color: var(--neutral-lightest);
   padding-left: 0;
 }
 
@@ -580,7 +614,7 @@ ol {
   flex-wrap: wrap;
   align-items: center;
   background-color: var(--secondary);
-  color: var(--white);
+  color: var(--neutral-lightest);
   padding: 1rem;
   max-height: 100%;
 }

@@ -11,7 +11,7 @@ import "./cards.css"
 
 function Info() {
   return (
-    <div className="mx-auto flex flex-col items-center justify-center bg-white xl:ml-36 xl:w-1/2">
+    <div className="mx-auto flex flex-col items-center justify-center xl:ml-36 xl:w-1/2">
       <StaticImage
         className="header-image h-60 w-52 shadow-inner"
         src="../../images/selfie.jpg"

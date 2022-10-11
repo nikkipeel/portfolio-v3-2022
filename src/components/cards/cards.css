@@ -45,7 +45,8 @@ section .card-post h3 {
 }
 
 .card-post p {
-  color: var(--white-85);
+  color: var(--neutral-lightest);
+  opacity: 0.85;
 }
 
 section .card-post p {
@@ -108,7 +109,7 @@ section .card-post .tag {
   bottom: 0;
   position: absolute;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-  background: var(--white);
+  background: var(--neutral-lightest);
   padding: 1rem;
 }
 

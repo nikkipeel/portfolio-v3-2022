@@ -44,7 +44,7 @@
   border-radius: 2px;
   padding: 0.35rem;
   width: 200px;
-  background-color: var(--white);
+  background-color: var(--neutral-lightest);
 }
 
 .dark .form-item__select--wrapper {
@@ -90,7 +90,7 @@ select .form-item__select--option:checked {
   background: var(--secondary);
 
   box-shadow: 0 0 10px 100px var(--secondary) inset;
-  color: var(--white);
+  color: var(--neutral-lightest);
 }
 
 select:focus > .form-item__select--option:checked {

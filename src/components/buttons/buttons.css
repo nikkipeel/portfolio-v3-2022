@@ -4,7 +4,7 @@
 
 .button--primary {
   background: var(--text-primary);
-  color: var(--white);
+  color: var(--neutral-lightest);
   border: none;
 }
 /* .button-primary:hover,
@@ -16,7 +16,7 @@
 
 .button--secondary {
   background: var(--secondary);
-  color: var(--white);
+  color: var(--neutral-lightest);
   border: none;
 }
 /* .button--secondary:hover,
@@ -34,12 +34,12 @@
 .button--secondary__outline:hover,
 .button--secondary__outline:focus {
   background: var(--secondary);
-  color: var(--white);
+  color: var(--neutral-lightest);
   border: 2px solid var(--secondary);
 }
 
 .button--scroll {
-  color: var(--white);
+  color: var(--neutral-lightest);
   padding: 0;
 }
 
