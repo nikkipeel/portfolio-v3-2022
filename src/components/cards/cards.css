@@ -131,12 +131,16 @@ body.dark .card-project {
   bottom: 0;
   position: absolute;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-  background: var(--neutral-lightest);
+  background: var(--neutral-light);
   padding: 1rem;
 }
 
+.page--projects .card-project--content {
+  background: var(--neutral-lightest);
+}
+
 body.dark .card-project--content {
-  background: var(--d-neutral-lightest);
+  background: var(--neutral-dark);
   color: var(--neutral-light);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }

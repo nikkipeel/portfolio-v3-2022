@@ -74,7 +74,7 @@ const ProjectsPage = ({ data, projects, location, pageContext }) => {
       </div>
       <Layout pageTitle="Recent Projects" id="works">
         <Seo title="Works" />
-        <div className="flex w-full flex-col items-center justify-center pb-12">
+        <div className="page--projects flex w-full flex-col items-center justify-center pb-12">
           <Select
             className="hover:outline-none focus:outline-none"
             name="project filter"

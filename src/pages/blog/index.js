@@ -61,7 +61,7 @@ const BlogPage = ({ data, location, pageContext }) => {
           getProps={isPartiallyActive}
         />
       </div>
-      <Layout pageTitle="Blog">
+      <Layout className="page--blog" pageTitle="Blog">
         <Seo title="Blog" />
         <div className="mx-auto flex flex-col md:p-8">
           <div className="mx-auto mb-24 flex flex-col justify-center gap-4 md:flex-row md:flex-wrap md:gap-8">
