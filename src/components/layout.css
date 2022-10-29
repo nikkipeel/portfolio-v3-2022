@@ -55,8 +55,8 @@ main section {
   background: var(--neutral-light);
 }
 
-.dark main section {
-  background: var(--neutral-dark);
+body.dark main section {
+  background: var(--neutral-darkest);
 }
 
 nav {
@@ -594,117 +594,6 @@ div.certs-carousel {
 
 .arrows button {
   padding: 8px;
-}
-
-/* contact form styles */
-.form-wrapper {
-  background: var(--accent);
-  color: var(--neutral-lightest);
-}
-
-body.dark .form-wrapper {
-  background: transparent;
-  border: 2px solid var(--d-accent);
-  color: var(--d-accent);
-}
-input {
-  width: 250px;
-  height: 32px;
-}
-
-textarea {
-  height: 150px;
-  width: 250px;
-}
-
-select {
-  outline: 2px solid var(--secondary);
-}
-
-.form-wrapper:focus-within,
-form button:focus-visible,
-input:focus-visible,
-textarea:focus-visible {
-  outline: 1.75px solid var(--text-primary);
-  outline-offset: 4px;
-}
-
-body.dark .form-wrapper:focus-within,
-form button:focus-visible,
-input:focus-visible,
-textarea:focus-visible {
-  outline: 1.75px solid var(--d-highlight);
-  outline-offset: 4px;
-}
-
-@media screen and (max-width: 768px) {
-  input {
-    width: 100%;
-  }
-  textarea {
-    width: 100%;
-  }
-}
-
-/* Copy code button in markdown code blocks */
-.button-container--code {
-  display: flex;
-  position: relative;
-  top: 10px;
-  height: 100%;
-  margin: 0 1rem 0 0;
-  z-index: 40;
-}
-
-@media (max-width: 1280px) {
-  .button-container--code {
-    top: 9px;
-  }
-}
-
-.button-code {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 2px;
-  width: auto;
-  border-radius: 0 0 3px 3px;
-  padding: 6px 10px;
-  background-color: var(--secondary);
-  color: var(--neutral-lightest);
-}
-
-body.dark .button-code {
-  background-color: var(--d-secondary);
-  color: var(--neutral-lightest);
-}
-
-@media screen and (max-width: 768px) {
-  .button-code {
-    top: 0;
-  }
-}
-
-/* Light/dark theme toggle */
-.checkbox {
-  opacity: 0;
-  top: 5px;
-  right: 5px;
-  position: absolute;
-}
-
-.label {
-  background-color: var(--neutral-dark);
-  border-radius: 50px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px;
-  position: relative;
-  height: 18px;
-  width: 48px;
-  transform: scale(1.25);
 }
 
 /* Breadcrumbs */
