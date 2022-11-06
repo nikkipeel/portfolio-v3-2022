@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import LinkButton from "./buttons/LinkButton"
+import ArrowButton from "./buttons/ArrowButton"
 import Post from "./cards/Post"
 
 const RecentPosts = () => {
@@ -57,11 +57,17 @@ const RecentPosts = () => {
             )
           })}
           <div className="mx-auto mt-8 mb-20 flex justify-center">
-            <LinkButton
+            {/* <LinkButton
               link="/blog"
               id="blog-link"
-              text="View All"
-              classes="button button--secondary hover:text-large m-6 rounded px-4 font-mono font-semibold tracking-tight shadow-md transition duration-500 hover:scale-105 hover:brightness-125"
+              text="Visit Blog"
+              classes="button button--secondary button--with-arrow  m-6 font-mono font-semibold tracking-tight shadow-md transition  hover:brightness-125"
+            /> */}
+            <ArrowButton
+              link="/blog"
+              id="blog-link"
+              text="Visit Blog"
+              classes="button button--secondary button--with-arrow  m-6 font-mono font-semibold tracking-tight shadow-md transition  hover:brightness-125"
             />
           </div>
         </div>

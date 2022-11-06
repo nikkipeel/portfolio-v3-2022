@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Project from "./cards/Project"
-import LinkButton from "./buttons/LinkButton"
+import ArrowButton from "./buttons/ArrowButton"
 
 const RecentProjects = () => {
   const data = useStaticQuery(graphql`
@@ -56,11 +56,11 @@ const RecentProjects = () => {
           ))}
       </div>
       <div className="mx-auto flex justify-center pt-8 pb-20">
-        <LinkButton
+        <ArrowButton
           link="/projects"
           id="projects-link--home"
-          text="View All"
-          classes="button button--primary hover:text-large m-6 rounded py-2 px-4 font-mono font-semibold tracking-tight text-white shadow-md transition duration-500 hover:scale-105 hover:brightness-125"
+          text="View All Projects"
+          classes="button button--primary button--with-arrow font-mono font-semibold tracking-tight text-white shadow-md hover:brightness-125"
         />
       </div>
     </div>

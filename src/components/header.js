@@ -18,7 +18,7 @@ function Header() {
                 Nikki
               </strong>
             </h1>
-            <p className="dark:text-white65 px-8 lg:p-0">
+            <p className="dark:text-white65 px-8">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
               itaque iusto nulla vel necessitatibus ipsa in cupiditate, ab fugit
               sed, sit blanditiis mollitia qui sapiente odio molestiae ratione
@@ -33,7 +33,7 @@ function Header() {
                 link="/projects"
                 id="projects-link--home-header"
                 text="View Portfolio"
-                classes="button--secondary hover:text-large rounded p-2 font-mono font-semibold tracking-tight shadow-md transition duration-500 hover:scale-125 hover:brightness-125 dark:brightness-125"
+                classes="button button--secondary fill-right font-mono font-semibold tracking-tight shadow-md"
               />
             </LazySlide>
             <LazySlide>
@@ -41,7 +41,7 @@ function Header() {
                 link="/contact"
                 id="contact-link--home-header"
                 text="Contact Me"
-                classes="button--secondary__outline hover:text-large rounded p-2 font-mono font-semibold font-semibold tracking-tight shadow-md transition duration-500 hover:scale-125 dark:brightness-125"
+                classes="button button--secondary__outline font-mono font-semibold tracking-tight shadow-md"
               />
             </LazySlide>
           </div>
