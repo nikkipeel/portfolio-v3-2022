@@ -1,12 +1,13 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import {
   faCodepen,
   faGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
+import resume from "../../images/resume-nikkipeel.pdf"
 import "./cards.css"
 
 function Info() {
@@ -23,15 +24,8 @@ function Info() {
         <h1 className="dark:text-white85 text-xl font-bold">Nikki Peel</h1>
         <em className="dark:text-white65 text-base">Front End Developer</em>
         <a
-          href="mailto:nikkipeel.dev@gmail.com"
-          className="dark:text-white85 p-1 font-macho text-base font-bold hover:underline"
-          style={{ textUnderlineOffset: "3px" }}
-        >
-          nikkipeel.dev@gmail.com
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/nikkipeel"
+          href={resume}
+          target="_blank"
           className="link-resume text-dark p-1 font-mono font-bold uppercase hover:scale-105 hover:underline  dark:text-white"
         >
           Download Resume
@@ -59,11 +53,11 @@ function Info() {
             <FontAwesomeIcon className="h-6 w-6" icon={faCodepen} />
           </a>
           <a
-            aria-label="blog"
-            href="https://nikkipeel.netlify.app"
+            aria-label="email"
+            href="mailto:nikkipeel.dev@gmail.com"
             className="text-dark hover:text-secondary my-auto px-2 text-2xl hover:scale-105 dark:brightness-125"
           >
-            <FontAwesomeIcon className="h-6 w-6" icon={faExternalLinkAlt} />
+            <FontAwesomeIcon className="h-6 w-6" icon={faEnvelope} />
           </a>
         </div>
       </div>

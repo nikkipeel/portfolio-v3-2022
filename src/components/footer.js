@@ -1,12 +1,14 @@
 import React from "react"
+import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import {
   faCodepen,
   faGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
+import resume from "../images/resume-nikkipeel.pdf"
 
 function Footer() {
   return (
@@ -25,13 +27,8 @@ function Footer() {
           </h2>
           <em className="my-1 text-base">Front End Developer</em>
           <a
-            href="mailto:nikkipeel.dev@gmail.com"
-            className="my-1 font-macho text-base font-bold underline-offset-2 hover:underline"
-          >
-            nikkipeel.dev@gmail.com
-          </a>
-          <a
-            href="https://www.linkedin.com/in/nikkipeel"
+            href={resume}
+            target="_blank"
             className="my-2 flex items-center font-mono font-semibold uppercase leading-tight tracking-wide underline-offset-2 drop-shadow-lg hover:scale-105 hover:underline"
           >
             Download Resume
@@ -75,11 +72,11 @@ function Footer() {
           <FontAwesomeIcon className="h-8 w-8" icon={faCodepen} />
         </a>
         <a
-          aria-label="blog"
-          href="https://nikkipeel.netlify.app"
+          aria-label="email"
+          href="mailto:nikkipeel.dev@gmail.com"
           className="px-2 text-2xl hover:scale-105"
         >
-          <FontAwesomeIcon className="h-8 w-8" icon={faExternalLinkAlt} />
+          <FontAwesomeIcon className="h-8 w-8" icon={faEnvelope} />
         </a>
       </div>
     </footer>

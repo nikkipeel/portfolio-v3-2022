@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { navigate } from "gatsby"
-import Button from "./buttons/Button"
+import ArrowButton from "./buttons/ArrowButton"
 import TextInput from "./inputs/TextInput"
 import TextArea from "./inputs/TextArea"
 
@@ -52,7 +52,7 @@ export default function Form() {
           </label>
         </p>
 
-        <div className="gap:0 mx-auto grid grid-cols-1 items-center justify-around md:grid-cols-2 md:gap-2 lg:gap-4">
+        <div className="gap:0 mx-auto grid grid-cols-1 justify-around md:grid-cols-2 md:gap-2 lg:gap-4">
           <div className="form-item md:mx-auto">
             <TextInput
               label="First Name:"
@@ -82,11 +82,11 @@ export default function Form() {
             />
           </div>
         </div>
-        <Button
+        <ArrowButton
           id="submit-form"
           type="submit"
-          text="Send"
-          classes="button button--primary mx-auto mt-4 flex justify-center rounded py-3 px-12 font-mono font-semibold uppercase shadow-md transition duration-500 hover:brightness-125"
+          text="Submit"
+          classes="button button--primary button--with-arrow font-mono font-semibold tracking-tight text-white shadow-md hover:brightness-125 mt-4 mx-auto"
         />
       </form>
     </div>

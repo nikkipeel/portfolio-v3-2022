@@ -25,7 +25,6 @@ const RecentPosts = () => {
 
   return (
     <>
-      {/* <div className="overlay--skew relative h-48 w-full -skew-y-6 lg:mt-8"></div> */}
       <div className="recent-posts h-full w-full pt-64 pb-20 text-center">
         <div className="mx-auto flex flex-col items-center justify-center">
           <h2 className="section-heading w-auto text-4xl font-bold tracking-wide text-white">
@@ -57,12 +56,6 @@ const RecentPosts = () => {
             )
           })}
           <div className="mx-auto mt-8 mb-20 flex justify-center">
-            {/* <LinkButton
-              link="/blog"
-              id="blog-link"
-              text="Visit Blog"
-              classes="button button--secondary button--with-arrow  m-6 font-mono font-semibold tracking-tight shadow-md transition  hover:brightness-125"
-            /> */}
             <ArrowButton
               link="/blog"
               id="blog-link"
