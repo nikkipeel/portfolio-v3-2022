@@ -7,27 +7,33 @@ import LazyFade from "../animations/lazyFade"
 function Header() {
   return (
     <>
-      <header className="bg-light flex flex-col py-16 xl:flex-row">
+      <header className="bg-light flex flex-col py-16 lg:flex-row">
         <Info />
 
-        <div className="mx-auto mt-12 flex flex-col justify-center p-4 text-center xl:mt-0 xl:mr-48 xl:w-1/2 xl:items-end xl:p-0 xl:text-right">
+        <div className="mx-auto mt-12 flex flex-col justify-center p-4 text-center lg:mt-0 lg:mr-48 lg:w-1/2 lg:items-end lg:p-0 lg:text-right">
           <LazyFade>
-            <h1 className="mb-8 p-4 text-xl font-semibold xl:p-0">
+            <h1 className="mb-8 p-4 text-xl font-semibold lg:p-0">
               Hi, my name is{" "}
-              <strong id="name" className="p-4 text-5xl">
+              <strong id="name" className="p-4 text-5xl lg:pl-4 lg:pr-0">
                 Nikki
               </strong>
             </h1>
-            <p className="dark:text-white65 px-8">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
-              itaque iusto nulla vel necessitatibus ipsa in cupiditate, ab fugit
-              sed, sit blanditiis mollitia qui sapiente odio molestiae ratione
-              consequuntur laboriosam quibusdam eos. Unde odio harum soluta
-              totam, ad minima id voluptates necessitatibus labore voluptate?
-              Velit nihil laboriosam atque similique sunt?
+            <p className="dark:text-white65 px-8 lg:px-0">
+              I'm a Front End Developer from Michigan and love creating
+              user-friendly, responsive websites. Currently, I'm working for{" "}
+              <a
+                href="https://www.gravityworksdesign.com"
+                target="_blank"
+                className="gradient-link text-base"
+              >
+                Gravity Works Design &amp; Development
+              </a>{" "}
+              - contributing to and building out impactful websites for a
+              variety of large scale clients. Browse my recent projects, read
+              blog posts, or reach out and we can discuss all things web-dev.
             </p>
           </LazyFade>
-          <div className="mx-auto mt-8 flex flex-col items-center justify-center gap-12 p-8 lg:flex-row lg:justify-end xl:mx-0 xl:p-0">
+          <div className="mx-auto mt-8 flex flex-col items-center justify-center gap-12 p-8 lg:mx-0 lg:flex-row lg:justify-end lg:p-0">
             <LazySlide>
               <LinkButton
                 link="/projects"

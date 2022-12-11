@@ -1,11 +1,11 @@
 ---
 slug: "flash-cards"
 title: "Flash Cards"
-description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque molestias iste ipsa ab deserunt eveniet dolorem facere consequatur exercitationem necessitatibus. In, ipsa corporis totam beatae culpa quis aliquid delectus incidunt"
+description: "Create flashcards with this application built with Javascript and Bootstrap CSS. Flashcards are saved for future use with LocalStorage"
 tags: ["Javascript", "Bootstrap", "All"]
 image: ./images/flashcards.png
-alt: "React Colors"
+alt: "Flash cards"
 link: "https://nikkipeel.github.io/flash-cards/"
-repo: ""
+repo: "https://github.com/nikkipeel/flash-cards"
 featured: true
 ---

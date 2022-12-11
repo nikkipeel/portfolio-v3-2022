@@ -2,7 +2,7 @@ import React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 import Layout from "../components/layout"
-import NavMenu from "../components/menu"
+import NavMenu from "../components/menu/menu"
 
 const Project = ({ pageContext }) => {
   const {
@@ -85,16 +85,10 @@ const Project = ({ pageContext }) => {
           </div>
           <p className="my-4 px-2 text-lg">{description}</p>
           <div className="my-4 flex gap-8 px-2">
-            <a
-              href={link}
-              className="font-mono text-lg font-semibold leading-tight underline"
-            >
+            <a href={link} className="gradient-link font-mono leading-tight">
               Visit Site
             </a>
-            <a
-              href={repo}
-              className="font-mono text-lg font-semibold leading-tight underline"
-            >
+            <a href={repo} className="gradient-link font-mono leading-tight">
               View Code
             </a>
           </div>

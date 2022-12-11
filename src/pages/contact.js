@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 import Seo from "../components/seo"
-import NavMenu from "../components/menu"
+import NavMenu from "../components/menu/menu"
 import Layout from "../components/layout"
 import Form from "../components/form"
 import "../components/layout.css"

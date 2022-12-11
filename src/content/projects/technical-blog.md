@@ -1,11 +1,11 @@
 ---
 slug: "technical-blog"
 title: "Technical Blog"
-description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque molestias iste ipsa ab deserunt eveniet dolorem facere consequatur exercitationem necessitatibus. In, ipsa corporis totam beatae culpa quis aliquid delectus incidunt"
+description: "Read about some of my favorite Web resources and enjoy my posts on this technical blog built with GatsbyJS, Markdown, and TailwindCSS."
 tags: ["Gatsby", "Tailwind", "Markdown", "All"]
 image: ./images/blog.png
 alt: "Technical Blog"
 link: "https://nikkipeel.netlify.app"
-repo: ""
+repo: "https://github.com/nikkipeel/gatsby-blog"
 featured: true
 ---

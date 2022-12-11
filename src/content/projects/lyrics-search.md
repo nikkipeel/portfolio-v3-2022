@@ -1,11 +1,11 @@
 ---
 slug: "lyrics-search"
 title: "Lyrics Search"
-description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque molestias iste ipsa ab deserunt eveniet dolorem facere consequatur exercitationem necessitatibus. In, ipsa corporis totam beatae culpa quis aliquid delectus incidunt"
+description: "Search lyrics to your favorite songs with this website built with Javascript and Bootstrap CSS. Unfortunately, the API this project uses is no longer available"
 tags: ["Javascript", "Bootstrap", "API", "All"]
 image: ./images/lyricssearch.png
 alt: "Lyrics Search"
 link: "https://nikkipeel.github.io/lyrics-search"
-repo: ""
+repo: "https://github.com/nikkipeel/lyrics-search"
 featured: true
 ---

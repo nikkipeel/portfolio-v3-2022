@@ -1,8 +1,8 @@
 ---
 slug: "gatsby-space-x"
 title: "SpaceX API"
-description: "Information about SpaceX, rockets, and launches using the SpaceX API. Features include a countdown for the next launch, embedded video of the most recent launch, and a details page for each launch."
-tags: ["Gatsby", "Tailwind", "API", "All"]
+description: "This Gatsby site utilizes the SpaceX API and  features information about SpaceX, rockets, and launches. Watch the most recent SpaceX launch or find out how long until the next launch by watching the countdown. There is a detailed page available for each launch."
+tags: ["Gatsby", "React", "API", "All"]
 image: ./images/spacex.png
 alt: "Gatsby SpaceX"
 link: "https://gatsby-spacex-api.netlify.app"

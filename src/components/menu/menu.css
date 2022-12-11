@@ -1,0 +1,100 @@
+nav {
+  background-color: var(--neutral-darker);
+}
+
+body.dark nav {
+  background-color: var(--neutral-dark);
+}
+
+.mobileNav {
+  background: var(--neutral-darker);
+}
+
+body.dark .mobileNav {
+  background: var(--neutral);
+}
+
+nav:not(.breadcrumb, .bm-item-list) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+nav h2,
+.theme {
+  margin: 0 auto;
+}
+
+.bm-burger-button {
+  position: absolute;
+  width: 32px;
+  height: 28px;
+  right: 36px;
+  top: 40px;
+}
+
+@media screen and (min-width: 468px) {
+  .bm-burger-button {
+    top: 25px;
+  }
+}
+
+.bm-cross-button {
+  top: 25px;
+  right: 24px;
+  height: 28px;
+  width: 28px;
+}
+
+.bm-cross {
+  height: 28px;
+  background: var(--neutral-lightest);
+}
+nav {
+  color: var(--neutral-light);
+}
+
+.nav-links {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .nav-links {
+    margin: 0 3rem;
+  }
+}
+
+nav:not(.breadcrumb) a,
+a.bm-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  color: var(--neutral-light);
+  font-size: var(--text-base);
+  font-family: macho, Tahoma, Verdana, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  transition: 0.5s ease;
+}
+
+@media screen and (min-width: 1280px) {
+  nav:not(.breadcrumb) a,
+  a.bm-item {
+    margin: 0 3rem;
+  }
+}
+
+a.bm-item {
+  padding: 1rem;
+}
+
+.menu-active,
+nav a:hover,
+nav a:focus,
+a.bm-item:hover,
+a.bm-item:focus {
+  color: var(--neutral-lightest);
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}

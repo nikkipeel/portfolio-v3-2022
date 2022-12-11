@@ -1,11 +1,11 @@
 ---
 slug: "expense-tracker"
 title: "Expense Tracker"
-description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque molestias iste ipsa ab deserunt eveniet dolorem facere consequatur exercitationem necessitatibus. In, ipsa corporis totam beatae culpa quis aliquid delectus incidunt"
-tags: ["React", "Bootstrap", "All"]
+description: "Track your income and expenses with this simple application built with Javascript and Bootstrap CSS"
+tags: ["Javascript", "Bootstrap", "All"]
 image: ./images/expensetracker.png
 alt: "Expense Tracker"
-link: "https://nikkipeel.github.io/expense-tracker-react/"
-repo: ""
+link: "https://nikkipeel.github.io/expense-tracker/"
+repo: "https://github.com/nikkipeel/expense-tracker"
 featured: true
 ---

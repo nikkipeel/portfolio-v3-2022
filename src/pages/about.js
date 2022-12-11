@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Breadcrumb } from "gatsby-plugin-breadcrumb"
-import NavMenu from "../components/menu"
+import NavMenu from "../components/menu/menu"
 import Layout from "../components/layout"
 
 const AboutPage = ({ location, pageContext }) => {

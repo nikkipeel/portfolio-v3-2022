@@ -10,7 +10,7 @@ export class ThemeToggle extends React.Component {
             return null
           }
           return (
-            <div>
+            <div className="theme">
               <label className="relative flex items-center justify-between p-1">
                 <span className="hidden" id="theme-toggle">
                   Toggle

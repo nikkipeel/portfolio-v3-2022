@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 import Seo from "../../components/seo"
-import NavMenu from "../../components/menu"
+import NavMenu from "../../components/menu/menu"
 import Layout from "../../components/layout"
 import "../../components/layout.css"
 

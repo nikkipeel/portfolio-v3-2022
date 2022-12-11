@@ -36,6 +36,13 @@
   --shadow-primary: -1.5px 1px 0px var(--primary);
   --shadow-secondary: -1.5px 1px 0px var(--secondary-light);
   --shadow-white: -1.5px 1px 0px var(--neutral-lightest);
+
+  /* font sizing */
+  --text-sm: 0.8rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
 }
 
 html {
@@ -46,9 +53,9 @@ html {
 body {
   overflow-x: hidden;
   color: var(--black);
-  font-size: 16px;
-  font-family: "source-sans-3", "Trebuchet MS", "Helvetica", "ui-sans-serif",
-    "system-ui", "sans-sefooterrif";
+  font-size: var(--text-base);
+  font-family: source-sans-3, Trebuchet MS, Helvetica, ui-sans-serif, system-ui,
+    sans-sefooterrif;
 }
 
 main section {
@@ -57,26 +64,6 @@ main section {
 
 body.dark main section {
   background: var(--neutral-darkest);
-}
-
-nav {
-  background-color: var(--neutral-darker);
-}
-
-body.dark nav {
-  background-color: var(--neutral-dark);
-}
-
-nav a {
-  color: var(--neutral-lightest);
-}
-
-.mobileNav {
-  background: var(--neutral-darker);
-}
-
-body.dark .mobileNav {
-  background: var(--neutral);
 }
 
 .text-white,
@@ -89,18 +76,18 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: var(--text-2xl);
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: var(--text-xl);
 }
 
 h1,
 h2,
 h3 {
   letter-spacing: 2.5px;
-  font-family: macho, "Tahoma", "Verdana", sans-serif;
+  font-family: macho, Tahoma, Verdana, sans-serif;
   font-weight: 700;
 }
 
@@ -222,14 +209,6 @@ svg:focus {
   border-radius: 50%;
 }
 
-nav a,
-.mobileNav a {
-  letter-spacing: 2.5px;
-  font-size: 22px;
-  font-family: macho, "Tahoma", "Verdana", sans-serif;
-  font-weight: 600;
-}
-
 header .card {
   width: max-content;
 }
@@ -346,6 +325,7 @@ body.dark .post-content h3 {
   border-left: 0.5rem solid var(--d-secondary);
 }
 
+a.gradient-link,
 .post-content a {
   color: var(--secondary);
   font-weight: 600;
@@ -365,8 +345,18 @@ body.dark .post-content h3 {
   transition: all 0.4s ease-in-out;
 }
 
+a.gradient-link:hover,
 .post-content a:hover {
   background-size: 0 0.1em, 100% 0.1em;
+}
+
+a.gradient-link {
+  line-height: 1.8;
+  font-size: var(--text-lg);
+}
+
+.dark a.gradient-link {
+  color: var(--neutral-lightest);
 }
 
 .dark .post a,
@@ -512,7 +502,7 @@ footer small {
 }
 
 footer small a {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: Source Sans Pro, sans-serif;
   font-weight: 600;
 }
 
@@ -607,7 +597,7 @@ div.certs-carousel {
 
 @media (min-width: 768px) {
   .breadcrumbs {
-    padding-left: 3rem;
+    padding-left: 3.5rem;
   }
 }
 
@@ -643,8 +633,9 @@ ol {
 }
 
 ol li a {
-  font-family: "interstate-mono", "Consolas", "Monaco", "ui-monospace",
-    "SFMono-Regular", "monospace";
+  padding-left: 0.5rem;
+  font-family: interstate-mono, Consolas, Monaco, ui-monospace, SFMono-Regular,
+    monospace;
   font-size: 0.9rem;
 }
 

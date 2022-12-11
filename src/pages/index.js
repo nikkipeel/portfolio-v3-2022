@@ -1,6 +1,6 @@
 import * as React from "react"
 import Seo from "../components/seo"
-import NavMenu from "../components/menu"
+import NavMenu from "../components/menu/menu"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import Skills from "../components/skills"

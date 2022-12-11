@@ -2,7 +2,7 @@ import * as React from "react"
 import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 import { Link } from "gatsby"
 import Seo from "../components/seo"
-import NavMenu from "../components/menu"
+import NavMenu from "../components/menu/menu"
 import Layout from "../components/layout"
 
 const ThankYouPage = ({ location, pageContext }) => {
@@ -68,7 +68,7 @@ const ThankYouPage = ({ location, pageContext }) => {
           <div className="mx-auto mt-8 flex items-center justify-center p-8">
             <Link
               to="/"
-              className="link--with-icon mr-8 p-2 font-mono font-semibold text-dark transition duration-500 dark:text-white85"
+              className="link--with-icon text-dark dark:text-white85 mr-8 p-2 font-mono font-semibold transition duration-500"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

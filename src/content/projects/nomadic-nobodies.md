@@ -1,11 +1,11 @@
 ---
 slug: "nomadic-nobodies"
 title: "Nomadic Nobodies"
-description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque molestias iste ipsa ab deserunt eveniet dolorem facere consequatur exercitationem necessitatibus. In, ipsa corporis totam beatae culpa quis aliquid delectus incidunt"
+description: "Travel blog website built with Wordpress and Elementor. View recent Trips on Google Maps, browse favorite photos and recipes. I've redesigned and am rebuilding this site with GraphQL and GatsbyJS"
 tags: ["Wordpress", "Elementor", "All"]
 image: ./images/nnblog1.png
 alt: "Nomadic Nobodies"
 link: "https://nomadicnobodies.com"
-repo: ""
+repo: "https://github.com/nikkipeel/gatsby-wordpress-sandbox"
 featured: false
 ---
