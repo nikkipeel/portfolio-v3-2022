@@ -83,9 +83,14 @@ h3 {
   font-size: var(--text-xl);
 }
 
+h4 {
+  font-size: var(--text-large);
+}
+
 h1,
 h2,
-h3 {
+h3,
+h4 {
   letter-spacing: 2.5px;
   font-family: macho, Tahoma, Verdana, sans-serif;
   font-weight: 700;
@@ -116,6 +121,16 @@ header {
 section {
   background: var(--neutral-light);
   color: var(--text-primary);
+}
+
+.site-caption {
+  background-color: var(--secondary);
+  color: var(--neutral-lightest);
+  padding: 1rem;
+}
+
+body.dark .site-caption {
+  background-color: var(--d-secondary);
 }
 
 body.dark section {

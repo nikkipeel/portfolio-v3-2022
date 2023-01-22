@@ -19,18 +19,16 @@ function Header() {
               </strong>
             </h1>
             <p className="dark:text-white65 px-8 lg:px-0">
-              I'm a Front End Developer from Michigan and love creating
-              user-friendly, responsive websites. Currently, I'm working for{" "}
-              <a
+              I'm a Front End Developer living in the United States and love creating
+              user-friendly, responsive websites. I work at <a
                 href="https://www.gravityworksdesign.com"
                 target="_blank"
                 className="gradient-link text-base"
               >
                 Gravity Works Design &amp; Development
-              </a>{" "}
-              - contributing to and building out impactful websites for a
-              variety of large scale clients. Browse my recent projects, read
-              blog posts, or reach out and we can discuss all things web-dev.
+              </a>, contributing to and building out impactful websites for a
+              variety of large scale clients. On this site you can browse my recent personal projects, read
+              blog posts I've written, or check out recent posts from some of my favorite blogs. Feel free to reach out and we can discuss all things web-dev.
             </p>
           </LazyFade>
           <div className="mx-auto mt-8 flex flex-col items-center justify-center gap-12 p-8 lg:mx-0 lg:flex-row lg:justify-end lg:p-0">

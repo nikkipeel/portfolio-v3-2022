@@ -64,17 +64,7 @@ const ContactPage = ({ location, pageContext }) => {
         <Seo title="Contact Me" />
         <div className="mx-auto flex w-full flex-col items-center p-4 lg:w-3/4 xl:w-1/2">
           <p className="p-2 text-lg leading-relaxed">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores,
-            consequuntur asperiores explicabo quis ut magnam, perferendis
-            expedita odio impedit iure natus consectetur officia accusamus nisi
-            alias quasi blanditiis! Sunt, provident! Aspernatur magni omnis
-            repellendus facilis numquam dignissimos maxime ducimus maiores natus
-            impedit ipsam, aperiam, pariatur nostrum accusantium! Totam
-            voluptates dolorem ipsam. Maxime pariatur ut, velit eum incidunt
-            perspiciatis obcaecati porro. Tenetur, neque nulla reiciendis minus
-            delectus, unde ratione dicta recusandae harum officiis enim eius,
-            error debitis eveniet! Veniam, odit ad. Accusantium aliquid
-            reiciendis magni fugit maxime deleniti ratione debitis magnam?
+            Please use this contact form to reach out if you have questions, suggestions, or other commentary related to web development. I can also be found on <a href="https://www.linkedin.com/in/nikkipeel" target="_blank" className="gradient-link">LinkedIn</a> or through reaching out via email at nikkipeel.dev@gmail.com. Thank you for visiting my website!
           </p>
           <Form></Form>
         </div>

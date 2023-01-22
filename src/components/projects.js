@@ -5,7 +5,12 @@ import Project from "./cards/Project"
 const Projects = ({ tag }) => {
   const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/projects/" } }) {
+      allMarkdownRemark(
+        filter: {
+          frontmatter: { featured: { eq: true } }
+          fileAbsolutePath: { regex: "/projects/" }
+        }
+      ) {
         nodes {
           frontmatter {
             alt

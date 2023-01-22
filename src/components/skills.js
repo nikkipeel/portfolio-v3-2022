@@ -22,11 +22,7 @@ function Skills() {
               Development
             </h3>
             <p className="px-8 pb-8">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
-              iure eos sit necessitatibus obcaecati ipsa itaque quisquam
-              sapiente praesentium voluptas repellendus, voluptates ab ea ut
-              aspernatur nobis. Voluptatem iste dolores aspernatur perspiciatis
-              amet, odio magni!
+              I enjoy brainstorming solutions for complex technical issues and building user-friendly websites. I'm fluent in HTML and Javascript (including React!) and love building out content structures with Content Management Systems such as Drupal and Wordpress.
             </p>
           </div>
           <div className="skills--card col rounded-sm text-center">
@@ -40,11 +36,7 @@ function Skills() {
             </h3>
 
             <p className="px-8 pb-8">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
-              iure eos sit necessitatibus obcaecati ipsa itaque quisquam
-              sapiente praesentium voluptas repellendus, voluptates ab ea ut
-              aspernatur nobis. Voluptatem iste dolores aspernatur perspiciatis
-              amet, odio magni!
+              The websites I contribute to and create meet <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" className="gradient-link">WCAG Standards</a> to <em>at least</em> the AA level. I utilize modern accessiblility tools such as Axe and Lighthouse and perform thorough manual testing to ensure keyboard and screenreader accessiblity
             </p>
           </div>
         </div>

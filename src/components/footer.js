@@ -1,6 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import {
@@ -9,23 +7,23 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
 import resume from "../images/resume-nikkipeel.pdf"
+import LastModified from "./lastModified"
 
 function Footer() {
+
+  const isBrowser = typeof document !== "undefined"
+
   return (
-    <footer className="flex h-full w-full flex-col items-center justify-between p-8 lg:flex-row">
+    <>
+    <footer className="h-full w-full p-8">
+      <div className="flex flex-col items-center justify-between lg:flex-row">
       <div className="flex w-full flex-col items-start px-2 text-left lg:flex-row lg:items-center lg:gap-8">
-        <StaticImage
-          className="h-20 w-20 rounded-full shadow-inner drop-shadow-md"
-          src="../images/selfie.jpg"
-          alt="Portrait"
-          placeholder="blurred"
-          loading="eager"
-        />
         <div className="my-4 flex w-auto max-w-full flex-col">
           <h2 className="my-1 font-macho text-xl font-semibold tracking-widest drop-shadow-md">
             Nikki Peel
           </h2>
           <em className="my-1 text-base">Front End Developer</em>
+              <p>nikkipeel.dev@gmail.com</p>
           <a
             href={resume}
             target="_blank"
@@ -79,7 +77,16 @@ function Footer() {
           <FontAwesomeIcon className="h-8 w-8" icon={faEnvelope} />
         </a>
       </div>
+      </div>
+
+
     </footer>
+    <div className="site-caption">
+    {isBrowser &&
+      <LastModified></LastModified>
+    }
+    </div>
+    </>
   )
 }
 

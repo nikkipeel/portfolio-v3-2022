@@ -16,9 +16,13 @@
 }
 
 body.dark .button--primary {
-  background: var(--d-primary);
+  background: var(--primary);
   color: var(--text-primary);
   border: none;
+}
+
+body.dark .button {
+  filter: brightness(100%);
 }
 
 .button--secondary {
