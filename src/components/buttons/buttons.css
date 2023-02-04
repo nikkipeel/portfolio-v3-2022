@@ -80,9 +80,10 @@ body.dark .button--secondary:focus {
   z-index: 1;
 }
 
-/* body.dark .button--secondary__outline {
+body.dark .button--secondary__outline {
   background: var(--neutral-light);
-} */
+  border: 2px solid var(--neutral-light);
+}
 
 .button--secondary__outline::after {
   position: absolute;
@@ -96,17 +97,10 @@ body.dark .button--secondary:focus {
   transition: all 0.3s ease;
 }
 
-body.dark .button--secondary__outline::after {
-  background: var(--neutral-light);
-}
-
 .button--secondary__outline:hover {
   color: var(--neutral-light);
 }
 
-body.dark .button--secondary__outline:hover {
-  color: var(--d-secondary);
-}
 .button--secondary__outline:hover::after {
   right: 0;
   width: 100%;
@@ -115,11 +109,6 @@ body.dark .button--secondary__outline:hover {
 .button--secondary__outline:focus {
   outline: 2px solid var(--secondary);
   outline-offset: 4px;
-}
-
-body.dark .button--secondary__outline {
-  color: var(--d-secondary);
-  border: 2px solid var(--d-secondary);
 }
 
 .button--with-arrow {

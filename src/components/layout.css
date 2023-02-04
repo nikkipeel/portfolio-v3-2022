@@ -340,6 +340,7 @@ body.dark .post-content h3 {
   border-left: 0.5rem solid var(--d-secondary);
 }
 
+
 a.gradient-link,
 .post-content a {
   color: var(--secondary);
@@ -377,6 +378,42 @@ a.gradient-link {
 .dark .post a,
 .dark .post-content a {
   color: var(--dark-primary);
+}
+
+.tooltip {
+  cursor: help;
+  position: relative;
+  display: inline-block;
+  border-bottom: 2px dotted var(--secondary);
+  font-weight: 600;
+}
+
+body.dark .tooltip {
+  border-bottom: 2px dotted var(--primary);
+}
+
+.tooltip .tooltip--text {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--neutral-darkest);
+  color: var(--neutral-lightest);
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+body.dark .tooltip--text {
+  background-color: var(--secondary);
+  /* color: var(--neutral-darkest); */
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltip--text {
+  visibility: visible;
 }
 
 .post strong,

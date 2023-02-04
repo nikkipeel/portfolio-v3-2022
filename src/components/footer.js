@@ -7,12 +7,8 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
 import resume from "../images/resume-nikkipeel.pdf"
-import LastModified from "./lastModified"
 
 function Footer() {
-
-  const isBrowser = typeof document !== "undefined"
-
   return (
     <>
     <footer className="h-full w-full p-8">
@@ -78,14 +74,7 @@ function Footer() {
         </a>
       </div>
       </div>
-
-
     </footer>
-    <div className="site-caption">
-    {isBrowser &&
-      <LastModified></LastModified>
-    }
-    </div>
     </>
   )
 }
