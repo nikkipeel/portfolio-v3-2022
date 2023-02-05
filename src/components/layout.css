@@ -43,6 +43,11 @@
   --text-lg: 1.125rem;
   --text-xl: 1.25rem;
   --text-2xl: 1.5rem;
+
+  /* fonts */
+  --mono: interstate-mono, Consolas, Monaco, ui-monospace, SFMono-Regular, monospace;
+  --body: source-sans-3, Trebuchet MS, Helvetica, ui-sans-serif, system-ui, sans-serif;
+  --heading: macho, Tahoma, Verdana, sans-serif;
 }
 
 html {
@@ -54,8 +59,7 @@ body {
   overflow-x: hidden;
   color: var(--black);
   font-size: var(--text-base);
-  font-family: source-sans-3, Trebuchet MS, Helvetica, ui-sans-serif, system-ui,
-    sans-sefooterrif;
+  font-family: var(--body);
 }
 
 main section {
@@ -92,7 +96,7 @@ h2,
 h3,
 h4 {
   letter-spacing: 2.5px;
-  font-family: macho, Tahoma, Verdana, sans-serif;
+  font-family: var(--heading);
   font-weight: 700;
 }
 
@@ -288,6 +292,7 @@ article header p {
 body.dark article header p {
   color: var(--d-highlight);
 }
+
 article .categories {
   padding-bottom: 2rem;
 }
@@ -296,6 +301,13 @@ article a.category,
 section a.tag {
   border: 2px solid var(--accent);
   color: var(--accent);
+}
+
+.tag.tag--read {
+  color: var(--secondary);
+  font-weight: 700;
+  font-family: var(--body);
+  font-size: 1rem;
 }
 
 body.dark article a.category,
@@ -554,7 +566,7 @@ footer small {
 }
 
 footer small a {
-  font-family: Source Sans Pro, sans-serif;
+  font-family: var(--body);
   font-weight: 600;
 }
 
@@ -686,8 +698,7 @@ ol {
 
 ol li a {
   padding-left: 0.5rem;
-  font-family: interstate-mono, Consolas, Monaco, ui-monospace, SFMono-Regular,
-    monospace;
+  font-family: var(--mono);
   font-size: 0.9rem;
 }
 

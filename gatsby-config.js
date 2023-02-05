@@ -146,6 +146,13 @@ module.exports = {
         path: `${__dirname}/src/content/posts`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `bookmarks`,
+        path: `${__dirname}/src/content/bookmarks`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

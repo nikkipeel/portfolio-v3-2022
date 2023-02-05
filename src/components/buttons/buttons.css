@@ -139,6 +139,7 @@ body.dark .button--secondary__outline {
   color: var(--neutral-lightest);
   padding: 0;
 }
+
 .button--scroll svg {
   background: var(--primary);
 }

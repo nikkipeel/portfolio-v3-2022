@@ -28,7 +28,7 @@ const RecentPosts = () => {
       <div className="recent-posts h-full w-full pt-64 pb-20 text-center">
         <div className="mx-auto flex flex-col items-center justify-center">
           <h2 className="section-heading w-auto text-4xl font-bold tracking-wide text-white">
-            Recent Posts
+            My Posts
           </h2>
         </div>
 

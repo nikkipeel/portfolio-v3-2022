@@ -28,25 +28,10 @@ body.dark .card-post:not(:hover) {
   border: 2px solid var(--d-secondary);
 }
 
-/* .card-post:hover,
-.card-post:focus {
-  border: 2px solid var(--highlight-light);
-}
-
-body.dark .card-post:hover,
-body.dark .card-post:focus {
-  border: 2px solid var(--d-highlight);
-} */
-
 .card-post:hover,
 .card-post:focus {
   border: 2px solid var(--accent);
 }
-
-/* .card-post h3 {
-  color: var(--white);
-  text-shadow: var(--shadow-secondary);
-} */
 
 body.dark .card-post h3 {
   color: var(--neutral-light);
@@ -240,3 +225,81 @@ body.dark .header-image {
   box-shadow: -6px 0.5px 0px var(--d-primary);
   border: 2px solid var(--d-accent);
 }
+
+
+.card-read {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 1rem;
+  transition: all .4s ease-in-out;
+  border: none;
+}
+
+.card-read:hover {
+    border-left: 4px solid;
+    border-image-slice: 1;
+    /* border-left-width: 5px; */
+    border-image-source: linear-gradient( to bottom,
+    var(--primary) 20%,
+    var(--highlight),
+    var(--accent),
+    var(--secondary));
+}
+
+.card-read svg {
+  height: 22px;
+  width: 22px;
+  position: relative;
+}
+
+.card-read svg path {
+  fill: var(--accent);
+}
+
+body.dark .card-read svg path {
+  fill: var(--d-primary);
+  filter:brightness(120%);
+}
+
+.card-read__icon-text {
+  font-weight: 700;
+  font-size: .9rem;
+  color: transparent;
+  opacity: 0;
+  right: 0;
+  transform: translateX(60px);
+  transition: all .4s ease-in-out;
+}
+
+.card-read:hover .card-read__icon-text {
+  color: var(--neutral-darkest);
+  right: auto;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+body.dark .card-read:hover .card-read__icon-text {
+  color: var(--d-primary);
+  filter:brightness(120%);
+}
+
+body.dark .card-read strong {
+  color: var(--highlight);
+}
+
+body.dark .tag--read {
+  color: var(--d-secondary);
+  filter: brightness(140%);
+}
+
+@media screen and (max-width: 768px) {
+  .card-read {
+    width: 85vw;
+  }
+
+  .card-read:hover .card-read__icon-text, .card-read .card-read__icon-text {
+    display: none;
+  }
+}
+
