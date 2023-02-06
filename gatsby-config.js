@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Nikki Peel - Portfolio`,
-    description: `Personal website for Nikki Peel includes recent projects, certifications, link to download resume, and contact form`,
+    description: `This website showcases some of my web projects, blog posts, recent reads, and a contact form for reaching out`,
     author: `Nikki Peel`,
   },
   plugins: [
@@ -164,7 +164,7 @@ module.exports = {
         background_color: `#75acc0`,
         theme_color: `#75acc0`,
         display: `minimal-ui`,
-        icon: `src/images/np-logo.png`,
+        icon: `src/images/np-logo__square-secondary-shadow.png`,
       },
     },
     `gatsby-plugin-postcss`,
