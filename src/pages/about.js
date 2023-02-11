@@ -60,7 +60,7 @@ const AboutPage = ({ location, pageContext }) => {
       <Layout title="About" pageTitle="About">
         <div className="mx-auto w-full p-6 lg:w-3/4 xl:w-1/2">
           <p className="text-lg leading-relaxed">
-            My name is Nikki Peel - I'm a Front End Developer living in the United States. I enjoy creating accessible, responsive websites and brainstorming web solutions. I work at <a href="https://www.gravityworksdesign.com" className="gradient-link" target="_blank">Gravity Works Design & Development</a> - please feel free to visit our website to find out more about what we do and browse our recent work. In my free time, I prefer spending time with my family (we enjoy relaxing, hiking, exploring the outdoors) and when creativity strikes, writing more code. Thank you for visiting my website! 
+            My name is Nikki Peel - I'm a Front End Developer working remotely in the United States. I enjoy building accessible, responsive websites and brainstorming web solutions.  In my free time, I can be found relaxing or exploring the outdoors with my family - and when creativity strikes, writing more code. Thank you for visiting my website! 
           </p>
         </div>
       </Layout>

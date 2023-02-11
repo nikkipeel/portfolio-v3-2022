@@ -1,6 +1,6 @@
 /* Form Styles */
 .form-wrapper {
-  background: var(--accent);
+  background: #a26126;
   color: var(--neutral-lightest);
 }
 
@@ -108,6 +108,7 @@ body.dark .button-code {
   width: 48px;
   transform: scale(1.25);
   font-weight: 600;
+  font-size: var(--text-base);
 }
 .form-item {
   display: flex;

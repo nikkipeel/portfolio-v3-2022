@@ -21,6 +21,10 @@ body.dark .button--primary {
   border: none;
 }
 
+body.dark .button--primary.text-white {
+  color: var(--neutral-dark);
+}
+
 body.dark .button {
   filter: brightness(100%);
 }

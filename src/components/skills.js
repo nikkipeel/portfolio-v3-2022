@@ -34,12 +34,9 @@ function Skills() {
             <h3 className="py-2 font-mono text-2xl font-semibold leading-tight">
               Accessibility
             </h3>
-
             <p className="px-8 pb-8">
-              Ensuring that web content is accessible is a top priority. The projects I work on are built to meet 
-              <div class="tooltip">WCAG
-                <span class="tooltip--text">Web Content Accessibility Guidelines</span>
-              </div> AA Level requirements. I utilize modern auditing tools and perform thorough manual testing to ensure keyboard and screenreader accessibility
+              Ensuring that web content is accessible is a top priority of mine. The projects I work on are built to meet 
+              Web Content Accessibility Guidelines (WCAG). I utilize modern auditing tools and perform thorough manual testing to ensure keyboard and screenreader accessibility
             </p>
           </div>
         </div>

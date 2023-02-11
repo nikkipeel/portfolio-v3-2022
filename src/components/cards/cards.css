@@ -62,8 +62,9 @@ body.dark .card-post .tag {
 }
 
 .card-post .tag {
-  border: 2px solid var(--accent);
-  color: var(--accent);
+  font-weight:700;
+  color: #9D5F25;
+  border: 2px solid #9D5F25;
 }
 
 .card-post .link {
@@ -289,8 +290,8 @@ body.dark .card-read strong {
 }
 
 body.dark .tag--read {
-  color: var(--d-secondary);
-  filter: brightness(140%);
+  color: var(--neutral-light);
+  opacity: .9;
 }
 
 @media screen and (max-width: 768px) {

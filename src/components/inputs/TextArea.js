@@ -5,7 +5,7 @@ const TextArea = ({ id, label, name, className, handleChange }) => {
   return (
     <>
       <label for={id}>{label}</label>
-      <textarea className={className} name={name} onChange={handleChange} />
+      <textarea id={id} className={className} name={name} onChange={handleChange} />
     </>
   )
 }

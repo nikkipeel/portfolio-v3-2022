@@ -33,9 +33,9 @@
   --d-neutral-light: #1b2b32;
   --d-neutral-lightest: #2d4752;
 
-  --shadow-primary: -1.5px 1px 0px var(--primary);
-  --shadow-secondary: -1.5px 1px 0px var(--secondary-light);
-  --shadow-white: -1.5px 1px 0px var(--neutral-lightest);
+  --shadow-primary: -1px 1px 0px var(--primary);
+  --shadow-secondary: -1px 1px 0px var(--secondary-light);
+  --shadow-white: -1px 1px 0px var(--neutral-lightest);
 
   /* font sizing */
   --text-sm: 0.8rem;
@@ -531,11 +531,11 @@ body.dark .skills--card {
 }
 
 body.dark .skills--card h3 {
-  text-shadow: -1.5px 1.5px 0px var(--d-primary);
+  text-shadow: -1px 1px 0px var(--d-primary);
 }
 
 body.dark .skills--card svg {
-  color: var(--d-accent);
+  color: var(--accent-light);
 }
 
 .skill-icon {
