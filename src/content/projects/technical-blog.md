@@ -7,5 +7,5 @@ image: ./images/blog.png
 alt: "Technical Blog"
 link: "https://nikkipeel.netlify.app"
 repo: "https://github.com/nikkipeel/gatsby-blog"
-featured: true
+featured: false
 ---
