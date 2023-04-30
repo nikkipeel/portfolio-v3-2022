@@ -20,31 +20,30 @@ var styles = {
   },
   bmCross: {
     height: "28px",
-    background: "#ffffff",
+    background: "#201335",
   },
   bmMenuWrap: {
     position: "fixed",
     top: "0",
     height: "100%",
-    background: "#192d35",
+    background: "#fce762",
   },
   bmMenu: {
-    background: "#192d35",
+    background: "#fce762",
     padding: "2.5em 1.5em 0",
-    fontSize: "1.15em",
   },
   bmMorphShape: {
     fill: "#373a47",
   },
   bmItemList: {
-    background: "#192d35",
+    background: "#fce762",
     paddingTop: "3rem",
   },
   bmItem: {
     display: "flex",
   },
   bmOverlay: {
-    background: "rgba(0, 0, 0, 0.3)",
+    background: "rgba(0, 0, 0, 0.4)",
   },
 }
 

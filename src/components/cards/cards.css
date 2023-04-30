@@ -1,6 +1,6 @@
 .card {
   box-shadow: -8px 8px 0px var(--primary);
-  border: 2px solid var(--secondary-light);
+  border: 2px solid var(--secondary);
 }
 
 body.dark .card {
@@ -8,6 +8,56 @@ body.dark .card {
   border: 2px solid var(--d-accent);
 }
 
+.info .card {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  border-radius: 2px;
+  padding: 1rem 3rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+.info .card h1 {
+  font-weight: 700;
+  font-size: var(--text-xl);
+}
+
+.info .card em {
+  font-size: var(--text-base);
+}
+
+.info .card .link-resume {
+  padding: 0.25rem;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.info .card .link-resume:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+.info .card .card--social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.info .card .card--social-links svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.info .card .card--social-links a {
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+}
+
+.info .card .card--social-links a:hover {
+  transform: scale(1.1);
+  color: var(--accent);
+}
 .angled-bg {
   position: absolute;
   z-index: 0;
@@ -40,7 +90,7 @@ body.dark .card-post h3 {
 
 .card-post h3 {
   color: var(--text-primary);
-  text-shadow: var(--shadow-primary);
+  text-shadow: var(--shadow-highlight);
 }
 
 .card-post p {
@@ -62,9 +112,10 @@ body.dark .card-post .tag {
 }
 
 .card-post .tag {
-  font-weight:700;
-  color: #9D5F25;
-  border: 2px solid #9D5F25;
+  font-weight: 700;
+  color: var(--neutral-lightest);
+  background: var(--secondary);
+  border: 2px solid var(--secondary);
 }
 
 .card-post .link {
@@ -75,6 +126,19 @@ body.dark .card-post .tag {
   .card-post {
     width: 90vw;
   }
+}
+
+.card-post:hover {
+  border: 3px solid;
+  border-image-slice: 1;
+  /* border-left-width: 5px; */
+  border-image-source: linear-gradient(
+    to bottom,
+    var(--primary) 20%,
+    var(--highlight),
+    var(--accent),
+    var(--secondary)
+  );
 }
 
 .card-post:hover .link {
@@ -90,6 +154,10 @@ body.dark .card-post .tag {
   width: 350px;
   height: 225px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.card-project h3 {
+  text-shadow: var(--shadow-highlight);
 }
 
 body.dark .card-project {
@@ -227,25 +295,30 @@ body.dark .header-image {
   border: 2px solid var(--d-accent);
 }
 
-
 .card-read {
   display: flex;
   flex-direction: column;
   gap: 8px;
   padding: 0 1rem;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   border: none;
 }
 
 .card-read:hover {
-    border-left: 4px solid;
-    border-image-slice: 1;
-    /* border-left-width: 5px; */
-    border-image-source: linear-gradient( to bottom,
+  border-left: 4px solid;
+  border-image-slice: 1;
+  /* border-left-width: 5px; */
+  border-image-source: linear-gradient(
+    to bottom,
     var(--primary) 20%,
     var(--highlight),
     var(--accent),
-    var(--secondary));
+    var(--secondary)
+  );
+}
+
+.card-read h3 {
+  text-shadow: var(--shadow-highlight);
 }
 
 .card-read svg {
@@ -260,17 +333,17 @@ body.dark .header-image {
 
 body.dark .card-read svg path {
   fill: var(--d-primary);
-  filter:brightness(120%);
+  filter: brightness(120%);
 }
 
 .card-read__icon-text {
   font-weight: 700;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: transparent;
   opacity: 0;
   right: 0;
   transform: translateX(60px);
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .card-read:hover .card-read__icon-text {
@@ -282,7 +355,7 @@ body.dark .card-read svg path {
 
 body.dark .card-read:hover .card-read__icon-text {
   color: var(--d-primary);
-  filter:brightness(120%);
+  filter: brightness(120%);
 }
 
 body.dark .card-read strong {
@@ -291,7 +364,7 @@ body.dark .card-read strong {
 
 body.dark .tag--read {
   color: var(--neutral-light);
-  opacity: .9;
+  opacity: 0.9;
 }
 
 @media screen and (max-width: 768px) {
@@ -299,8 +372,8 @@ body.dark .tag--read {
     width: 85vw;
   }
 
-  .card-read:hover .card-read__icon-text, .card-read .card-read__icon-text {
+  .card-read:hover .card-read__icon-text,
+  .card-read .card-read__icon-text {
     display: none;
   }
 }
-

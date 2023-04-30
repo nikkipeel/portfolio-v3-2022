@@ -7,11 +7,15 @@
   transition: all 0.3s ease;
   display: flex;
   cursor: pointer;
+  font-family: var(--mono);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 .button--primary {
-  background: var(--neutral-dark);
-  color: var(--neutral-lightest);
+  background: var(--highlight);
+  color: var(--secondary);
   border: none;
 }
 

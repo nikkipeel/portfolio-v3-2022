@@ -215,7 +215,7 @@ module.exports = {
       options: {
         // Configure color of the scroll indicator
         // color: "#4a94a8",
-        color: "linear-gradient(to right, #c8782f, #da9c63)",
+        color: "linear-gradient(to right, #ffb17a, #fce762)",
         // Height of the scroll indicator
         height: "14px",
         // Configure paths where the scroll indicator will appear

@@ -9,55 +9,41 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 import resume from "../../images/resume-nikkipeel.pdf"
 import "./cards.css"
+// import "../header.css"
 
 function Info() {
   return (
-    <div className="mx-auto flex flex-col items-center justify-center lg:ml-36 lg:w-1/2">
+    <div className="info">
       <StaticImage
-        className="header-image h-60 w-52 shadow-inner"
+        className="header-image"
         src="../../images/selfie.jpg"
         alt="Portrait"
         placeholder="blurred"
         loading="eager"
       />
-      <div className="card text-dark my-8 flex w-full flex-col rounded-sm px-12 py-4 text-center shadow-xl dark:text-white">
-        <h1 className="dark:text-white85 text-xl font-bold">Nikki Peel</h1>
-        <em className="dark:text-white65 text-base">Front End Developer</em>
+      <div className="card">
+        <h1>Nikki Peel</h1>
+        <em>Front End Developer</em>
         <a
           href={resume}
           target="_blank"
-          className="link-resume text-dark p-1 font-mono font-bold uppercase hover:scale-105 hover:underline  dark:text-white"
+          rel="noreferrer"
+          className="link-resume"
         >
           Download Resume
         </a>
-        <div className="card--social-links my-2 flex h-8 justify-center">
-          <a
-            aria-label="linked in"
-            href="https://www.linkedin.com/in/nikkipeel"
-            className="text-dark hover:text-secondary my-auto mr-2 px-2 text-2xl hover:scale-105 dark:brightness-125"
-          >
-            <FontAwesomeIcon className="h-6 w-6" icon={faLinkedin} />
+        <div className="card--social-links">
+          <a aria-label="linkedin" href="https://www.linkedin.com/in/nikkipeel">
+            <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a
-            aria-label="github"
-            href="https://www.github.com/nikkipeel"
-            className="text-dark hover:text-secondary  my-auto mr-2 px-2 text-2xl hover:scale-105 dark:brightness-125"
-          >
-            <FontAwesomeIcon className="h-6 w-6" icon={faGithub} />
+          <a aria-label="github" href="https://www.github.com/nikkipeel">
+            <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a
-            aria-label="codepen"
-            href="https://www.codepen.io/nikki-peel"
-            className="text-dark hover:text-secondary my-auto mr-2 px-2 text-2xl  hover:scale-105 dark:brightness-125"
-          >
-            <FontAwesomeIcon className="h-6 w-6" icon={faCodepen} />
+          <a aria-label="codepen" href="https://www.codepen.io/nikki-peel">
+            <FontAwesomeIcon icon={faCodepen} />
           </a>
-          <a
-            aria-label="email"
-            href="mailto:nikkipeel.dev@gmail.com"
-            className="text-dark hover:text-secondary my-auto px-2 text-2xl hover:scale-105 dark:brightness-125"
-          >
-            <FontAwesomeIcon className="h-6 w-6" icon={faEnvelope} />
+          <a aria-label="email" href="mailto:nikkipeel.dev@gmail.com">
+            <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </div>
       </div>

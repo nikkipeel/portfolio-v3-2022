@@ -3,21 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --primary: #75acc0; /* light blue */
-  --secondary: #66202a; /* maroon */
-  --accent: #c8782f; /* burnt orange */
-  --highlight: #e1b878; /* light burnt orange */
+  --primary: #ffb17a; /* light orange */
+  --secondary: #201335; /* very dark purple */
+  --accent: #4f4789; /* light purple */
+  --highlight: #fce762; /* bright yellow */
   --neutral-darkest: #0f1b20;
-  --neutral-darker: #101d22;
   --neutral-dark: #162830;
   --neutral: #182d35;
   --neutral-light: #faf3e9;
   --neutral-lightest: #fcfdfe;
-
-  --primary-light: #b1d0db; /* #81b3c5; */
-  --secondary-light: #8e2c3a;
-  --accent-light: #da9c63; /* #d38945; */
-  --highlight-light: #e7c692;
 
   --text-primary: #122127; /* or #122127 */
   --text-secondary: #f6e2e5; /* or #260c10 */
@@ -34,7 +28,8 @@
   --d-neutral-lightest: #2d4752;
 
   --shadow-primary: -1px 1px 0px var(--primary);
-  --shadow-secondary: -1px 1px 0px var(--secondary-light);
+  --shadow-highlight: -1px 1px 0px var(--highlight);
+  --shadow-secondary: -1px 1px 0px var(--secondary);
   --shadow-white: -1px 1px 0px var(--neutral-lightest);
 
   /* font sizing */
@@ -45,9 +40,14 @@
   --text-2xl: 1.5rem;
 
   /* fonts */
-  --mono: interstate-mono, Consolas, Monaco, ui-monospace, SFMono-Regular, monospace;
-  --body: source-sans-3, Trebuchet MS, Helvetica, ui-sans-serif, system-ui, sans-serif;
+  --mono: interstate-mono, Consolas, Monaco, ui-monospace, SFMono-Regular,
+    monospace;
+  --body: source-sans-3, Trebuchet MS, Helvetica, ui-sans-serif, system-ui,
+    sans-serif;
   --heading: macho, Tahoma, Verdana, sans-serif;
+
+  /* breakpoints */
+  --large: 968px;
 }
 
 html {
@@ -115,11 +115,6 @@ p {
 a {
   transition: all 0.4s ease;
   letter-spacing: 1px;
-}
-
-header {
-  background: var(--primary);
-  color: var(--text-primary);
 }
 
 section {
@@ -233,12 +228,12 @@ header .card {
 }
 
 .header-image {
-  border: 2px solid var(--secondary-light);
+  border: 2px solid var(--secondary);
 }
 
 /* Recent Projects */
 .recent-projects {
-  background: var(--primary);
+  background: var(--accent);
 }
 
 body.dark .recent-projects {
@@ -277,7 +272,14 @@ article header {
 article header span {
   display: flex;
   height: 4px;
-  background: var(--secondary);
+  /* background: var(--secondary); */
+  background: linear-gradient(
+    to right,
+    var(--primary) 20%,
+    var(--highlight),
+    var(--accent),
+    var(--secondary)
+  );
   border-radius: 2px;
 }
 
@@ -342,7 +344,7 @@ code.language-text {
 .post h3,
 .post-content h3 {
   margin: 2rem 0;
-  border-left: 0.5rem solid var(--secondary-light);
+  border-left: 0.5rem solid var(--secondary);
   padding: 0.5rem 0.75rem;
   text-shadow: none;
 }
@@ -352,14 +354,13 @@ body.dark .post-content h3 {
   border-left: 0.5rem solid var(--d-secondary);
 }
 
-
 a.gradient-link,
 .post-content a {
   color: var(--secondary);
   font-weight: 600;
   font-size: inherit;
   transition: all 0.4s ease-in-out;
-  background: linear-gradient(to right, var(--primary), var(--primary)),
+  background: linear-gradient(to right, var(--accent), var(--accent)),
     linear-gradient(
       to right,
       var(--primary) 20%,
@@ -412,7 +413,7 @@ body.dark .tooltip {
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
- 
+
   /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
@@ -459,13 +460,9 @@ body.dark .post-content p h3 {
 }
 
 .section-heading {
-  border-bottom: 12px solid var(--secondary-light);
+  border-bottom: 12px solid var(--primary);
   line-height: 0.65;
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
-}
-
-.recent-posts .section-heading {
-  border-bottom: 12px solid var(--accent);
 }
 
 body.dark .section-heading {
@@ -476,8 +473,15 @@ body.dark .section-heading {
 
 strong#name {
   text-shadow: 2px 2px 0px var(--primary);
-  text-decoration: 3px underline wavy var(--secondary-light);
+  text-decoration: 3px underline wavy var(--secondary);
   text-underline-offset: 8px;
+  padding: 1rem;
+  font-size: calc(var(--text-xl) * 3);
+
+  @media screen and (min-width: var(--large)) {
+    padding-left: 1rem;
+    padding-right: 0;
+  }
 }
 
 body.dark strong#name {
@@ -507,7 +511,7 @@ body.dark strong#name {
 }
 
 .skills {
-  background: var(--primary);
+  background: var(--accent);
   color: var(--text-primary);
 }
 
@@ -535,11 +539,11 @@ body.dark .skills--card h3 {
 }
 
 body.dark .skills--card svg {
-  color: var(--accent-light);
+  color: var(--accent);
 }
 
 .skill-icon {
-  color: var(--text-primary);
+  color: var(--highlight);
 }
 
 body.dark .skill-icon {
@@ -654,7 +658,7 @@ div.certs-carousel {
 .breadcrumbs {
   display: flex;
   align-items: center;
-  background-color: var(--secondary);
+  background-color: var(--accent);
   color: var(--neutral-lightest);
   padding-left: 0;
 }
@@ -680,7 +684,7 @@ ol {
   display: flex !important;
   flex-wrap: wrap;
   align-items: center;
-  background-color: var(--secondary);
+  background-color: var(--accent);
   color: var(--neutral-lightest);
   padding: 1rem;
   max-height: 100%;

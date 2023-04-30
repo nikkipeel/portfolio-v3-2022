@@ -86,7 +86,7 @@ export default function Form() {
           id="submit-form"
           type="submit"
           text="Submit"
-          classes="button button--primary button--with-arrow font-mono font-semibold tracking-tight text-white shadow-md hover:brightness-125 mt-4 mx-auto"
+          classes="button button--secondary button--with-arrow font-mono font-semibold tracking-tight text-white shadow-md hover:brightness-125 mt-4 mx-auto"
         />
       </form>
     </div>

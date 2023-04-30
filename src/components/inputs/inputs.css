@@ -1,7 +1,7 @@
 /* Form Styles */
 .form-wrapper {
-  background: #a26126;
-  color: var(--neutral-lightest);
+  background: var(--highlight);
+  color: var(--secondary);
 }
 
 body.dark .form-wrapper {
@@ -27,7 +27,7 @@ select {
 form button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 1.75px solid var(--text-primary);
+  outline: 1.75px solid var(--secondary);
   outline-offset: 4px;
 }
 
