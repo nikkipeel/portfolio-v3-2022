@@ -50,12 +50,28 @@ var styles = {
 function NavMenu() {
   return (
     <>
+      <a className="skip-nav" href="#main">
+        Skip to main content
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="3"
+          stroke="currentColor"
+          class="h-6 w-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+      </a>
       <nav className="flex h-full items-center px-8 pt-5 pb-6 lg:px-0">
-        <h2>Nikki Peel</h2>
+        <h2 className="home-link">
+          <Link to="/">Nikki Peel</Link>
+        </h2>
         <div className="nav-links hidden md:flex">
-          <Link to="/" activeClassName="menu-active">
-            home
-          </Link>
           <Link to="/about" activeClassName="menu-active">
             about
           </Link>
@@ -77,20 +93,17 @@ function NavMenu() {
         right
         styles={styles}
       >
-        <Link to="/" activeClassName="menu-active">
-          Home
-        </Link>
         <Link to="/about" activeClassName="menu-active">
-          About
+          about
         </Link>
         <Link to="/projects" activeClassName="menu-active">
-          Projects
+          projects
         </Link>
         <Link to="/contact" activeClassName="menu-active">
-          Contact
+          contact
         </Link>
         <Link to="/blog" activeClassName="menu-active">
-          Blog
+          blog
         </Link>
       </Menu>
     </>

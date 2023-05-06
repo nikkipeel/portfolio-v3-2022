@@ -166,7 +166,8 @@ body.dark .button--secondary__outline:focus {
   gap: 0.5rem;
 }
 
-.button--with-arrow:hover svg {
+.button--with-arrow:hover svg,
+.button--with-arrow:focus svg {
   width: 32px;
   opacity: 1;
 }

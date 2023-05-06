@@ -83,6 +83,7 @@ export default function Form() {
           </div>
         </div>
         <ArrowButton
+          link="#"
           id="submit-form"
           type="submit"
           text="Submit"

@@ -50,6 +50,30 @@ body {
   font-family: var(--body);
 }
 
+a.skip-nav {
+  display: flex;
+  background: var(--highlight);
+  width: 100%;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: var(--text-base);
+  gap: 1rem;
+  text-decoration: none;
+  top: 0;
+  position: absolute;
+  z-index: 5;
+  transform: translateY(-100%);
+  transition: all 0.4s ease-in-out;
+}
+
+a.skip-nav:hover,
+a.skip-nav:focus {
+  transform: translateY(0%);
+  text-decoration: underline;
+}
+
 main section {
   background: var(--neutral-light);
 }
@@ -187,14 +211,14 @@ svg:focus {
 }
 
 header h1.page-title {
-  margin: 0 auto;
-  padding: 1.5rem 4rem;
-  font-size: calc(var(--text-xl) * 5);
+  padding: 2rem;
+  font-size: calc(var(--text-xl) * 2);
 }
 
 @media screen and (min-width: 768px) {
   header h1.page-title {
     padding: 4rem;
+    font-size: calc(var(--text-xl) * 3);
   }
 }
 

@@ -8,7 +8,7 @@ import "./header.css"
 function Header() {
   return (
     <>
-      <header className="bg-light">
+      <header className="bg-light" id="main">
         <Info />
 
         <div className="content-wrapper">

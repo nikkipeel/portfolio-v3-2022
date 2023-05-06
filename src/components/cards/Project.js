@@ -9,7 +9,7 @@ const Project = ({ slug, image, imageAlt, title, tags }) => {
     <LazySlideRight>
       <Link
         to={"/projects/" + slug}
-        className="card-project col m-4 rounded shadow-sm dark:shadow-sm"
+        className="card-project col rounded shadow-sm dark:shadow-sm"
         tabIndex="0"
         key={slug + " - Project"}
       >

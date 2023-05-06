@@ -64,7 +64,19 @@ const ContactPage = ({ location, pageContext }) => {
         <Seo title="Contact Me" />
         <div className="mx-auto flex w-full flex-col items-center p-4 lg:w-3/4 xl:w-1/2">
           <p className="p-2 text-lg leading-relaxed">
-            Please use this contact form to reach out if you have questions, suggestions, or other commentary related to web development. I can also be found on <a href="https://www.linkedin.com/in/nikkipeel" target="_blank" className="gradient-link">LinkedIn</a> or through reaching out via email at nikkipeel.dev@gmail.com. Thank you for visiting my website!
+            Please use this contact form to reach out if you have questions,
+            suggestions, or other commentary related to web development. I can
+            also be found on{" "}
+            <a
+              href="https://www.linkedin.com/in/nikkipeel"
+              target="_blank"
+              rel="noreferrer"
+              className="gradient-link"
+            >
+              LinkedIn
+            </a>{" "}
+            or through reaching out via email at nikkipeel.dev@gmail.com. Thank
+            you for visiting my website!
           </p>
           <Form></Form>
         </div>

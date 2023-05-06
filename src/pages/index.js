@@ -5,9 +5,7 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import Skills from "../components/skills"
 import RecentProjects from "../components/recentProjects"
-// import Certs from "../components/certifications"
 import RecentPosts from "../components/recentPosts"
-// import RecentReading from "../components/recentReading"
 import ScrollToTop from "../components/scrollToTop"
 import "../components/layout.css"
 
@@ -19,9 +17,7 @@ const IndexPage = () => (
     <main>
       <Skills></Skills>
       <RecentProjects></RecentProjects>
-      {/* <Certs></Certs> */}
       <RecentPosts></RecentPosts>
-      {/* <RecentReading></RecentReading> */}
     </main>
     <ScrollToTop showBelow={250}></ScrollToTop>
     <Footer></Footer>
