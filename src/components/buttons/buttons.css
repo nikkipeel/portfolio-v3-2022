@@ -45,6 +45,12 @@ body.dark .button--secondary {
   color: var(--secondary);
 }
 
+body.dark .button--secondary#submit-form {
+  background: var(--highlight);
+  border: 2px solid var(--highlight);
+  color: var(--secondary);
+}
+
 .button--secondary.fill-right {
   z-index: 1;
 }
@@ -119,7 +125,7 @@ body.dark .button--secondary__outline {
   color: var(--neutral-light);
 }
 
-body.dark .button--secondary__outline:hover {
+__outline:hover {
   color: var(--secondary);
 }
 
