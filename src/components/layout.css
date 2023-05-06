@@ -7,16 +7,13 @@
   --secondary: #201335; /* very dark purple */
   --accent: #4f4789; /* light purple */
   --highlight: #fce762; /* bright yellow */
-  --neutral-darkest: #0f1b20;
-  --neutral-dark: #162830;
-  --neutral: #182d35;
+  --neutral-darkest: #0f0d1a;
+  --neutral-dark: #10091a; /* #162830; */
+  --neutral: #171529; /* #182d35; */
   --neutral-light: #faf3e9;
   --neutral-lightest: #fcfdfe;
 
-  --text-primary: #122127; /* or #122127 */
-  --text-secondary: #f6e2e5; /* or #260c10 */
-  --text-accent: #78481c; /* or #5d3816; */
-  --text-highlight: #ae7927; /* #d29433 or */
+  --text-dark: #0f0d1a; /* or #122127 */
 
   --shadow-primary: -1px 1px 0px var(--primary);
   --shadow-highlight: -1px 1px 0px var(--highlight);
@@ -48,7 +45,7 @@ html {
 
 body {
   overflow-x: hidden;
-  color: var(--black);
+  color: var(--neutral-darkest);
   font-size: var(--text-base);
   font-family: var(--body);
 }
@@ -58,7 +55,7 @@ main section {
 }
 
 body.dark main section {
-  background: var(--secondary);
+  background: var(--neutral-dark);
 }
 
 .text-white,
@@ -110,7 +107,7 @@ a {
 
 section {
   background: var(--neutral-light);
-  color: var(--text-primary);
+  color: var(--text-dark);
 }
 
 .site-caption {
@@ -125,9 +122,9 @@ body.dark .site-caption {
 }
 
 body.dark section {
-  background: var(--secondary);
+  background: var(--neutral-dark);
   color: var(--neutral-lightest);
-  filter: brightness(0.8);
+  /* filter: brightness(0.8); */
 }
 
 .bg-primary {
@@ -151,41 +148,13 @@ body.dark section {
 }
 
 body.dark .bg-light {
-  background: var(--secondary);
+  background: var(--neutral-dark);
   color: var(--neutral-lightest);
-  filter: brightness(0.8);
-}
-
-.bg-lightest {
-  background: var(--neutral-lightest);
-}
-
-.text-secondary {
-  color: var(--secondary);
-}
-
-.text-accent {
-  color: var(--accent);
+  /* filter: brightness(0.8); */
 }
 
 .text-dark {
   color: var(--neutral-dark);
-}
-
-.text-highlight {
-  color: var(--highlight);
-}
-
-.border-highlight {
-  border: 2px solid var(--highlight);
-}
-
-.border-primary {
-  border: 2px solid var(--primary);
-}
-
-.border-accent {
-  border: 2px solid var(--accent);
 }
 
 a:focus-visible,
@@ -243,8 +212,8 @@ header .card {
 }
 
 body.dark .recent-projects {
-  background: var(--secondary);
-  filter: brightness(0.8);
+  background: var(--neutral-dark);
+  /* filter: brightness(0.8); */
 }
 
 .recent-posts {
@@ -252,12 +221,12 @@ body.dark .recent-projects {
 }
 
 body.dark .recent-posts {
-  background: var(--secondary);
-  filter: brightness(0.8);
+  background: var(--neutral-dark);
+  /* filter: brightness(0.8); */
 }
 
 .recent-posts h2 {
-  color: var(--text-primary);
+  color: var(--text-dark);
   text-shadow: none;
 }
 
@@ -291,12 +260,8 @@ article header span {
   border-radius: 2px;
 }
 
-body.dark article header span {
-  background: var(--accent);
-}
-
 article header p {
-  color: var(--text-primary);
+  color: var(--text-dark);
 }
 
 body.dark article header p {
@@ -352,14 +317,14 @@ code.language-text {
 .post h3,
 .post-content h3 {
   margin: 2rem 0;
-  border-left: 0.5rem solid var(--secondary);
+  border-left: 0.5rem solid var(--accent);
   padding: 0.5rem 0.75rem;
   text-shadow: none;
 }
 
 body.dark .post h3,
 body.dark .post-content h3 {
-  border-left: 0.5rem solid var(--primary);
+  border-left: 0.5rem solid var(--accent);
 }
 
 a.gradient-link,
@@ -510,7 +475,7 @@ strong#name {
 }
 
 body.dark strong#name {
-  text-shadow: 2px 2px 0px var(--highlight);
+  text-shadow: none;
   text-decoration: 3px underline wavy var(--accent);
   text-underline-offset: 8px;
 }
@@ -521,22 +486,21 @@ body.dark strong#name {
 
 .skills {
   background: var(--accent);
-  color: var(--text-primary);
+  color: var(--text-dark);
 }
 
 body.dark .skills {
-  background: var(--secondary);
-  filter: brightness(0.8);
+  background: var(--neutral-dark);
 }
 
 .skills--card {
   background: var(--neutral-light);
-  color: var(--text-primary);
+  color: var(--text-dark);
   opacity: 0.85;
 }
 
 body.dark .skills--card {
-  background: #291944;
+  background: var(--neutral);
   color: var(--neutral-light);
   opacity: 1;
 }

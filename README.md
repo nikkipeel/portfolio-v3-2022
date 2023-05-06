@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5508e176-5a39-487f-a745-e0863c2b0c61?branch=2023-upgrades/deploy-status)](https://app.netlify.com/sites/nikkipeel-portfolio/deploys)
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">

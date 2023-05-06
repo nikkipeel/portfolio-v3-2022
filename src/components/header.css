@@ -6,7 +6,10 @@ header {
 body.dark header {
   background: var(--secondary);
   color: var(--primary);
-  filter: brightness(1.05);
+}
+
+body.dark article header {
+  background: var(--neutral-dark);
 }
 
 header.bg-light {

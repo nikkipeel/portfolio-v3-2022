@@ -128,7 +128,7 @@ body.dark .button-code {
 
 .form-item input,
 .form-item textarea {
-  color: var(--text-primary);
+  color: var(--text-dark);
 }
 
 input,
@@ -191,7 +191,7 @@ body.dark .form-item__select--wrapper {
 .form-item__select--wrapper select {
   padding: 0 0.75rem;
   outline: none;
-  color: var(--text-primary);
+  color: var(--text-dark);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;

@@ -161,10 +161,10 @@ module.exports = {
         name: `Nikki Peel - Portfolio`,
         short_name: `portfolio`,
         start_url: `/`,
-        background_color: `#75acc0`,
-        theme_color: `#75acc0`,
+        background_color: `#201335`,
+        theme_color: `#4f4789`,
         display: `minimal-ui`,
-        icon: `src/images/np-logo__square-secondary-shadow.png`,
+        icon: `src/images/np-logo_orange.png`,
       },
     },
     `gatsby-plugin-postcss`,
@@ -256,6 +256,6 @@ module.exports = {
     `gatsby-plugin-netlify`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }

@@ -60,7 +60,7 @@ const RecentProjects = () => {
           link="/projects"
           id="projects-link--home"
           text="View All Projects"
-          classes="button button--primary button--with-arrow font-mono font-semibold tracking-tight shadow-md hover:brightness-125"
+          classes="button button--secondary button--with-arrow font-mono font-semibold tracking-tight shadow-md"
         />
       </div>
     </div>
