@@ -72,7 +72,7 @@ const ProjectsPage = ({ data, projects, location, pageContext }) => {
           getProps={isPartiallyActive}
         />
       </div>
-      <Layout pageTitle="Recent Projects" id="works">
+      <Layout pageTitle="Projects" id="works">
         <Seo title="Works" />
         <div className="page--projects flex w-full flex-col items-center justify-center pb-12">
           <Select

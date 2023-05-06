@@ -19,11 +19,15 @@ function Footer() {
               <h2>Nikki Peel</h2>
               <em>Front End Developer</em>
               <p>nikkipeel.dev@gmail.com</p>
-              <a href={resume} target="_blank" className="link-resume">
+              <a
+                href={resume}
+                target="_blank"
+                rel="noreferrer"
+                className="link-resume"
+              >
                 Download Resume
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="ml-2 h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -42,30 +46,17 @@ function Footer() {
             <a
               aria-label="linked in"
               href="https://www.linkedin.com/in/nikkipeel"
-              className="mr-2 px-2 text-2xl hover:scale-105"
             >
-              <FontAwesomeIcon className="h-8 w-8" icon={faLinkedin} />
+              <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a
-              aria-label="github"
-              href="https://www.github.com/nikkipeel"
-              className="mr-2 px-2 text-2xl hover:scale-105"
-            >
-              <FontAwesomeIcon className="h-8 w-8" icon={faGithub} />
+            <a aria-label="github" href="https://www.github.com/nikkipeel">
+              <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a
-              aria-label="codepen"
-              href="https://www.codepen.io/nikki-peel"
-              className="mr-2 px-2 text-2xl hover:scale-105"
-            >
-              <FontAwesomeIcon className="h-8 w-8" icon={faCodepen} />
+            <a aria-label="codepen" href="https://www.codepen.io/nikki-peel">
+              <FontAwesomeIcon icon={faCodepen} />
             </a>
-            <a
-              aria-label="email"
-              href="mailto:nikkipeel.dev@gmail.com"
-              className="px-2 text-2xl hover:scale-105"
-            >
-              <FontAwesomeIcon className="h-8 w-8" icon={faEnvelope} />
+            <a aria-label="email" href="mailto:nikkipeel.dev@gmail.com">
+              <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </div>
         </div>

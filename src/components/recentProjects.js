@@ -41,7 +41,7 @@ const RecentProjects = () => {
       className="recent-projects flex h-full w-full flex-col items-center justify-center py-20"
     >
       <h2 className="section-heading w-auto text-center text-3xl font-bold tracking-wide text-white">
-        Recent Projects
+        Projects
       </h2>
       <div className="grid-cols -px-8 mx-auto mt-8 grid items-center justify-center gap-4 md:grid-cols-2 md:p-4 lg:grid-cols-3">
         {projects &&

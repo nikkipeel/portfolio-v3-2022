@@ -40,9 +40,16 @@ body.dark .button {
 }
 
 body.dark .button--secondary {
-  background: var(--d-secondary);
-  border: 2px solid var(--d-secondary);
+  background: var(--primary);
+  border: 2px solid var(--primary);
+  color: var(--secondary);
 }
+/* 
+body.dark .button--secondary#blog-link {
+  background: var(--primary);
+  border: 2px solid var(--primary);
+  color: var(--secondary);
+} */
 
 .button--secondary.fill-right {
   z-index: 1;
@@ -60,8 +67,17 @@ body.dark .button--secondary {
   transition: all 0.3s ease;
 }
 
+body.dark .button--secondary.fill-right:after {
+  background: var(--secondary);
+  filter: brightness(0.8);
+}
+
 .button--secondary.fill-right:hover {
   color: var(--secondary);
+}
+
+body.dark .button--secondary.fill-right:hover {
+  color: var(--primary);
 }
 
 .button--secondary.fill-right:hover::after {
@@ -75,7 +91,7 @@ body.dark .button--secondary {
 }
 
 body.dark .button--secondary:focus {
-  outline: 2px solid var(--d-secondary);
+  outline: 2px solid var(--primary);
   outline-offset: 4px;
 }
 
@@ -89,8 +105,9 @@ body.dark .button--secondary:focus {
 }
 
 body.dark .button--secondary__outline {
-  background: var(--neutral-light);
-  border: 2px solid var(--neutral-light);
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
 }
 
 .button--secondary__outline::after {
@@ -109,14 +126,26 @@ body.dark .button--secondary__outline {
   color: var(--neutral-light);
 }
 
+body.dark .button--secondary__outline:hover {
+  color: var(--secondary);
+}
+
 .button--secondary__outline:hover::after {
   right: 0;
   width: 100%;
 }
 
+body.dark .button--secondary__outline:hover::after {
+  background: var(--primary);
+}
+
 .button--secondary__outline:focus {
   outline: 2px solid var(--secondary);
   outline-offset: 4px;
+}
+
+body.dark .button--secondary__outline:focus {
+  outline: 2px solid var(--primary);
 }
 
 .button--with-arrow {
@@ -144,10 +173,24 @@ body.dark .button--secondary__outline {
 }
 
 .button--scroll {
-  color: var(--neutral-lightest);
+  color: var(--secondary);
   padding: 0;
+}
+
+body.dark .button--scroll {
+  color: var(--highlight);
+  transition: all 0.3s ease;
+}
+
+body.dark .button--scroll:hover,
+body.dark .button--scroll:focus {
+  transform: scale(1.15);
 }
 
 .button--scroll svg {
   background: var(--primary);
+}
+
+body.dark .button--scroll svg {
+  background: transparent;
 }

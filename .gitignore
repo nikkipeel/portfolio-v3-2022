@@ -68,5 +68,6 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
-# Old files
-old/
+# Old files, unused features
+src/components/certifications.js
+src/content/bookmarks
